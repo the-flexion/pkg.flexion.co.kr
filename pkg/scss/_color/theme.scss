@@ -1,0 +1,100 @@
+/*
+  Light mode colors
+*/
+:root {
+  // Primary
+  --primary: var(--brand-primary);
+  --primary-hover: var(--brand-primary-hover);
+  --primary-pressed: var(--brand-primary-pressed);
+  --primary-focus: var(--brand-primary-focus);
+  --primary-spot: var(--brand-primary-spot);
+  --primary-reverse: var(--brand-primary-reverse);
+
+  // Default
+  --default: var(--gray-100);
+  --default-hover: var(--gray-150);
+  --default-pressed: var(--gray-250);
+  --default-focus: var(--gray-150);
+  --default-spot: var(--gray-50);
+  --default-reverse: var(--mono-white);
+
+  // Default deep
+  --default-deep: var(--gray-600);
+  --default-deep-hover: var(--gray-700);
+  --default-deep-pressed: var(--gray-800);
+  --default-deep-focus: var(--gray-700);
+  --default-deep-spot: var(--gray-50);
+  --default-deep-reverse: var(--mono-white);
+
+  // Info
+  --info: var(--blue-500);
+  --info-hover: var(--blue-600);
+  --info-pressed: var(--blue-700);
+  --info-focus: var(--blue-600);
+  --info-spot: var(--blue-50);
+  --info-reverse: var(--mono-white);
+
+  // Link
+  --link: var(--sky-500);
+  --link-hover: var(--sky-600);
+  --link-pressed: var(--sky-700);
+  --link-focus: var(--sky-600);
+  --link-spot: var(--sky-50);
+  --link-reverse: var(--mono-white);
+
+  // Success
+  --success: var(--teal-600);
+  --success-hover: var(--teal-700);
+  --success-pressed: var(--teal-800);
+  --success-focus: var(--teal-700);
+  --success-spot: var(--teal-50);
+  --success-reverse: var(--mono-white);
+
+  // Warning
+  --warning: var(--amber-500);
+  --warning-hover: var(--amber-600);
+  --warning-pressed: var(--amber-700);
+  --warning-focus: var(--amber-600);
+  --warning-spot: var(--amber-50);
+  --warning-reverse: var(--mono-white);
+
+  // Danger
+  --danger: var(--red-500);
+  --danger-hover: var(--red-600);
+  --danger-pressed: var(--red-700);
+  --danger-focus: var(--red-600);
+  --danger-spot: var(--red-50);
+  --danger-reverse: var(--mono-white);
+
+  // Background
+  --bg-modal: var(--mono-white);
+  --bg-disabled: var(--gray-200);
+  --bg-toggle: var(--gray-300);
+  --bg-reverse-wb: var(--mono-white);
+  --bg-reverse-bw: var(--mono-black);
+  --bg-indicator: var(--black-alpha-100);
+  --bg-block: var(--mono-white);
+
+  // Background elevation
+  --bg-elevation: var(--gray-50);
+  --bg-elevation-2: var(--mono-white);
+  --bg-elevation-3: var(--mono-white);
+  --bg-elevation-4: var(--mono-white);
+  
+  // Border
+  
+
+}
+
+html[data-color-mode="dark"] {
+  /*
+    Dark mode colors
+  */
+  // Primary
+  --primary: var(--brand-primary);
+  --primary-hover: var(--brand-primary-hover);
+  --primary-pressed: var(--brand-primary-pressed);
+  --primary-focus: var(--brand-primary-focus);
+  --primary-spot: var(--brand-primary-spot);
+  --primary-reverse: var(--brand-primary-reverse);
+}

@@ -1,0 +1,15 @@
+@import '../pkg/scss/pkg.scss';
+.app {
+  width: 100%;
+  min-height: 100%;
+  &:global {
+    > * {
+      .test-1 {
+        color: var(--gray-800);
+      }
+      .test-2 {
+        color: var(--rose-500);
+      }
+    } 
+  }
+}
