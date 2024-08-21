@@ -1,0 +1,49 @@
+@import './spacing.scss';
+/*
+  Devices
+*/
+
+// Breakpoints
+$breakpoint-pc: 1200px;
+$breakpoint-tb: 768px;
+$breakpoint-mo: 375px;
+
+// Media Queries Mixins
+@mixin pc {
+  @media screen and (min-width: $breakpoint-pc) {
+    @content;
+  }
+}
+@mixin tb {
+  @media screen and (min-width: $breakpoint-tb) and (max-width: calc(#{$breakpoint-pc} - 1px)) {
+    @content;
+  }
+}
+@mixin mo {
+  @media screen and (max-width: calc(#{$breakpoint-mo} - 1px)) {
+    @content;
+  }
+}
+
+// Side-margin & Gap & Grid-count
+$side-margin: var(--spacing-6);
+$gap: var(--spacing-6);
+$grid-count: 12;
+
+@include pc {
+  $side-margin: var(--spacing-6);
+  $gap: var(--spacing-6);
+  $grid-count: 12;
+}
+
+@include tb {
+  $side-margin: var(--spacing-5);
+  $gap: var(--spacing-5);
+  $grid-count: 6;
+}
+
+@include mo {
+  $side-margin: var(--spacing-5);
+  $gap: var(--spacing-5);
+  $grid-count: 4;
+}
