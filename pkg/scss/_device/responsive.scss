@@ -1,21 +1,23 @@
-@import './spacing.scss';
+@import '../_layout/spacing.scss';
 /*
   Devices
 */
 
 // Breakpoints
-$breakpoint-pc: 1200px;
-$breakpoint-tb: 768px;
-$breakpoint-mo: 375px;
+$breakpoint-tb: 1280px;
+$breakpoint-mo: 768px;
+
+// Mobile Min-width
+$min-mo: 375px;
 
 // Media Queries Mixins
 @mixin pc {
-  @media screen and (min-width: $breakpoint-pc) {
+  @media screen and (min-width: $breakpoint-tb) {
     @content;
   }
 }
 @mixin tb {
-  @media screen and (min-width: $breakpoint-tb) and (max-width: calc(#{$breakpoint-pc} - 1px)) {
+  @media screen and (min-width: $breakpoint-mo) and (max-width: calc(#{$breakpoint-tb} - 1px)) {
     @content;
   }
 }

@@ -93,12 +93,12 @@
   --text-header: var(--gray-900);
   --text-body: var(--gray-800);
   --text-sub: var(--gray-500);
-  --text-disabled: var(--gray-400);
-  --text: var(--gray-500);
-  --text-hover: var(--gray-600);
-  --text-pressed: var(--gray-700);
-  --text-focus: var(--gray-600);
-  --text-reverse: var(--mono-white);
+  --text-action: var(--gray-500);
+  --text-action-hover: var(--gray-600);
+  --text-action-pressed: var(--gray-700);
+  --text-action-focus: var(--gray-600);
+  --text-action-reverse: var(--mono-white);
+  --text-action-disabled: var(--gray-400);
 }
 
 html[data-color-mode='dark'] {

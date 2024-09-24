@@ -1,8 +1,12 @@
 {
-  "name": "pkg.flexion.co.kr",
-  "private": true,
-  "version": "0.0.1",
+  "name": "@the-flexion/pkg.flexion.co.kr",
+  "version": "0.0.2",
   "type": "module",
+  "author": "flexion <dev@flexion.co.kr>",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

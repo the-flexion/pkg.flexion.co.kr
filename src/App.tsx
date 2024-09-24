@@ -1,45 +1,34 @@
 import styles from './App.module.scss';
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
-    document.documentElement.setAttribute("data-color-tone", "warm");
+    document.documentElement.setAttribute('data-color-tone', 'warm');
   }, []);
 
   return (
-    <div className={ styles.app }>
+    <div className={styles.app}>
       <header>
         <h1>Sample Page</h1>
-        
       </header>
       <main className="p-6">
         <article className="bg-1 p-6">
-          <p className="test-1">
-            test1
-          </p>
-          <p className="test-2">
-            test2
-          </p>
           <h2>Text</h2>
           <section className="bg-2 p-6">
             <h1>h1</h1>
             <h2>h2</h2>
             <h3>h3</h3>
-            <h4>h4</h4>
-            <h5>h5</h5>
-            <h6>h6</h6>
-            <div>body</div>
-            <sub>sub</sub>
-            <caption>caption</caption>
-            <div className="display-1 display-3-tb display-5-mo primary">
-              display-1 display-3-tb display-5-mo
-            </div>
-            <p>
-              abbr <abbr>CSS</abbr> (Cascading Style Sheets)
-            </p>
-            <p>
-              asdf <mark>mark</mark> asdf
-            </p>
+            <p className="s1">s1</p>
+            <p className="s2">s2</p>
+            <p className="s3">s3</p>
+            <p className="s4">s4</p>
+            <p className="p1">p1</p>
+            <p className="p2">p2</p>
+            <p className="p3">p3, body</p>
+            <p className="p4">p4</p>
+            <p className="p4-semibold">p4-semibold</p>
+            <p className="p5">p5</p>
+            <p className="p5-semibold">p5-semibold</p>
           </section>
         </article>
         <article className="bg-1 p-6">
@@ -862,7 +851,7 @@ function App() {
               </div>
               <div className="w-1_3">
                 <label htmlFor="label2" className="required">
-                  Required{" "}
+                  Required{' '}
                 </label>
                 <input
                   id="label2"
@@ -873,7 +862,7 @@ function App() {
               </div>
               <div className="w-1_3">
                 <label htmlFor="label3" className="bold required">
-                  Bold Required{" "}
+                  Bold Required{' '}
                 </label>
                 <input
                   id="label3"
@@ -1328,4 +1317,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
