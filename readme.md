@@ -1,4 +1,24 @@
+# Release 배포
+
+- 버전 확인
+
+```
+npm publish
+```
+
 # SCSS
+
+## 기본 적용
+
+```js
+import "pkg.scss" from "@the-flexion/pkg";
+```
+
+### system(admin) 레이아웃 적용
+
+```js
+import "system.scss" from "@the-flexion/pkg";
+```
 
 ## Variables
 

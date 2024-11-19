@@ -1,0 +1,91 @@
+/* system layout */
+main,
+article,
+section {
+  margin-bottom: var(--m-2);
+}
+h2,
+h3,
+h4,
+h5 {
+  margin-top: var(--m-3);
+  margin-bottom: var(--m-2);
+}
+.grid.guide {
+  > * {
+    background-color: var(--info-light);
+    &:first-child {
+      background-color: var(--info);
+    }
+  }
+}
+body {
+  background-color: var(--bg);
+  main {
+    min-width: 1200px;
+    padding: var(--p-3) var(--p-5) var(--p-5) var(--p-5);
+    > h1 {
+      margin-bottom: var(--m-2);
+    }
+    > section,
+    > article {
+      padding: var(--p-6);
+      background-color: var(--bg-1);
+      box-shadow: var(--shadow);
+      > section,
+      > article {
+        padding: var(--p-6);
+        background-color: var(--bg-2);
+        box-shadow: var(--shadow-1);
+        > section,
+        > article {
+          padding: var(--p-6);
+          background-color: var(--bg-3);
+          box-shadow: var(--shadow-2);
+        }
+      }
+    }
+  }
+}
+
+/* icon */
+.icons i {
+  margin-right: 4px;
+}
+
+/* button */
+body button,
+body a.button {
+  padding-left: var(--p-5);
+  padding-right: var(--p-5);
+}
+
+/* table */
+table.list {
+  > thead {
+    position: sticky;
+    top: 0;
+    transform: translateY(-1px);
+    background-color: var(--bg-1);
+    z-index: 1;
+  }
+  tbody tr:hover {
+    background-color: var(--primary-light);
+  }
+}
+
+/* detail */
+table.detail {
+  th,
+  td {
+    text-align: left;
+  }
+  tr:not(:last-child) > th,
+  tr:not(:last-child) > td {
+    border-bottom: 1px solid var(--border);
+  }
+  tr:last-child > th,
+  tr:last-child > td {
+    border-bottom: 0;
+  }
+}
