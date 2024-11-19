@@ -59,3 +59,15 @@ document.documentElement.setAttribute('data-color-mode', 'dark');
   --brand-font-family: 'Pretendard', sans-serif;
 }
 ```
+
+# 아이콘 생성
+
+- 디자인 시스템 피그마에서 vector가 아닌 상태를 선택한 후 svg로 export 할 것
+- /pkg/scss/\_icon/svg 경로에 svg 파일을 아이콘명에 맞춰 저장
+- 쉘에서 아래 스크립트 실행
+
+```sh
+npm run font
+```
+
+- 스크립트 실행 후 /pkg/scss/\_icon/font 경로에 폰트 파일 생성

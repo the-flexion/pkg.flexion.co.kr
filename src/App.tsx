@@ -207,28 +207,16 @@ function App() {
             <h3>Icon</h3>
             <div className="grid icons">
               <div className="w-2 p-6">
-                <i className="icon-ellipse"></i>ellipse
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-close"></i>close
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-cancel"></i>cancel
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-user"></i>user
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-arrow-up"></i>arrow-up
+                <i className="icon-apple"></i>apple
               </div>
               <div className="w-2 p-6">
                 <i className="icon-arrow-down"></i>arrow-down
               </div>
               <div className="w-2 p-6">
-                <i className="icon-arrow-dropdown"></i>arrow-dropdown
+                <i className="icon-arrow-dropdown-up"></i>arrow-dropdown-up
               </div>
               <div className="w-2 p-6">
-                <i className="icon-arrow-dropdown-up"></i>arrow-dropdown-up
+                <i className="icon-arrow-dropdown"></i>arrow-dropdown
               </div>
               <div className="w-2 p-6">
                 <i className="icon-arrow-left"></i>arrow-left
@@ -237,10 +225,28 @@ function App() {
                 <i className="icon-arrow-right"></i>arrow-right
               </div>
               <div className="w-2 p-6">
-                <i className="icon-check-small"></i>check-small
+                <i className="icon-arrow-up"></i>arrow-up
               </div>
               <div className="w-2 p-6">
-                <i className="icon-check"></i>check
+                <i className="icon-briefcase"></i>briefcase
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-calendar"></i>calendar
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-cancel"></i>cancel
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-car"></i>car
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-card"></i>card
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-chart-bar"></i>chart-bar
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-chart"></i>chart
               </div>
               <div className="w-2 p-6">
                 <i className="icon-check-circle-fill"></i>check-circle-fill
@@ -249,157 +255,309 @@ function App() {
                 <i className="icon-check-circle-stroke"></i>check-circle-stroke
               </div>
               <div className="w-2 p-6">
-                <i className="icon-checkbox"></i>checkbox
+                <i className="icon-check-small"></i>check-small
               </div>
               <div className="w-2 p-6">
-                <i className="icon-checkbox-multi"></i>checkbox-multi
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-radio-check"></i>radio-check
+                <i className="icon-check"></i>check
               </div>
               <div className="w-2 p-6">
                 <i className="icon-checkbox-blank"></i>checkbox-blank
               </div>
               <div className="w-2 p-6">
-                <i className="icon-radio-blank"></i>radio-blank
+                <i className="icon-checkbox-multi"></i>checkbox-multi
               </div>
               <div className="w-2 p-6">
-                <i className="icon-warning"></i>warning
+                <i className="icon-checkbox"></i>checkbox
               </div>
               <div className="w-2 p-6">
-                <i className="icon-help"></i>help
+                <i className="icon-clip"></i>clip
               </div>
               <div className="w-2 p-6">
-                <i className="icon-new-window"></i>new-window
+                <i className="icon-close"></i>close
               </div>
               <div className="w-2 p-6">
-                <i className="icon-plus"></i>plus
+                <i className="icon-coin"></i>coin
               </div>
               <div className="w-2 p-6">
-                <i className="icon-minus"></i>minus
+                <i className="icon-compass"></i>compass
               </div>
               <div className="w-2 p-6">
-                <i className="icon-info"></i>info
+                <i className="icon-contour"></i>contour
               </div>
               <div className="w-2 p-6">
-                <i className="icon-danger"></i>danger
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-calendar"></i>calendar
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-settings"></i>settings
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-time"></i>time
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-upload"></i>upload
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-download"></i>download
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-mail"></i>mail
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-global"></i>global
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-search"></i>search
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-exchange"></i>exchange
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-drag"></i>drag
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-trash"></i>trash
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-dm"></i>dm
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-apple"></i>apple
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-google"></i>google
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-youtube"></i>youtube
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-kakao"></i>kakao
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-x"></i>x
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-facebook"></i>facebook
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-naver"></i>naver
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-insta"></i>insta
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-tiktok"></i>tiktok
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-paper"></i>paper
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-emoticon"></i>emoticon
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-show"></i>show
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-hidden"></i>hidden
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-tag"></i>tag
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-heart"></i>heart
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-heart-fill"></i>heart-fill
+                <i className="icon-counselor"></i>counselor
               </div>
               <div className="w-2 p-6">
                 <i className="icon-currency"></i>currency
               </div>
               <div className="w-2 p-6">
-                <i className="icon-fordid"></i>fordid
+                <i className="icon-danger-fill"></i>danger-fill
               </div>
               <div className="w-2 p-6">
-                <i className="icon-more"></i>more
+                <i className="icon-danger"></i>danger
               </div>
               <div className="w-2 p-6">
-                <i className="icon-more-horizontal"></i>more-horizontal
+                <i className="icon-dm"></i>dm
               </div>
               <div className="w-2 p-6">
-                <i className="icon-notification"></i>notification
+                <i className="icon-download"></i>download
               </div>
               <div className="w-2 p-6">
-                <i className="icon-loading"></i>loading
+                <i className="icon-drag"></i>drag
               </div>
               <div className="w-2 p-6">
                 <i className="icon-edit"></i>edit
               </div>
               <div className="w-2 p-6">
-                <i className="icon-link"></i>link
+                <i className="icon-ellipse-stroke"></i>ellipse-stroke
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-ellipse"></i>ellipse
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-email"></i>email
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-excel"></i>excel
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-exchange-horizontally"></i>
+                exchange-horizontally
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-exchange-vertical"></i>exchange-vertical
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-expand-down-double"></i>expand-down-double
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-expand-down"></i>expand-down
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-expand-left-double"></i>expand-left-double
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-expand-left"></i>expand-left
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-expand-right-double"></i>expand-right-double
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-expand-right"></i>expand-right
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-expand-up-double"></i>expand-up-double
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-expand-up"></i>expand-up
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-export"></i>export
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-facebook"></i>facebook
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-favorite-fill"></i>favorite-fill
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-favorite"></i>favorite
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-file"></i>file
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-flag-finish"></i>flag-finish
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-flag"></i>flag
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-fordid"></i>fordid
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-global"></i>global
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-google"></i>google
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-gps"></i>gps
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-hand"></i>hand
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-handle"></i>handle
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-help"></i>help
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-hidden"></i>hidden
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-home"></i>home
               </div>
               <div className="w-2 p-6">
                 <i className="icon-img"></i>img
               </div>
               <div className="w-2 p-6">
+                <i className="icon-import"></i>import
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-info"></i>info
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-insta"></i>insta
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-kakao"></i>kakao
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-layers"></i>layers
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-link-alt"></i>link-alt
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-link"></i>link
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-mail"></i>mail
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-map"></i>map
+              </div>
+              <div className="w-2 p-6">
                 <i className="icon-menu"></i>menu
               </div>
               <div className="w-2 p-6">
+                <i className="icon-minus"></i>minus
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-more-horizontal"></i>more-horizontal
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-more"></i>more
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-naver"></i>naver
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-new-window"></i>new-window
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-notifications-stroke"></i>
+                notifications-stroke
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-notifications"></i>notifications
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-paper"></i>paper
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-phone-stroke"></i>phone-stroke
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-phone"></i>phone
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-pin"></i>pin
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-plus"></i>plus
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-pressure"></i>pressure
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-print"></i>print
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-pyramid-chart"></i>pyramid-chart
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-radio-blank"></i>radio-blank
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-radio-check"></i>radio-check
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-receipt"></i>receipt
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-refresh"></i>refresh
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-ruler"></i>ruler
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-search"></i>search
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-setting-stroke"></i>setting-stroke
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-settings"></i>settings
+              </div>
+              <div className="w-2 p-6">
                 <i className="icon-share"></i>share
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-show"></i>show
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-star-fill"></i>star-fill
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-star"></i>star
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-tag"></i>tag
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-temperature"></i>temperature
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-tiktok"></i>tiktok
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-time"></i>time
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-trash"></i>trash
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-turbine"></i>turbine
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-upload-cloud"></i>upload-cloud
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-upload"></i>upload
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-user-storke"></i>user-storke
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-user"></i>user
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-warning"></i>warning
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-x"></i>x
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-youtube"></i>youtube
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-zoom-in"></i>zoom-in
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-zoom-out"></i>zoom-out
               </div>
             </div>
           </section>
