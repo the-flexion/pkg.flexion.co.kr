@@ -1,0 +1,32 @@
+/*
+  Spacing
+*/
+$spacing: (
+  0: 0,
+  1: 2px,
+  2: 4px,
+  3: 8px,
+  4: 12px,
+  5: 16px,
+  6: 24px,
+  7: 32px,
+  8: 40px,
+  9: 48px,
+  10: 64px,
+  11: 80px,
+  12: 96px,
+  13: 160px,
+);
+
+@function spacing($key) {
+  @return map-get($spacing, $key);
+}
+
+@each $key, $value in $spacing {
+  .padding-#{$key} {
+    padding: $value;
+  }
+  .margin-#{$key} {
+    margin: $value;
+  }
+}

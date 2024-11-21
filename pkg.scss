@@ -1,29 +1,26 @@
 /*
-  Reset
-*/
-@import './pkg/scss/_reset.scss';
-
-/*
   Color & Theme
 */
-@import './pkg/scss/_color/base-color.scss';
-@import './pkg/scss/_custom/brand.scss';
-@import './pkg/scss/_color/theme.scss';
+@forward './scss/color/base-color';
+@forward './scss/color/theme';
+@forward './scss/color/class';
 
 /*
   Layout
 */
-@import './pkg/scss/_layout/spacing.scss';
-@import './pkg/scss/_layout/radius.scss';
-@import './pkg/scss/_layout/border.scss';
-@import './pkg/scss/_layout/grid.scss';
+@forward './scss/layout/device';
+@forward './scss/layout/spacing';
+@forward './scss/layout/radius';
+@forward './scss/layout/border';
+@forward './scss/layout/grid';
+@forward './scss/layout/shadow';
 
 /*
   Typo
 */
-@import './pkg/scss/_typo/typo.scss';
+@forward './scss/typo/typo';
 
 /*
   Icon
 */
-@import './pkg/scss/_icon/icon.scss';
+@forward './scss/icon/icon';

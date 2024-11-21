@@ -10,6 +10,8 @@ function App() {
     <div className={styles.app}>
       <header>
         <h1>Sample Page</h1>
+        <div className="test-1">test 1</div>
+        <div className="test-2">test 2</div>
       </header>
       <main className="p-6">
         <article className="bg-1 p-6">
@@ -34,73 +36,71 @@ function App() {
         <article className="bg-1 p-6">
           <h2>Color</h2>
           <div className="grid">
-            <div className="w-3 bg-primary">primary</div>
-            <div className="w-3 bg-brand">brand</div>
-            <div className="w-3 bg">bg</div>
-            <div className="w-3 bg-1">bg-1</div>
-            <div className="w-3 bg-2">bg-2</div>
-            <div className="w-3 bg-3">bg-3</div>
-            <div className="w-3 card">card</div>
-            <div className="w-3 inverse bg-fix-black">inverse</div>
-            <div className="w-3 bg-disabled">disabled</div>
-            <div className="w-3 border">border</div>
-            <div className="w-3 border-1">border-1</div>
-            <div className="w-3 border-2">border-2</div>
-            <div className="w-3 bg-default">default</div>
-            <div className="w-3 bg-info">info</div>
-            <div className="w-3 bg-link">link</div>
-            <div className="w-3 bg-success">success</div>
-            <div className="w-3 bg-warning">warning</div>
-            <div className="w-3 bg-danger">danger</div>
+            <div className="w-3 primary">primary</div>
+            <div className="w-3 bg-primary">bg primary</div>
+            <div className="w-3 default">default</div>
+            <div className="w-3 bg-default">bg default</div>
+            <div className="w-3 default-deep">default-deep</div>
+            <div className="w-3 bg-default-deep">bg default-deep</div>
+            <div className="w-3 info">info</div>
+            <div className="w-3 bg-info">bg info</div>
+            <div className="w-3 link">link</div>
+            <div className="w-3 bg-link">bg link</div>
+            <div className="w-3 success">success</div>
+            <div className="w-3 bg-success">bg success</div>
+            <div className="w-3 warning">warning</div>
+            <div className="w-3 bg-warning">bg warning</div>
+            <div className="w-3 danger">danger</div>
+            <div className="w-3 bg-danger">bg danger</div>
           </div>
         </article>
         <article className="bg-1 p-6">
           <h2>Grid</h2>
           <section className="bg-2 p-6">
             <h3>Basic 12 Columns (Auto wrap)</h3>
-            <div className="grid guide p-5 bg-3">
-              <div className="w-4 w-2-tb w-1-mo">w-4 / w-2-tb / w-1-mo</div>
-              <div className="w-5 w-4-tb w-1-mo">w-5 / w-4-tb / w-1-mo</div>
-              <div className="w-3 w-6-tb w-2-mo">w-3 / w-6-tb / w-2-mo</div>
-              <div className="grid w-6 w-4-mo">
-                w-6 / w-4-mo
-                <div className="w-12 w-6-tb w-4-mo">w-12 / w-6-tb / w-4-mo</div>
+            <div className="grid guide border p-5 bg-3">
+              <div className="w-4">w-4</div>
+              <div className="w-5">w-5</div>
+              <div className="w-3">w-3</div>
+              <div className="grid w-6">
+                w-6
+                <div className="w-12">w-12</div>
                 <div className="w-2">w-2</div>
-                <div className="w-6 w-4-tb w-2-mo">w-6 / w-4-tb / w-2-mo</div>
-                <div className="w-4 w-6-tb w-4-mo">w-4 / w-6-tb / w-4-mo</div>
+                <div className="w-6">w-6</div>
+                <div className="w-4">w-4</div>
               </div>
-              <div className="w-6 w-4-mo">w-6 / w-4-mo</div>
+              <div className="w-6">w-6</div>
               <div className="w-full">w-full</div>
             </div>
           </section>
           <section className="bg-2 p-6">
             <h3>Fixed Columns (No wrap)</h3>
             <h4>2 Columns (grid grid-fix-2)</h4>
-            <div className="grid guide grid-fix-2 p-5 bg-3">
+            <div className="grid guide border grid-fix-2 p-5 bg-3">
               <div className="w-1_2">w-1_2</div>
               <div className="w-1_2">w-1_2</div>
             </div>
             <h4>3 Columns (grid grid-fix-3)</h4>
-            <div className="grid guide grid-fix-3 p-5 bg-3">
+            <div className="grid guide border grid-fix-3 p-5 bg-3">
               <div className="w-1_3">w-1_3</div>
               <div className="w-2_3">w-2_3</div>
             </div>
             <h4>4 Columns (grid grid-fix-4)</h4>
-            <div className="grid guide grid-fix-4 p-5 bg-3">
+            <div className="grid guide border grid-fix-4 p-5 bg-3">
               <div className="w-1_4">w-1_4</div>
               <div className="w-3_4">w-3_4</div>
               <div className="w-2_4">w-2_4</div>
               <div className="w-2_4">w-2_4</div>
             </div>
             <h4>5 Columns (grid grid-fix-5)</h4>
-            <div className="grid guide grid-fix-5 p-5">
+            <div className="grid guide border grid-fix-5 p-5">
               <div className="w-1_5">w-1_5</div>
               <div className="w-4_5">w-4_5</div>
               <div className="w-2_5">w-2_5</div>
               <div className="w-3_5">w-3_5</div>
             </div>
             <h4>6 Columns (grid grid-fix-6)</h4>
-            <div className="grid guide grid-fix-6 p-5">
+            <div className="grid guide border grid-fix-6 p-5">
               <div className="w-1_6">w-1_6</div>
               <div className="w-5_6">w-5_6</div>
               <div className="w-2_6">w-2_6</div>
@@ -114,76 +114,44 @@ function App() {
           <h2>Layout</h2>
           <section className="bg-2 p-6">
             <h3>Border</h3>
-            <div className="grid grid-fix-4">
-              <div className="w-1_4 border-w-0">border-0</div>
-              <div className="w-1_4 border-w-1">border-1</div>
-              <div className="w-1_4 border-w-2">border-2</div>
-              <div className="w-1_4 border-w-3">border-3</div>
+            <div className="grid guide grid-fix-4">
+              <div className="w-1_4 border-0">border-0</div>
+              <div className="w-1_4 border-1">border-1</div>
+              <div className="w-1_4 border-2">border-2</div>
+              <div className="w-1_4 border-3">border-3</div>
             </div>
           </section>
           <section className="bg-2 p-6">
             <h3>Border-radius</h3>
-            <div className="grid grid-fix-4">
-              <div className="w-1_4 border-w-1 r-0 p-6">r-0</div>
-              <div className="w-1_4 border-w-1 r-1 p-6">r-1</div>
-              <div className="w-1_4 border-w-1 r-2 p-6">r-2</div>
-              <div className="w-1_4 border-w-1 r-3 p-6">r-3</div>
-              <div className="w-1_4 border-w-1 r-4 p-6">r-4</div>
-              <div className="w-1_4 border-w-1 r-5 p-6">r-5</div>
-              <div className="w-1_4 border-w-1 r-6 p-6">r-6</div>
-              <div className="w-1_4 border-w-1 r-full p-6">r-full</div>
+            <div className="grid guide grid-fix-4">
+              <div className="w-1_4 border-1 r-0 p-6">r-0</div>
+              <div className="w-1_4 border-1 r-1 p-6">r-1</div>
+              <div className="w-1_4 border-1 r-2 p-6">r-2</div>
+              <div className="w-1_4 border-1 r-3 p-6">r-3</div>
+              <div className="w-1_4 border-1 r-4 p-6">r-4</div>
+              <div className="w-1_4 border-1 r-5 p-6">r-5</div>
+              <div className="w-1_4 border-1 r-6 p-6">r-6</div>
+              <div className="w-1_4 border-1 r-full p-6">r-full</div>
             </div>
           </section>
           <section className="bg-2 p-6">
-            <h3>Padding</h3>
+            <h3>padding</h3>
             <div className="grid grid-fix-4">
-              <div className="w-full border-w-1 p-0 bg-info">
-                <div className="bg-info-light">p-0</div>
-              </div>
-              <div className="w-full border-w-1 p-1 bg-info">
-                <div className="bg-info-light">p-1</div>
-              </div>
-              <div className="w-full border-w-1 p-2 bg-info">
-                <div className="bg-info-light">p-2</div>
-              </div>
-              <div className="w-full border-w-1 p-3 bg-info">
-                <div className="bg-info-light">p-3</div>
-              </div>
-              <div className="w-full border-w-1 p-4 bg-info">
-                <div className="bg-info-light">p-4</div>
-              </div>
-              <div className="w-full border-w-1 p-5 bg-info">
-                <div className="bg-info-light">p-5</div>
-              </div>
-              <div className="w-full border-w-1 p-6 bg-info">
-                <div className="bg-info-light">p-6</div>
-              </div>
-              <div className="w-full border-w-1 p-7 bg-info">
-                <div className="bg-info-light">p-7</div>
-              </div>
-              <div className="w-full border-w-1 p-8 bg-info">
-                <div className="bg-info-light">p-8</div>
-              </div>
+              {Array.from({ length: 14 }).map((_, i) => (
+                <div key={i} className={`w-full border-1 padding-${i} bg-info`}>
+                  <div className="bg-info-light">padding-{i}</div>
+                </div>
+              ))}
             </div>
           </section>
           <section className="bg-2 p-6">
-            <h3>Margin</h3>
+            <h3>margin</h3>
             <div className="grid grid-fix-4">
-              <div className="w-full border-w-1 bg-info">
-                <div className="bg-info-light m-0">m-0</div>
-              </div>
-              <div className="w-full border-w-1 bg-info">
-                <div className="bg-info-light m-1">m-1</div>
-              </div>
-              <div className="w-full border-w-1 bg-info">
-                <div className="bg-info-light m-2">m-2</div>
-              </div>
-              <div className="w-full border-w-1 bg-info">
-                <div className="bg-info-light m-3">m-3</div>
-              </div>
-              <div className="w-full border-w-1 bg-info">
-                <div className="bg-info-light m-4">m-4</div>
-              </div>
+              {Array.from({ length: 14 }).map((_, i) => (
+                <div key={i} className={`w-full border-1 margin-${i} bg-info`}>
+                  <div className="bg-info-light">margin-{i}</div>
+                </div>
+              ))}
             </div>
           </section>
           <section className="bg-2 p-6">
@@ -539,7 +507,7 @@ function App() {
                 <i className="icon-upload"></i>upload
               </div>
               <div className="w-2 p-6">
-                <i className="icon-user-storke"></i>user-storke
+                <i className="icon-user-stroke"></i>user-stroke
               </div>
               <div className="w-2 p-6">
                 <i className="icon-user"></i>user

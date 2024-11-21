@@ -1,13 +1,26 @@
+@use '../pkg.scss' as *;
 .app {
   width: 100%;
   min-height: 100%;
   &:global {
     > * {
       .test-1 {
-        color: var(--gray-800);
+        @include h1;
       }
       .test-2 {
-        color: var(--rose-500);
+        color: color('primary');
+        background: color('primary-spot');
+        padding: spacing(6);
+        border-radius: r(6);
+      }
+      .grid.guide {
+        * {
+          padding: spacing(2);
+          background: color('primary-spot');
+        }
+        &.border * {
+          border: 1px solid color('primary');
+        }
       }
     }
   }

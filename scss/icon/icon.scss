@@ -1,0 +1,80 @@
+@use './font/icon.scss' as *;
+
+@font-face {
+  font-family: 'pkg-icon';
+  src: url(./font/icon.woff2) format('woff2');
+  font-display: swap;
+}
+
+[class^='icon-']::before,
+[class*=' icon-']::before {
+  font-family: 'pkg-icon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.with-icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  > select,
+  > input[type='text'],
+  > input[type='date'],
+  > input[type='datetime-local'],
+  > input[type='email'],
+  > input[type='month'],
+  > input[type='number'],
+  > input[type='password'],
+  > input[type='search'],
+  > input[type='tel'],
+  > input[type='time'],
+  > input[type='url'],
+  > input[type='week'],
+  > input[type='datetime'],
+  > textarea {
+    padding-left: var(--p-8);
+    position: relative;
+  }
+  > [class^='icon-'],
+  > [class*=' icon-'] {
+    position: absolute;
+    left: var(--p-1);
+    top: var(--p-2);
+    z-index: 1;
+    color: var(--gray-5);
+    &::before {
+      font-size: 1.2rem;
+    }
+  }
+  &.right {
+    > select,
+    > input[type='text'],
+    > input[type='date'],
+    > input[type='datetime-local'],
+    > input[type='email'],
+    > input[type='month'],
+    > input[type='number'],
+    > input[type='password'],
+    > input[type='search'],
+    > input[type='tel'],
+    > input[type='time'],
+    > input[type='url'],
+    > input[type='week'],
+    > input[type='datetime'],
+    > textarea {
+      padding-right: var(--p-8);
+      padding-left: var(--p-3);
+    }
+    > [class^='icon-'],
+    > [class*=' icon-'] {
+      right: var(--p-4);
+      left: auto;
+    }
+  }
+}

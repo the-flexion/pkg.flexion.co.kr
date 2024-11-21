@@ -2,8 +2,8 @@ import svgtofont from 'svgtofont';
 import path from 'node:path';
 import fs from 'node:fs';
 
-const inputDir = path.resolve(process.cwd(), 'pkg/scss/_icon/svg');
-const outputDir = path.resolve(process.cwd(), 'pkg/scss/_icon/font');
+const inputDir = path.resolve(process.cwd(), 'scss/icon/svg');
+const outputDir = path.resolve(process.cwd(), 'scss/icon/font');
 
 await svgtofont({
   src: inputDir,
@@ -58,22 +58,22 @@ await svgtofont({
 });
 
 // outputDir 경로에서 icon.woff2와 icon.scss를 제외한 모든 파일 삭제
-function cleanOutputDir() {
-  fs.readdir(outputDir, (err, files) => {
-    if (err) {
-      return console.error('Error while reading output directory:', err);
-    }
-    files.forEach((file) => {
-      if (file !== 'icon.woff2' && file !== 'icon.scss') {
-        fs.unlink(path.join(outputDir, file), (err) => {
-          if (err) {
-            console.error('Error while deleting file:', err);
-          }
-        });
-      }
-    });
-    console.log('Unnecessary files deleted!');
-  });
-}
+// function cleanOutputDir() {
+//   fs.readdir(outputDir, (err, files) => {
+//     if (err) {
+//       return console.error('Error while reading output directory:', err);
+//     }
+//     files.forEach((file) => {
+//       if (file !== 'icon.woff2' && file !== 'icon.scss') {
+//         fs.unlink(path.join(outputDir, file), (err) => {
+//           if (err) {
+//             console.error('Error while deleting file:', err);
+//           }
+//         });
+//       }
+//     });
+//     console.log('Unnecessary files deleted!');
+//   });
+// }
 
 // cleanOutputDir();
