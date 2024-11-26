@@ -1,0 +1,49 @@
+/*
+  Toggle
+  */
+.toggle {
+  appearance: none;
+  position: relative;
+  border-radius: 10px;
+  border: 1 solid #fff;
+  width: 33px;
+  height: 20px;
+  background-color: var(--default);
+  cursor: pointer;
+  vertical-align: middle;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 2.5px;
+    top: 2.5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--fix-white);
+    transition: 0.15s;
+  }
+  &:checked::before {
+    background-color: var(--fix-white);
+    left: auto;
+    right: 2.5px;
+  }
+  &:checked {
+    background-color: var(--info);
+  }
+  &:disabled {
+    background-color: var(--disabled);
+    cursor: not-allowed;
+  }
+  &:disabled::before {
+    background-color: var(--disabled-1);
+    cursor: not-allowed;
+  }
+
+  &:checked:disabled {
+    background-color: var(--disabled-1);
+    cursor: not-allowed;
+  }
+  &:checked:disabled::before {
+    background-color: var(--disabled);
+  }
+}

@@ -13,6 +13,7 @@
       &.xs {
         @include p4;
         & {
+          border-radius: r(2);
           padding: spacing(2) spacing(3);
           > i::before {
             font-size: 20px;
@@ -22,12 +23,14 @@
       &.md {
         @include p2;
         & {
+          border-radius: r(5);
           padding: spacing(4) spacing(6);
         }
       }
       &.lg {
         @include p1;
         & {
+          border-radius: r(6);
           padding: spacing(5) spacing(6);
         }
       }

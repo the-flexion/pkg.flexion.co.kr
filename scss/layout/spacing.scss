@@ -23,10 +23,34 @@ $spacing: (
 }
 
 @each $key, $value in $spacing {
-  .padding-#{$key} {
+  .p-#{$key} {
     padding: $value;
   }
-  .margin-#{$key} {
+  .p-t-#{$key} {
+    padding-top: $value;
+  }
+  .p-r-#{$key} {
+    padding-right: $value;
+  }
+  .p-b-#{$key} {
+    padding-bottom: $value;
+  }
+  .p-l-#{$key} {
+    padding-left: $value;
+  }
+  .m-#{$key} {
     margin: $value;
+  }
+  .m-t-#{$key} {
+    margin-top: $value;
+  }
+  .m-r-#{$key} {
+    margin-right: $value;
+  }
+  .m-b-#{$key} {
+    margin-bottom: $value;
+  }
+  .m-l-#{$key} {
+    margin-left: $value;
   }
 }

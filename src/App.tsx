@@ -161,21 +161,53 @@ function App() {
             </div>
           </section>
           <section className="bg-2 p-6">
-            <h3>padding</h3>
+            <h3>Spacing</h3>
             <div className="grid grid-fix-4">
               {Array.from({ length: 14 }).map((_, i) => (
-                <div key={i} className={`w-full border-1 padding-${i} bg-info`}>
-                  <div className="bg-info-light">padding-{i}</div>
+                <div>spacing({i});</div>
+              ))}
+            </div>
+          </section>
+          <section className="bg-2 p-6">
+            <h3>Padding</h3>
+            <p>
+              전체 : p-0 ~ p-13
+              <br />
+              상단 : p-t-0 ~ p-t-13
+              <br />
+              우측 : p-r-0 ~ p-r-13
+              <br />
+              하단 : p-b-0 ~ p-b-13
+              <br />
+              좌측 : p-l-0 ~ p-l-13
+              <br />
+            </p>
+            <div className="grid grid-fix-4">
+              {Array.from({ length: 14 }).map((_, i) => (
+                <div key={i} className={`w-full border-1 p-${i} bg-info`}>
+                  <div className="bg-info-light">p-{i}</div>
                 </div>
               ))}
             </div>
           </section>
           <section className="bg-2 p-6">
-            <h3>margin</h3>
+            <h3>Margin</h3>
+            <p>
+              전체 : m-0 ~ m-13
+              <br />
+              상단 : m-t-0 ~ m-t-13
+              <br />
+              우측 : m-r-0 ~ m-r-13
+              <br />
+              하단 : m-b-0 ~ m-b-13
+              <br />
+              좌측 : m-l-0 ~ m-l-13
+              <br />
+            </p>
             <div className="grid grid-fix-4">
               {Array.from({ length: 14 }).map((_, i) => (
-                <div key={i} className={`w-full border-1 margin-${i} bg-info`}>
-                  <div className="bg-info-light">margin-{i}</div>
+                <div key={i} className={`w-full border-1 m-${i} bg-info`}>
+                  <div className="bg-info-light">m-{i}</div>
                 </div>
               ))}
             </div>
@@ -183,15 +215,30 @@ function App() {
           <section className="bg-2 p-6">
             <h3>Elevation</h3>
             <div className="grid grid-fix-4">
-              <div className="w-1_4 bg p-6">bg</div>
-              <div className="w-1_4 bg-1 p-6">bg-1</div>
-              <div className="w-1_4 bg-2 p-6">bg-2</div>
-              <div className="w-1_4 bg-3 p-6">bg-3</div>
+              <div className="w-1_4 bg-elevation p-3">
+                <div className="bg-elevation-1 p-3 m-3">
+                  <div className="bg-elevation-2 p-3 m-3">
+                    <div className="bg-elevation-3 p-3 m-3">bg-elevation-3</div>
+                    <span>bg-elevation-2</span>
+                  </div>
+                  <span>bg-elevation-1</span>
+                </div>
+                <span>bg-elevation</span>
+              </div>
+            </div>
+            <h3>Shadow</h3>
+            <div className="grid grid-fix-5">
+              <div className="w-1_5 shadow-1 p-6">shadow-1</div>
+              <div className="w-1_5 shadow-2 p-6">shadow-2</div>
+              <div className="w-1_5 shadow-3 p-6">shadow-3</div>
+              <div className="w-1_5 shadow-4 p-6">shadow-4</div>
+              <div className="w-1_5 shadow-5 p-6">shadow-5</div>
             </div>
           </section>
           <section className="bg-2 p-6">
             <h3>Hide</h3>
             <div className="grid grid-fix-4">
+              <div className="w-1_3 hide p-6">hide</div>
               <div className="w-1_3 hide-pc p-6">hide-pc</div>
               <div className="w-1_3 hide-tb p-6">hide-tb</div>
               <div className="w-1_3 hide-mo p-6">hide-mo</div>
