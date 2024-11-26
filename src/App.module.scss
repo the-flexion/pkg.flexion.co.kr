@@ -4,22 +4,21 @@
   min-height: 100%;
   &:global {
     > * {
-      .test-1 {
-        @include h1;
-      }
-      .test-2 {
-        color: color('primary');
-        background: color('primary-spot');
-        padding: spacing(6);
-        border-radius: r(6);
-      }
       .grid.guide {
         * {
-          padding: spacing(2);
-          background: color('primary-spot');
+          padding: spacing(4);
+        }
+        &.fill {
+          background: color('primary-fill');
         }
         &.border * {
           border: 1px solid color('primary');
+        }
+      }
+      .elements {
+        margin-bottom: spacing(4);
+        > :not(:last-child) {
+          margin-right: spacing(4);
         }
       }
     }

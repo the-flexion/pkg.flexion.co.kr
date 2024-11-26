@@ -1,0 +1,36 @@
+@use '../layout/spacing.scss' as *;
+@use '../layout/radius.scss' as *;
+@use '../typo/typo.scss' as *;
+
+:root {
+  button {
+    @include p3;
+    & {
+      display: inline-flex;
+      gap: spacing(2);
+      border-radius: r(3);
+      padding: spacing(3) spacing(5);
+      &.xs {
+        @include p4;
+        & {
+          padding: spacing(2) spacing(3);
+          > i::before {
+            font-size: 20px;
+          }
+        }
+      }
+      &.md {
+        @include p2;
+        & {
+          padding: spacing(4) spacing(6);
+        }
+      }
+      &.lg {
+        @include p1;
+        & {
+          padding: spacing(5) spacing(6);
+        }
+      }
+    }
+  }
+}

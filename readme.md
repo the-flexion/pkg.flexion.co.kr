@@ -73,7 +73,7 @@ $base-font-family: 'Pretendard', sans-serif;
 ### 적용 색상 종류
 
 👉 선택 가능한 색상 종류 : primary, default, default-deep, info, link, success, warning, danger
-👉 선택 가능한 색상의 하위 색상으로 색상명-spot과 색상명-reverse가 존재한다.
+👉 선택 가능한 색상의 하위 색상으로 색상명-fill과 색상명-reverse가 존재한다.
 👉 위 선택자에 없는 text, border, bg, bg-elevation은 시스템 내 자동 적용한다.
 
 ### CSS 선택자 사용
@@ -90,6 +90,32 @@ $base-font-family: 'Pretendard', sans-serif;
 ```scss
 p {
   color: color(값);
+}
+```
+
+### 커스컴 컬러
+
+👉 아래 형태로 css 변수를 커스텀하여 사용
+
+```scss
+:root {
+  --color-primary: #{map-get($base-color, 'red-500')};
+  --color-primary-hover: #{map-get($base-color, 'red-600')};
+  --color-primary-pressed: #{map-get($base-color, 'red-700')};
+  --color-primary-focus: #{map-get($base-color, 'red-600')};
+  --color-primary-fill: #{map-get($base-color, 'red-50')};
+  --color-primary-reverse: #{map-get($base-color, 'mono-white')};
+}
+html[data-color-mode='dark'] {
+  /*
+    Dark mode colors
+  */
+  --color-primary: #{map-get($base-color, 'red-500')};
+  --color-primary-hover: #{map-get($base-color, 'red-400')};
+  --color-primary-pressed: #{map-get($base-color, 'red-500')};
+  --color-primary-focus: #{map-get($base-color, 'red-400')};
+  --color-primary-fill: #{map-get($base-color, 'red-900')};
+  --color-primary-reverse: #{map-get($base-color, 'mono-white')};
 }
 ```
 
@@ -167,8 +193,8 @@ p {
 
 ## 아이콘 생성 방법
 
-👉 디자인 시스템 피그마에서 vector가 아닌 상태를 선택한 후 svg로 export 할 것
-👉 폰트포지에서 woff 폰트 생성
+👉 디자인 시스템 피그마에서 상태를 선택한 후 svg로 export 할 것
+👉 폰트포지에서 icon.woff 폰트 생성
 👉 /scss/icon/font 경로에 icon.woff 복사
 👉 쉘에서 아래 스크립트 실행
 

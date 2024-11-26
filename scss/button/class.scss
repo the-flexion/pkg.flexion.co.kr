@@ -1,0 +1,132 @@
+@use '../color/theme.scss' as *;
+
+body {
+  @mixin button-status($type) {
+    &:hover {
+      color: color($type + '-hover');
+    }
+    &:active {
+      color: color($type + '-pressed');
+    }
+  }
+  @each $type
+    in (primary, default, default-deep, info, link, success, warning, danger)
+  {
+    button.#{$type} {
+      color: color($type + '-reverse');
+      background-color: color($type);
+      border: 1px solid color($type);
+      outline: none;
+      &:hover {
+        background-color: color($type + '-hover');
+      }
+      &:active {
+        background-color: color($type + '-pressed');
+      }
+
+      &-fill {
+        @if ($type == 'default') {
+          color: color('default-reverse');
+          background-color: color($type + '-fill');
+        } @else {
+          color: color($type);
+          background-color: color($type + '-fill');
+        }
+        border: 1px solid color($type);
+        @include button-status($type);
+      }
+      &-border,
+      &-text {
+        color: color($type);
+        @include button-status($type);
+      }
+      &-fill,
+      &-border {
+        outline: none;
+        &:hover {
+          border: 1px solid color($type + '-hover');
+        }
+        &:active {
+          border: 1px solid color($type + '-pressed');
+        }
+        &:focus {
+          border: 1px solid color($type + '-focus');
+        }
+      }
+      @if ($type == 'default') {
+        &-border {
+          color: color('default-reverse');
+          outline: none;
+          border: 1px solid color('border');
+          &:hover {
+            color: color('default-reverse');
+            border: 1px solid color('border-hover');
+          }
+          &:active {
+            color: color('default-reverse');
+            border: 1px solid color('border-pressed');
+          }
+          &:focus {
+            border: 1px solid color('border-focus');
+          }
+        }
+        &-fill {
+          color: color('default-reverse');
+          outline: none;
+          &:hover {
+            color: color('default-reverse');
+            border: 1px solid color('border-hover');
+          }
+          &:active {
+            color: color('default-reverse');
+            border: 1px solid color('border-pressed');
+          }
+          &:focus {
+            border: 1px solid color('border-focus');
+          }
+        }
+        &-text {
+          color: color('text-action');
+          outline: none;
+          border: none;
+          &:hover {
+            color: color('text-action-hover');
+          }
+          &:active {
+            color: color('text-action-pressed');
+          }
+          &:focus {
+            color: color('text-action-focus');
+          }
+        }
+      }
+      &:disabled {
+        color: color('text-action-disabled');
+        background-color: color('bg-disabled');
+        border: 1px solid color('bg-disabled');
+        outline-color: color('bg-disabled');
+        cursor: not-allowed;
+      }
+      &-border:disabled {
+        color: color('text-action-disabled');
+        border: 1px solid color('border-disabled');
+        outline-color: color('bg-disabled');
+        cursor: not-allowed;
+      }
+      &-fill:disabled {
+        color: color('text-action-disabled');
+        background-color: color('bg-disabled');
+        border: 1px solid color('border-disabled');
+        outline-color: color('bg-disabled');
+        cursor: not-allowed;
+      }
+
+      &-text:disabled {
+        color: color('text-action-disabled');
+        border: none;
+        outline-color: none;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

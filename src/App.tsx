@@ -35,23 +35,49 @@ function App() {
         </article>
         <article className="bg-1 p-6">
           <h2>Color</h2>
-          <div className="grid">
-            <div className="w-3 primary">primary</div>
-            <div className="w-3 bg-primary">bg primary</div>
-            <div className="w-3 default">default</div>
-            <div className="w-3 bg-default">bg default</div>
-            <div className="w-3 default-deep">default-deep</div>
-            <div className="w-3 bg-default-deep">bg default-deep</div>
-            <div className="w-3 info">info</div>
-            <div className="w-3 bg-info">bg info</div>
-            <div className="w-3 link">link</div>
-            <div className="w-3 bg-link">bg link</div>
-            <div className="w-3 success">success</div>
-            <div className="w-3 bg-success">bg success</div>
-            <div className="w-3 warning">warning</div>
-            <div className="w-3 bg-warning">bg warning</div>
-            <div className="w-3 danger">danger</div>
-            <div className="w-3 bg-danger">bg danger</div>
+          <div className="grid grid-fix-5 guide">
+            <div className="w-1_5 primary">primary</div>
+            <div className="w-1_5 primary-fill">primary-fill</div>
+            <div className="w-1_5 primary-bg">primary-bg</div>
+            <div className="w-1_5 primary-border">primary-border</div>
+            <div className="w-1_5 primary-border-fill">primary-border-fill</div>
+            <div className="w-1_5 default">default</div>
+            <div className="w-1_5 default-fill">default-fill</div>
+            <div className="w-1_5 default-bg">default-bg</div>
+            <div className="w-1_5 default-border">default-border</div>
+            <div className="w-1_5 default-border-fill">default-border-fill</div>
+            <div className="w-1_5 default-deep">default-deep</div>
+            <div className="w-1_5 default-deep-fill">default-deep-fill</div>
+            <div className="w-1_5 default-deep-bg">default-deep-bg</div>
+            <div className="w-1_5 default-deep-border">default-deep-border</div>
+            <div className="w-1_5 default-deep-border-fill">
+              default-deep-border-fill
+            </div>
+            <div className="w-1_5 info">info</div>
+            <div className="w-1_5 info-fill">info-fill</div>
+            <div className="w-1_5 info-bg">info-bg</div>
+            <div className="w-1_5 info-border">info-border</div>
+            <div className="w-1_5 info-border-fill">info-border-fill</div>
+            <div className="w-1_5 link">link</div>
+            <div className="w-1_5 link-fill">link-fill</div>
+            <div className="w-1_5 link-bg">link-bg</div>
+            <div className="w-1_5 link-border">link-border</div>
+            <div className="w-1_5 link-border-fill">link-border-fill</div>
+            <div className="w-1_5 success">success</div>
+            <div className="w-1_5 success-fill">success-fill</div>
+            <div className="w-1_5 success-bg">success-bg</div>
+            <div className="w-1_5 success-border">success-border</div>
+            <div className="w-1_5 success-border-fill">success-border-fill</div>
+            <div className="w-1_5 warning">warning</div>
+            <div className="w-1_5 warning-fill">warning-fill</div>
+            <div className="w-1_5 warning-bg">warning-bg</div>
+            <div className="w-1_5 warning-border">warning-border</div>
+            <div className="w-1_5 warning-fill">warning-fill</div>
+            <div className="w-1_5 danger">danger</div>
+            <div className="w-1_5 danger-fill">danger-fill</div>
+            <div className="w-1_5 danger-bg">danger-bg</div>
+            <div className="w-1_5 danger-border">danger-border</div>
+            <div className="w-1_5 danger-border-fill">danger-border-fill</div>
           </div>
         </article>
         <article className="bg-1 p-6">
@@ -175,357 +201,364 @@ function App() {
             <h3>Icon</h3>
             <div className="grid icons">
               <div className="w-2 p-6">
-                <i className="icon-apple"></i>apple
+                <i className="icon-star"></i>star(e900)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-arrow-down"></i>arrow-down
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-arrow-dropdown-up"></i>arrow-dropdown-up
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-arrow-dropdown"></i>arrow-dropdown
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-arrow-left"></i>arrow-left
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-arrow-right"></i>arrow-right
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-arrow-up"></i>arrow-up
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-briefcase"></i>briefcase
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-calendar"></i>calendar
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-cancel"></i>cancel
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-car"></i>car
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-card"></i>card
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-chart-bar"></i>chart-bar
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-chart"></i>chart
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-check-circle-fill"></i>check-circle-fill
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-check-circle-stroke"></i>check-circle-stroke
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-check-small"></i>check-small
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-check"></i>check
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-checkbox-blank"></i>checkbox-blank
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-checkbox-multi"></i>checkbox-multi
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-checkbox"></i>checkbox
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-clip"></i>clip
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-close"></i>close
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-coin"></i>coin
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-compass"></i>compass
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-contour"></i>contour
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-counselor"></i>counselor
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-currency"></i>currency
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-danger-fill"></i>danger-fill
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-danger"></i>danger
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-dm"></i>dm
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-download"></i>download
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-drag"></i>drag
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-edit"></i>edit
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-ellipse-stroke"></i>ellipse-stroke
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-ellipse"></i>ellipse
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-email"></i>email
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-excel"></i>excel
+                <i className="icon-star-fill"></i>star-fill(e901)
               </div>
               <div className="w-2 p-6">
                 <i className="icon-exchange-horizontally"></i>
-                exchange-horizontally
+                exchange-horizontally(e902)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-exchange-vertical"></i>exchange-vertical
+                <i className="icon-exchange-vertical"></i>
+                exchange-vertical(e903)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-expand-down-double"></i>expand-down-double
+                <i className="icon-new-window"></i>new-window(e904)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-expand-down"></i>expand-down
+                <i className="icon-tag"></i>tag(e905)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-expand-left-double"></i>expand-left-double
+                <i className="icon-notification"></i>notification(e906)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-expand-left"></i>expand-left
+                <i className="icon-notification-stroke"></i>
+                notification-stroke(e907)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-expand-right-double"></i>expand-right-double
+                <i className="icon-mail"></i>mail(e908)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-expand-right"></i>expand-right
+                <i className="icon-global"></i>global(e909)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-expand-up-double"></i>expand-up-double
+                <i className="icon-trash"></i>trash(e90a)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-expand-up"></i>expand-up
+                <i className="icon-dm"></i>dm(e90b)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-export"></i>export
+                <i className="icon-currency"></i>currency(e90c)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-facebook"></i>facebook
+                <i className="icon-print"></i>print(e90d)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-favorite-fill"></i>favorite-fill
+                <i className="icon-gps"></i>gps(e90e)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-favorite"></i>favorite
+                <i className="icon-ellipse"></i>ellipse(e90f)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-file"></i>file
+                <i className="icon-ellipse-stroke"></i>ellipse-stroke(e910)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-flag-finish"></i>flag-finish
+                <i className="icon-radio-check"></i>radio-check(e911)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-flag"></i>flag
+                <i className="icon-facebook"></i>facebook(e912)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-fordid"></i>fordid
+                <i className="icon-naver"></i>naver(e913)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-global"></i>global
+                <i className="icon-insta"></i>insta(e914)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-google"></i>google
+                <i className="icon-tiktok"></i>tiktok(e915)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-gps"></i>gps
+                <i className="icon-apple"></i>apple(e916)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-hand"></i>hand
+                <i className="icon-google"></i>google(e917)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-handle"></i>handle
+                <i className="icon-youtube"></i>youtube(e918)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-help"></i>help
+                <i className="icon-kakao"></i>kakao(e919)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-hidden"></i>hidden
+                <i className="icon-x"></i>x(e91a)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-home"></i>home
+                <i className="icon-checkbox"></i>checkbox(e91b)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-img"></i>img
+                <i className="icon-arrow-dropdown"></i>arrow-dropdown(e91c)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-import"></i>import
+                <i className="icon-arrow-dropdown-up"></i>
+                arrow-dropdown-up(e91d)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-info"></i>info
+                <i className="icon-check-small"></i>check-small(e91e)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-insta"></i>insta
+                <i className="icon-check"></i>check(e91f)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-kakao"></i>kakao
+                <i className="icon-show"></i>show(e920)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-layers"></i>layers
+                <i className="icon-hidden"></i>hidden(e921)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-link-alt"></i>link-alt
+                <i className="icon-fordid"></i>fordid(e922)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-link"></i>link
+                <i className="icon-upload-cloud"></i>upload-cloud(e923)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-mail"></i>mail
+                <i className="icon-share"></i>share(e924)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-map"></i>map
+                <i className="icon-excel"></i>excel(e925)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-menu"></i>menu
+                <i className="icon-cancel"></i>cancel(e926)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-minus"></i>minus
+                <i className="icon-arrow-left"></i>arrow-left(e927)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-more-horizontal"></i>more-horizontal
+                <i className="icon-arrow-right"></i>arrow-right(e928)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-more"></i>more
+                <i className="icon-arrow-up"></i>arrow-up(e929)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-naver"></i>naver
+                <i className="icon-arrow-down"></i>arrow-down(e92a)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-new-window"></i>new-window
+                <i className="icon-download"></i>download(e92b)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-notifications-stroke"></i>
-                notifications-stroke
+                <i className="icon-upload"></i>upload(e92c)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-notifications"></i>notifications
+                <i className="icon-link-alt"></i>link-alt(e92d)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-paper"></i>paper
+                <i className="icon-link"></i>link(e92e)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-phone-stroke"></i>phone-stroke
+                <i className="icon-edit"></i>edit(e92f)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-phone"></i>phone
+                <i className="icon-pin"></i>pin(e930)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-pin"></i>pin
+                <i className="icon-flag"></i>flag(e931)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-plus"></i>plus
+                <i className="icon-hand"></i>hand(e932)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-pressure"></i>pressure
+                <i className="icon-zoom-in"></i>zoom-in(e933)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-print"></i>print
+                <i className="icon-zoom-out"></i>zoom-out(e934)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-pyramid-chart"></i>pyramid-chart
+                <i className="icon-chart"></i>chart(e935)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-radio-blank"></i>radio-blank
+                <i className="icon-temperature"></i>temperature(e936)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-radio-check"></i>radio-check
+                <i className="icon-turbine"></i>turbine(e937)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-receipt"></i>receipt
+                <i className="icon-layers"></i>layers(e938)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-refresh"></i>refresh
+                <i className="icon-compass"></i>compass(e939)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-ruler"></i>ruler
+                <i className="icon-flag-finish"></i>flag-finish(e93a)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-search"></i>search
+                <i className="icon-pressure"></i>pressure(e93b)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-setting-stroke"></i>setting-stroke
+                <i className="icon-pyramid-chart"></i>pyramid-chart(e93c)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-settings"></i>settings
+                <i className="icon-ruler"></i>ruler(e93d)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-share"></i>share
+                <i className="icon-contour"></i>contour(e93e)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-show"></i>show
+                <i className="icon-plus"></i>plus(e93f)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-star-fill"></i>star-fill
+                <i className="icon-minus"></i>minus(e940)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-star"></i>star
+                <i className="icon-warning"></i>warning(e941)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-tag"></i>tag
+                <i className="icon-user-stroke"></i>user-stroke(e942)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-temperature"></i>temperature
+                <i className="icon-user"></i>user(e943)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-tiktok"></i>tiktok
+                <i className="icon-menu"></i>menu(e944)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-time"></i>time
+                <i className="icon-time"></i>time(e945)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-trash"></i>trash
+                <i className="icon-checkbox-blank"></i>checkbox-blank(e946)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-turbine"></i>turbine
+                <i className="icon-radio-blank"></i>radio-blank(e947)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-upload-cloud"></i>upload-cloud
+                <i className="icon-checkbox-multi"></i>checkbox-multi(e948)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-upload"></i>upload
+                <i className="icon-search"></i>search(e949)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-user-stroke"></i>user-stroke
+                <i className="icon-close"></i>close(e94a)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-user"></i>user
+                <i className="icon-info"></i>info(e94b)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-warning"></i>warning
+                <i className="icon-danger"></i>danger(e94c)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-x"></i>x
+                <i className="icon-danger-fill"></i>danger-fill(e94d)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-youtube"></i>youtube
+                <i className="icon-expand-left"></i>expand-left(e94e)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-zoom-in"></i>zoom-in
+                <i className="icon-expand-right"></i>expand-right(e94f)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-zoom-out"></i>zoom-out
+                <i className="icon-expand-up"></i>expand-up(e950)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-expand-down"></i>expand-down(e951)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-calendar"></i>calendar(e952)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-paper"></i>paper(e953)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-import"></i>import(e954)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-export"></i>export(e955)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-img"></i>img(e956)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-favorite"></i>favorite(e957)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-favorite-fill"></i>favorite-fill(e958)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-phone"></i>phone(e959)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-phone-stroke"></i>phone-stroke(e95a)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-home"></i>home(e95b)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-expand-up-double"></i>expand-up-double(e95c)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-expand-down-double"></i>
+                expand-down-double(e95d)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-expand-left-double"></i>
+                expand-left-double(e95e)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-expand-right-double"></i>
+                expand-right-double(e95f)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-setting-stroke"></i>setting-stroke(e960)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-setting"></i>setting(e961)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-email"></i>email(e962)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-more-horizontal"></i>more-horizontal(e963)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-more"></i>more(e964)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-help"></i>help(e965)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-check-circle-stroke"></i>
+                check-circle-stroke(e966)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-check-circle-fill"></i>
+                check-circle-fill(e967)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-map"></i>map(e968)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-refresh"></i>refresh(e969)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-drag"></i>drag(e96a)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-clip"></i>clip(e96b)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-file"></i>file(e96c)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-card"></i>card(e96d)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-car"></i>car(e96e)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-handle"></i>handle(e96f)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-counselor"></i>counselor(e970)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-chart-bar"></i>chart-bar(e971)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-coin"></i>coin(e972)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-receipt"></i>receipt(e973)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-briefcase"></i>briefcase(e974)
               </div>
             </div>
           </section>
@@ -533,350 +566,992 @@ function App() {
         <article className="bg-1 p-6">
           <h2>Button</h2>
           <section className="bg-2 p-6">
-            <h3>Default</h3>
-            <div>
-              <button>default</button>
-              <button className="subtle">subtle</button>
-              <button className="border">border</button>
-              <button className="text">text</button>
-              <button>
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
-              </button>
-              <button>
-                <i className="icon-loading"></i>icon
-              </button>
-              <button>
-                <i className="icon-notification"></i>icon
-              </button>
-              <button>
-                <i className="icon-notification"></i>
-              </button>
-              <button className="small">default</button>
-              <button className="small subtle">subtle</button>
-              <button className="small border">border</button>
-              <button className="small text">text</button>
-              <button className="small">
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
-              </button>
-              <button className="small">
-                <i className="icon-loading"></i>icon
-              </button>
-              <button className="small">
-                <i className="icon-notification"></i>icon
-              </button>
-              <button className="small">
-                <i className="icon-notification"></i>
-              </button>
-            </div>
-          </section>
-          <section className="bg-2 p-6">
             <h3>Primary</h3>
-            <div>
-              <button className="primary">default</button>
-              <button className="primary subtle">subtle</button>
-              <button className="primary border">border</button>
-              <button className="primary text">text</button>
+            <div className="elements">
+              <button className="primary">primary (sm)</button>
               <button className="primary">
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
-              </button>
-              <button className="primary">
-                <i className="icon-loading"></i>icon
-              </button>
-              <button className="primary">
-                <i className="icon-notification"></i>icon
-              </button>
-              <button className="primary">
+                <i className="icon-notification"></i>icon (sm)
                 <i className="icon-notification"></i>
               </button>
-              <button className="primary small">default</button>
-              <button className="primary small subtle">subtle</button>
-              <button className="primary small border">border</button>
-              <button className="primary small text">text</button>
-              <button className="primary small">
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
+
+              <button className="primary xs">primary xs</button>
+              <button className="primary xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
               </button>
-              <button className="primary small">
-                <i className="icon-loading"></i>icon
+
+              <button className="primary md">primary md</button>
+              <button className="primary md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
               </button>
-              <button className="primary small">
-                <i className="icon-notification"></i>icon
-              </button>
-              <button className="primary small">
+
+              <button className="primary lg">primary lg</button>
+              <button className="primary lg">
+                <i className="icon-notification"></i>icon lg
                 <i className="icon-notification"></i>
               </button>
             </div>
-          </section>
-          <section className="bg-2 p-6">
-            <h3>Brand</h3>
-            <div>
-              <button className="brand">default</button>
-              <button className="brand subtle">subtle</button>
-              <button className="brand border">border</button>
-              <button className="brand text">text</button>
-              <button className="brand">
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
-              </button>
-              <button className="brand">
-                <i className="icon-loading"></i>icon
-              </button>
-              <button className="brand">
-                <i className="icon-notification"></i>icon
-              </button>
-              <button className="brand">
+
+            <div className="elements">
+              <button className="primary-border">primary-border (sm)</button>
+              <button className="primary-border">
+                <i className="icon-notification"></i>icon (sm)
                 <i className="icon-notification"></i>
               </button>
-              <button className="brand small">default</button>
-              <button className="brand small subtle">subtle</button>
-              <button className="brand small border">border</button>
-              <button className="brand small text">text</button>
-              <button className="brand small">
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
+
+              <button className="primary-border xs">primary-border xs</button>
+              <button className="primary-border xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
               </button>
-              <button className="brand small">
-                <i className="icon-loading"></i>icon
+
+              <button className="primary-border md">primary-border md</button>
+              <button className="primary-border md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
               </button>
-              <button className="brand small">
-                <i className="icon-notification"></i>icon
-              </button>
-              <button className="brand small">
+
+              <button className="primary-border lg">primary-border lg</button>
+              <button className="primary-border lg">
+                <i className="icon-notification"></i>icon lg
                 <i className="icon-notification"></i>
               </button>
             </div>
-          </section>
-          <section className="bg-2 p-6">
+
+            <div className="elements">
+              <button className="primary-fill">primary-fill (sm)</button>
+              <button className="primary-fill">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="primary-fill xs">primary-fill xs</button>
+              <button className="primary-fill xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="primary-fill md">primary-fill md</button>
+              <button className="primary-fill md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="primary-fill lg">primary-fill lg</button>
+              <button className="primary-fill lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+            <div className="elements">
+              <button className="primary-text">primary-text (sm)</button>
+              <button className="primary-text">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="primary-text xs">primary-text xs</button>
+              <button className="primary-text xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="primary-text md">primary-text md</button>
+              <button className="primary-text md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="primary-text lg">primary-text lg</button>
+              <button className="primary-text lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+
+            <h3>Default</h3>
+            <div className="elements">
+              <button className="default">default (sm)</button>
+              <button className="default">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default xs">default xs</button>
+              <button className="default xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default md">default md</button>
+              <button className="default md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default lg">default lg</button>
+              <button className="default lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+
+            <div className="elements">
+              <button className="default-border">default-border (sm)</button>
+              <button className="default-border">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-border xs">default-border xs</button>
+              <button className="default-border xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-border md">default-border md</button>
+              <button className="default-border md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-border lg">default-border lg</button>
+              <button className="default-border lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+
+            <div className="elements">
+              <button className="default-fill">default-fill (sm)</button>
+              <button className="default-fill">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-fill xs">default-fill xs</button>
+              <button className="default-fill xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-fill md">default-fill md</button>
+              <button className="default-fill md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-fill lg">default-fill lg</button>
+              <button className="default-fill lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+            <div className="elements">
+              <button className="default-text">default-text (sm)</button>
+              <button className="default-text">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-text xs">default-text xs</button>
+              <button className="default-text xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-text md">default-text md</button>
+              <button className="default-text md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-text lg">default-text lg</button>
+              <button className="default-text lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+
+            <h3>default-deep</h3>
+            <div className="elements">
+              <button className="default-deep">default-deep (sm)</button>
+              <button className="default-deep">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-deep xs">default-deep xs</button>
+              <button className="default-deep xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-deep md">default-deep md</button>
+              <button className="default-deep md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-deep lg">default-deep lg</button>
+              <button className="default-deep lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+
+            <div className="elements">
+              <button className="default-deep-border">
+                default-deep-border (sm)
+              </button>
+              <button className="default-deep-border">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-deep-border xs">
+                default-deep-border xs
+              </button>
+              <button className="default-deep-border xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-deep-border md">
+                default-deep-border md
+              </button>
+              <button className="default-deep-border md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-deep-border lg">
+                default-deep-border lg
+              </button>
+              <button className="default-deep-border lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+
+            <div className="elements">
+              <button className="default-deep-fill">
+                default-deep-fill (sm)
+              </button>
+              <button className="default-deep-fill">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-deep-fill xs">
+                default-deep-fill xs
+              </button>
+              <button className="default-deep-fill xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-deep-fill md">
+                default-deep-fill md
+              </button>
+              <button className="default-deep-fill md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-deep-fill lg">
+                default-deep-fill lg
+              </button>
+              <button className="default-deep-fill lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+            <div className="elements">
+              <button className="default-deep-text">
+                default-deep-text (sm)
+              </button>
+              <button className="default-deep-text">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-deep-text xs">
+                default-deep-text xs
+              </button>
+              <button className="default-deep-text xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-deep-text md">
+                default-deep-text md
+              </button>
+              <button className="default-deep-text md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="default-deep-text lg">
+                default-deep-text lg
+              </button>
+              <button className="default-deep-text lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+
             <h3>Info</h3>
-            <div>
-              <button className="info">default</button>
-              <button className="info subtle">subtle</button>
-              <button className="info border">border</button>
-              <button className="info text">text</button>
+            <div className="elements">
+              <button className="info">info (sm)</button>
               <button className="info">
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
-              </button>
-              <button className="info">
-                <i className="icon-loading"></i>icon
-              </button>
-              <button className="info">
-                <i className="icon-notification"></i>icon
-              </button>
-              <button className="info">
+                <i className="icon-notification"></i>icon (sm)
                 <i className="icon-notification"></i>
               </button>
-              <button className="info small">default</button>
-              <button className="info small subtle">subtle</button>
-              <button className="info small border">border</button>
-              <button className="info small text">text</button>
-              <button className="info small">
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
+
+              <button className="info xs">info xs</button>
+              <button className="info xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
               </button>
-              <button className="info small">
-                <i className="icon-loading"></i>icon
+
+              <button className="info md">info md</button>
+              <button className="info md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
               </button>
-              <button className="info small">
-                <i className="icon-notification"></i>icon
-              </button>
-              <button className="info small">
+
+              <button className="info lg">info lg</button>
+              <button className="info lg">
+                <i className="icon-notification"></i>icon lg
                 <i className="icon-notification"></i>
               </button>
             </div>
-          </section>
-          <section className="bg-2 p-6">
+
+            <div className="elements">
+              <button className="info-border">info-border (sm)</button>
+              <button className="info-border">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="info-border xs">info-border xs</button>
+              <button className="info-border xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="info-border md">info-border md</button>
+              <button className="info-border md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="info-border lg">info-border lg</button>
+              <button className="info-border lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+
+            <div className="elements">
+              <button className="info-fill">info-fill (sm)</button>
+              <button className="info-fill">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="info-fill xs">info-fill xs</button>
+              <button className="info-fill xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="info-fill md">info-fill md</button>
+              <button className="info-fill md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="info-fill lg">info-fill lg</button>
+              <button className="info-fill lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+            <div className="elements">
+              <button className="info-text">info-text (sm)</button>
+              <button className="info-text">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="info-text xs">info-text xs</button>
+              <button className="info-text xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="info-text md">info-text md</button>
+              <button className="info-text md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="info-text lg">info-text lg</button>
+              <button className="info-text lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+
             <h3>Link</h3>
-            <div>
-              <button className="link">default</button>
-              <button className="link subtle">subtle</button>
-              <button className="link border">border</button>
-              <button className="link text">text</button>
+            <div className="elements">
+              <button className="link">link (sm)</button>
               <button className="link">
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
-              </button>
-              <button className="link">
-                <i className="icon-loading"></i>icon
-              </button>
-              <button className="link">
-                <i className="icon-notification"></i>icon
-              </button>
-              <button className="link">
+                <i className="icon-notification"></i>icon (sm)
                 <i className="icon-notification"></i>
               </button>
-              <button className="link small">default</button>
-              <button className="link small subtle">subtle</button>
-              <button className="link small border">border</button>
-              <button className="link small text">text</button>
-              <button className="link small">
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
+
+              <button className="link xs">link xs</button>
+              <button className="link xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
               </button>
-              <button className="link small">
-                <i className="icon-loading"></i>icon
+
+              <button className="link md">link md</button>
+              <button className="link md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
               </button>
-              <button className="link small">
-                <i className="icon-notification"></i>icon
-              </button>
-              <button className="link small">
+
+              <button className="link lg">link lg</button>
+              <button className="link lg">
+                <i className="icon-notification"></i>icon lg
                 <i className="icon-notification"></i>
               </button>
             </div>
-          </section>
-          <section className="bg-2 p-6">
-            <h3>Warning</h3>
-            <div>
-              <button className="warning">default</button>
-              <button className="warning subtle">subtle</button>
-              <button className="warning border">border</button>
-              <button className="warning text">text</button>
-              <button className="warning">
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
-              </button>
-              <button className="warning">
-                <i className="icon-loading"></i>icon
-              </button>
-              <button className="warning">
-                <i className="icon-notification"></i>icon
-              </button>
-              <button className="warning">
+
+            <div className="elements">
+              <button className="link-border">link-border (sm)</button>
+              <button className="link-border">
+                <i className="icon-notification"></i>icon (sm)
                 <i className="icon-notification"></i>
               </button>
-              <button className="warning small">default</button>
-              <button className="warning small subtle">subtle</button>
-              <button className="warning small border">border</button>
-              <button className="warning small text">text</button>
-              <button className="warning small">
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
+
+              <button className="link-border xs">link-border xs</button>
+              <button className="link-border xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
               </button>
-              <button className="warning small">
-                <i className="icon-loading"></i>icon
+
+              <button className="link-border md">link-border md</button>
+              <button className="link-border md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
               </button>
-              <button className="warning small">
-                <i className="icon-notification"></i>icon
-              </button>
-              <button className="warning small">
+
+              <button className="link-border lg">link-border lg</button>
+              <button className="link-border lg">
+                <i className="icon-notification"></i>icon lg
                 <i className="icon-notification"></i>
               </button>
             </div>
-          </section>
-          <section className="bg-2 p-6">
+
+            <div className="elements">
+              <button className="link-fill">link-fill (sm)</button>
+              <button className="link-fill">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="link-fill xs">link-fill xs</button>
+              <button className="link-fill xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="link-fill md">link-fill md</button>
+              <button className="link-fill md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="link-fill lg">link-fill lg</button>
+              <button className="link-fill lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+            <div className="elements">
+              <button className="link-text">link-text (sm)</button>
+              <button className="link-text">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="link-text xs">link-text xs</button>
+              <button className="link-text xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="link-text md">link-text md</button>
+              <button className="link-text md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="link-text lg">link-text lg</button>
+              <button className="link-text lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+
             <h3>Success</h3>
-            <div>
-              <button className="success">default</button>
-              <button className="success subtle">subtle</button>
-              <button className="success border">border</button>
-              <button className="success text">text</button>
+            <div className="elements">
+              <button className="success">success (sm)</button>
               <button className="success">
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
-              </button>
-              <button className="success">
-                <i className="icon-loading"></i>icon
-              </button>
-              <button className="success">
-                <i className="icon-notification"></i>icon
-              </button>
-              <button className="success">
+                <i className="icon-notification"></i>icon (sm)
                 <i className="icon-notification"></i>
               </button>
-              <button className="success small">default</button>
-              <button className="success small subtle">subtle</button>
-              <button className="success small border">border</button>
-              <button className="success small text">text</button>
-              <button className="success small">
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
+
+              <button className="success xs">success xs</button>
+              <button className="success xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
               </button>
-              <button className="success small">
-                <i className="icon-loading"></i>icon
+
+              <button className="success md">success md</button>
+              <button className="success md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
               </button>
-              <button className="success small">
-                <i className="icon-notification"></i>icon
-              </button>
-              <button className="success small">
+
+              <button className="success lg">success lg</button>
+              <button className="success lg">
+                <i className="icon-notification"></i>icon lg
                 <i className="icon-notification"></i>
               </button>
             </div>
-          </section>
-          <section className="bg-2 p-6">
+
+            <div className="elements">
+              <button className="success-border">success-border (sm)</button>
+              <button className="success-border">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="success-border xs">success-border xs</button>
+              <button className="success-border xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="success-border md">success-border md</button>
+              <button className="success-border md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="success-border lg">success-border lg</button>
+              <button className="success-border lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+
+            <div className="elements">
+              <button className="success-fill">success-fill (sm)</button>
+              <button className="success-fill">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="success-fill xs">success-fill xs</button>
+              <button className="success-fill xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="success-fill md">success-fill md</button>
+              <button className="success-fill md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="success-fill lg">success-fill lg</button>
+              <button className="success-fill lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+            <div className="elements">
+              <button className="success-text">success-text (sm)</button>
+              <button className="success-text">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="success-text xs">success-text xs</button>
+              <button className="success-text xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="success-text md">success-text md</button>
+              <button className="success-text md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="success-text lg">success-text lg</button>
+              <button className="success-text lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+            <h3>Warning</h3>
+            <div className="elements">
+              <button className="warning">warning (sm)</button>
+              <button className="warning">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="warning xs">warning xs</button>
+              <button className="warning xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="warning md">warning md</button>
+              <button className="warning md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="warning lg">warning lg</button>
+              <button className="warning lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+
+            <div className="elements">
+              <button className="warning-border">warning-border (sm)</button>
+              <button className="warning-border">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="warning-border xs">warning-border xs</button>
+              <button className="warning-border xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="warning-border md">warning-border md</button>
+              <button className="warning-border md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="warning-border lg">warning-border lg</button>
+              <button className="warning-border lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+
+            <div className="elements">
+              <button className="warning-fill">warning-fill (sm)</button>
+              <button className="warning-fill">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="warning-fill xs">warning-fill xs</button>
+              <button className="warning-fill xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="warning-fill md">warning-fill md</button>
+              <button className="warning-fill md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="warning-fill lg">warning-fill lg</button>
+              <button className="warning-fill lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+            <div className="elements">
+              <button className="warning-text">warning-text (sm)</button>
+              <button className="warning-text">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="warning-text xs">warning-text xs</button>
+              <button className="warning-text xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="warning-text md">warning-text md</button>
+              <button className="warning-text md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="warning-text lg">warning-text lg</button>
+              <button className="warning-text lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
             <h3>Danger</h3>
-            <div>
-              <button className="danger">default</button>
-              <button className="danger subtle">subtle</button>
-              <button className="danger border">border</button>
-              <button className="danger text">text</button>
+            <div className="elements">
+              <button className="danger">danger (sm)</button>
               <button className="danger">
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
-              </button>
-              <button className="danger">
-                <i className="icon-loading"></i>icon
-              </button>
-              <button className="danger">
-                <i className="icon-notification"></i>icon
-              </button>
-              <button className="danger">
+                <i className="icon-notification"></i>icon (sm)
                 <i className="icon-notification"></i>
               </button>
-              <button className="danger small">default</button>
-              <button className="danger small subtle">subtle</button>
-              <button className="danger small border">border</button>
-              <button className="danger small text">text</button>
-              <button className="danger small">
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
+
+              <button className="danger xs">danger xs</button>
+              <button className="danger xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
               </button>
-              <button className="danger small">
-                <i className="icon-loading"></i>icon
+
+              <button className="danger md">danger md</button>
+              <button className="danger md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
               </button>
-              <button className="danger small">
-                <i className="icon-notification"></i>icon
-              </button>
-              <button className="danger small">
+
+              <button className="danger lg">danger lg</button>
+              <button className="danger lg">
+                <i className="icon-notification"></i>icon lg
                 <i className="icon-notification"></i>
               </button>
             </div>
-          </section>
-          <section className="bg-2 p-6">
-            <h3>Disabled</h3>
-            <div>
-              <button className="primary" disabled>
-                default
-              </button>
-              <button className="primary subtle" disabled>
-                subtle
-              </button>
-              <button className="primary border" disabled>
-                border
-              </button>
-              <button className="primary text" disabled>
-                text
-              </button>
-              <button className="danger" disabled>
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
-              </button>
-              <button className="danger" disabled>
-                <i className="icon-loading"></i>icon
-              </button>
-              <button className="danger" disabled>
-                <i className="icon-notification"></i>icon
-              </button>
-              <button className="danger" disabled>
+
+            <div className="elements">
+              <button className="danger-border">danger-border (sm)</button>
+              <button className="danger-border">
+                <i className="icon-notification"></i>icon (sm)
                 <i className="icon-notification"></i>
               </button>
-              <button className="primary small" disabled>
-                default
+
+              <button className="danger-border xs">danger-border xs</button>
+              <button className="danger-border xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
               </button>
-              <button className="primary small subtle" disabled>
-                subtle
+
+              <button className="danger-border md">danger-border md</button>
+              <button className="danger-border md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
               </button>
-              <button className="primary small border" disabled>
-                border
+
+              <button className="danger-border lg">danger-border lg</button>
+              <button className="danger-border lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
               </button>
-              <button className="primary small text" disabled>
-                text
+            </div>
+
+            <div className="elements">
+              <button className="danger-fill">danger-fill (sm)</button>
+              <button className="danger-fill">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
               </button>
-              <button className="danger small" disabled>
-                <i className="icon-share"></i>icon<i className="icon-link"></i>
+
+              <button className="danger-fill xs">danger-fill xs</button>
+              <button className="danger-fill xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
               </button>
-              <button className="danger small" disabled>
-                <i className="icon-loading"></i>icon
+
+              <button className="danger-fill md">danger-fill md</button>
+              <button className="danger-fill md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
               </button>
-              <button className="danger small" disabled>
-                <i className="icon-notification"></i>icon
+
+              <button className="danger-fill lg">danger-fill lg</button>
+              <button className="danger-fill lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
               </button>
-              <button className="danger small" disabled>
+            </div>
+            <div className="elements">
+              <button className="danger-text">danger-text (sm)</button>
+              <button className="danger-text">
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="danger-text xs">danger-text xs</button>
+              <button className="danger-text xs">
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="danger-text md">danger-text md</button>
+              <button className="danger-text md">
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="danger-text lg">danger-text lg</button>
+              <button className="danger-text lg">
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+
+            <h3>Disabled</h3>
+            <div className="elements">
+              <button className="danger" disabled>
+                danger (sm)
+              </button>
+              <button className="danger" disabled>
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="danger xs" disabled>
+                danger xs
+              </button>
+              <button className="danger xs" disabled>
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="danger md" disabled>
+                danger md
+              </button>
+              <button className="danger md" disabled>
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="danger lg" disabled>
+                danger lg
+              </button>
+              <button className="danger lg" disabled>
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+
+            <div className="elements">
+              <button className="danger-border" disabled>
+                danger-border (sm)
+              </button>
+              <button className="danger-border" disabled>
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="danger-border xs" disabled>
+                danger-border xs
+              </button>
+              <button className="danger-border xs" disabled>
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="danger-border md" disabled>
+                danger-border md
+              </button>
+              <button className="danger-border md" disabled>
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="danger-border lg" disabled>
+                danger-border lg
+              </button>
+              <button className="danger-border lg" disabled>
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+
+            <div className="elements">
+              <button className="danger-fill" disabled>
+                danger-fill (sm)
+              </button>
+              <button className="danger-fill" disabled>
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="danger-fill xs" disabled>
+                danger-fill xs
+              </button>
+              <button className="danger-fill xs" disabled>
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="danger-fill md" disabled>
+                danger-fill md
+              </button>
+              <button className="danger-fill md" disabled>
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="danger-fill lg" disabled>
+                danger-fill lg
+              </button>
+              <button className="danger-fill lg" disabled>
+                <i className="icon-notification"></i>icon lg
+                <i className="icon-notification"></i>
+              </button>
+            </div>
+            <div className="elements">
+              <button className="danger-text" disabled>
+                danger-text (sm)
+              </button>
+              <button className="danger-text" disabled>
+                <i className="icon-notification"></i>icon (sm)
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="danger-text xs" disabled>
+                danger-text xs
+              </button>
+              <button className="danger-text xs" disabled>
+                <i className="icon-notification"></i>icon xs
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="danger-text md" disabled>
+                danger-text md
+              </button>
+              <button className="danger-text md" disabled>
+                <i className="icon-notification"></i>icon md
+                <i className="icon-notification"></i>
+              </button>
+
+              <button className="danger-text lg" disabled>
+                danger-text lg
+              </button>
+              <button className="danger-text lg" disabled>
+                <i className="icon-notification"></i>icon lg
                 <i className="icon-notification"></i>
               </button>
             </div>

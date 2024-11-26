@@ -1,9 +1,18 @@
 @use './icon-name.scss' as *;
+@use '../layout/spacing.scss' as *;
 
 @font-face {
   font-family: 'pkg-icon';
   src: url('./font/icon.woff') format('woff');
   font-display: swap;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  &:only-child,
+  &:not(:last-child) {
+    margin-right: spacing(2);
+  }
 }
 
 [class^='icon-']::before,
@@ -14,7 +23,7 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  font-size: 1.5rem;
+  font-size: 24px;
   vertical-align: middle;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,14 +48,14 @@
   > input[type='week'],
   > input[type='datetime'],
   > textarea {
-    padding-left: var(--p-8);
+    padding-left: spacing(3);
     position: relative;
   }
   > [class^='icon-'],
   > [class*=' icon-'] {
     position: absolute;
-    left: var(--p-1);
-    top: var(--p-2);
+    left: spacing(1);
+    top: spacing(2);
     z-index: 1;
     color: var(--gray-5);
     &::before {
@@ -69,12 +78,12 @@
     > input[type='week'],
     > input[type='datetime'],
     > textarea {
-      padding-right: var(--p-8);
-      padding-left: var(--p-3);
+      padding-right: spacing(8);
+      padding-left: spacing(3);
     }
     > [class^='icon-'],
     > [class*=' icon-'] {
-      right: var(--p-4);
+      right: spacing(4);
       left: auto;
     }
   }
