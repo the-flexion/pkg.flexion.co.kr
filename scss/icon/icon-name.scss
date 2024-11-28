@@ -1,3 +1,4 @@
+.icon-.notdef:before { content: "\e911"; }
 .icon-star:before { content: "\e900"; }
 .icon-star-fill:before { content: "\e901"; }
 .icon-exchange-horizontally:before { content: "\e902"; }
@@ -15,7 +16,6 @@
 .icon-gps:before { content: "\e90e"; }
 .icon-ellipse:before { content: "\e90f"; }
 .icon-ellipse-stroke:before { content: "\e910"; }
-.icon-radio-check:before { content: "\e911"; }
 .icon-facebook:before { content: "\e912"; }
 .icon-naver:before { content: "\e913"; }
 .icon-insta:before { content: "\e914"; }
@@ -25,7 +25,6 @@
 .icon-youtube:before { content: "\e918"; }
 .icon-kakao:before { content: "\e919"; }
 .icon-x:before { content: "\e91a"; }
-.icon-checkbox:before { content: "\e91b"; }
 .icon-arrow-dropdown:before { content: "\e91c"; }
 .icon-arrow-dropdown-up:before { content: "\e91d"; }
 .icon-check-small:before { content: "\e91e"; }
@@ -68,9 +67,6 @@
 .icon-user:before { content: "\e943"; }
 .icon-menu:before { content: "\e944"; }
 .icon-time:before { content: "\e945"; }
-.icon-checkbox-blank:before { content: "\e946"; }
-.icon-radio-blank:before { content: "\e947"; }
-.icon-checkbox-multi:before { content: "\e948"; }
 .icon-search:before { content: "\e949"; }
 .icon-close:before { content: "\e94a"; }
 .icon-info:before { content: "\e94b"; }
@@ -115,3 +111,5 @@
 .icon-coin:before { content: "\e972"; }
 .icon-receipt:before { content: "\e973"; }
 .icon-briefcase:before { content: "\e974"; }
+.icon-arrow-dropdown-left:before { content: "\e975"; }
+.icon-arrow-dropdown-right:before { content: "\e976"; }

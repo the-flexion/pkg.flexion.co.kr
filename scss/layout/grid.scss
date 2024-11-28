@@ -50,7 +50,7 @@ $grid-mo: 4;
 /*
   object size
   */
-:not(.grid) > * {
+:not(:global(.grid)) > * {
   @for $i from 1 through $grid-pc {
     &.w-#{$i} {
       width: calc(#{$i}/ 12 * 100%);

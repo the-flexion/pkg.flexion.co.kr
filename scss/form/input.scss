@@ -1,0 +1,45 @@
+@use '../color/theme.scss' as *;
+@use '../layout/radius.scss' as *;
+@use '../layout/spacing.scss' as *;
+@use '../typo/typo.scss' as *;
+
+/*
+  Input
+  */
+input[type='text'],
+input[type='date'],
+input[type='datetime-local'],
+input[type='email'],
+input[type='month'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='time'],
+input[type='url'],
+input[type='week'],
+input[type='datetime'] {
+  @include p3;
+  padding: spacing(3) spacing(4);
+  border-radius: r(3);
+  border: 1px solid color('border-disabled');
+  &:placeholder {
+    color: color('text-action-disabled');
+  }
+  &:focus:not(:disabled) {
+    // border: 1px solid color('primary');
+    border: 1px solid #f00;
+  }
+  &.danger {
+    color: var(--danger);
+    &:not(:disabled) {
+      box-shadow: 0 0 0 1px var(--danger) inset;
+    }
+  }
+  &:disabled {
+    box-shadow: 0 0 0 1px var(--disabled-2) inset;
+    background: var(--disabled);
+    color: var(--text-disabled);
+    cursor: not-allowed;
+  }
+}

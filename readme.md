@@ -191,6 +191,16 @@ p {
 <p className="spacing-4">spacing-4</p>
 ```
 
+## 입력요소
+
+### 토글 (toggle)
+
+👉 checkbox에 .toggle 클래스 사용
+
+```html
+<input type="checkbox" className="toggle" />
+```
+
 ## 아이콘 생성 방법
 
 👉 디자인 시스템 피그마에서 상태를 선택한 후 svg로 export 할 것

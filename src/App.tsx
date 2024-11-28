@@ -1,17 +1,47 @@
 import styles from './App.module.scss';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
+  const [darkmode, setDarkmode] = useState('light');
+
   useEffect(() => {
     document.documentElement.setAttribute('data-color-tone', 'warm');
   }, []);
+  useEffect(() => {
+    document.documentElement.setAttribute('data-color-mode', darkmode);
+  });
 
   return (
     <div className={styles.app}>
       <header>
-        <h1>Sample Page</h1>
-        <div className="test-1">test 1</div>
-        <div className="test-2">test 2</div>
+        <div className="p1">Sample Page</div>
+        <label>
+          <input
+            type="radio"
+            name="darkmode"
+            checked={darkmode === 'auto'}
+            onChange={() => setDarkmode('auto')}
+          />
+          auto
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="darkmode"
+            checked={darkmode === 'light'}
+            onChange={() => setDarkmode('light')}
+          />
+          light
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="darkmode"
+            checked={darkmode === 'dark'}
+            onChange={() => setDarkmode('dark')}
+          />
+          dark
+        </label>
       </header>
       <main className="p-6">
         <article className="bg-1 p-6">
@@ -302,9 +332,6 @@ function App() {
                 <i className="icon-ellipse-stroke"></i>ellipse-stroke(e910)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-radio-check"></i>radio-check(e911)
-              </div>
-              <div className="w-2 p-6">
                 <i className="icon-facebook"></i>facebook(e912)
               </div>
               <div className="w-2 p-6">
@@ -330,9 +357,6 @@ function App() {
               </div>
               <div className="w-2 p-6">
                 <i className="icon-x"></i>x(e91a)
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-checkbox"></i>checkbox(e91b)
               </div>
               <div className="w-2 p-6">
                 <i className="icon-arrow-dropdown"></i>arrow-dropdown(e91c)
@@ -460,15 +484,6 @@ function App() {
               </div>
               <div className="w-2 p-6">
                 <i className="icon-time"></i>time(e945)
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-checkbox-blank"></i>checkbox-blank(e946)
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-radio-blank"></i>radio-blank(e947)
-              </div>
-              <div className="w-2 p-6">
-                <i className="icon-checkbox-multi"></i>checkbox-multi(e948)
               </div>
               <div className="w-2 p-6">
                 <i className="icon-search"></i>search(e949)
@@ -606,6 +621,14 @@ function App() {
               </div>
               <div className="w-2 p-6">
                 <i className="icon-briefcase"></i>briefcase(e974)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-arrow-dropdown-left"></i>
+                arrow-dropdown-left(e975)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-arrow-dropdown-right"></i>
+                arrow-dropdown-right(e976)
               </div>
             </div>
           </section>
@@ -1618,48 +1641,66 @@ function App() {
         <article>
           <h2>Checkbox</h2>
           <section className="bg-2 p-6">
-            <div>
-              <input type="checkbox" />
-              <span>Default</span>
-              <input type="checkbox" checked />
-              <span>Checked</span>
-              <input type="checkbox" checked className="danger" />
-              <span>Danger</span>
-              <input type="checkbox" disabled />
-              <span>text</span>
-              <input type="checkbox" checked disabled />
-              <span>Disabled</span>
-              <input type="checkbox" name="indeterminate" />
-              <span>Indeterminate</span>
-              <script>
-                document.querySelector( 'input[name="indeterminate"]'
-                ).indeterminate = true;
-              </script>
+            <div className="elements">
+              <label>
+                <input type="checkbox" />
+                <span>Default</span>
+              </label>
+              <label>
+                <input type="checkbox" disabled />
+                <span>Disabled</span>
+              </label>
+              <label>
+                <input type="checkbox" checked disabled />
+                <span>Checked Disabled</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  ref={(el) => el && (el.indeterminate = true)}
+                />
+                <span>Indeterminate</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  disabled
+                  ref={(el) => el && (el.indeterminate = true)}
+                />
+                <span>Indeterminate Disabled</span>
+              </label>
             </div>
           </section>
         </article>
         <article>
           <h2>Radio</h2>
           <section className="bg-2 p-6">
-            <div>
-              <input type="radio" />
-              <span>Default</span>
-              <input type="radio" checked />
-              <span>Checked</span>
-              <input type="radio" checked className="danger" />
-              <span>Danger</span>
-              <input type="radio" disabled />
-              <span>Disabled</span>
-              <input type="radio" checked disabled />
-              <span>Checked Disabled</span>
+            <div className="elements">
+              <label>
+                <input type="radio" name="dafault-radio" />
+                <span>Default 1</span>
+              </label>
+              <label>
+                <input type="radio" name="dafault-radio" checked />
+                <span>Default 2</span>
+              </label>
+              <label>
+                <input type="radio" disabled />
+                <span>Disabled</span>
+              </label>
+              <label>
+                <input type="radio" checked disabled />
+                <span>Checked Disabled</span>
+              </label>
             </div>
           </section>
         </article>
         <article>
           <h2>Input</h2>
           <section className="bg-2 p-6">
-            <div>
+            <div className="elements">
               <input type="text" placeholder="default" />
+              <input type="text" value="readOnly" readOnly />
               <div className="with-icon">
                 <input type="text" placeholder="icon" />
                 <i className="icon-tag"></i>

@@ -1,49 +1,64 @@
+@use '../color/base-color.scss' as *;
+@use '../color/theme.scss' as *;
+@use '../layout/radius.scss' as *;
 /*
   Toggle
   */
 .toggle {
   appearance: none;
   position: relative;
-  border-radius: 10px;
-  border: 1 solid #fff;
+  border-radius: r('full');
+  border: none;
   width: 33px;
   height: 20px;
-  background-color: var(--default);
+  background-color: color('bg-toggle');
   cursor: pointer;
   vertical-align: middle;
   &::before {
     content: '';
     position: absolute;
-    left: 2.5px;
-    top: 2.5px;
-    width: 15px;
-    height: 15px;
+    left: 3px;
+    top: 2px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
-    background-color: var(--fix-white);
+    background-color: map-get($base-color, 'mono-white');
     transition: 0.15s;
   }
   &:checked::before {
-    background-color: var(--fix-white);
+    background-color: map-get($base-color, 'mono-white');
     left: auto;
-    right: 2.5px;
+    right: 3px;
   }
   &:checked {
-    background-color: var(--info);
+    background-color: color('info');
   }
   &:disabled {
-    background-color: var(--disabled);
+    background-color: color('bg-disabled');
     cursor: not-allowed;
   }
   &:disabled::before {
-    background-color: var(--disabled-1);
+    background-color: color('bg-toggle');
     cursor: not-allowed;
   }
 
   &:checked:disabled {
-    background-color: var(--disabled-1);
+    background-color: #a6d4ff;
     cursor: not-allowed;
   }
   &:checked:disabled::before {
-    background-color: var(--disabled);
+    background-color: map-get($base-color, 'mono-white');
+  }
+}
+// 다크모드
+html[data-color-mode='dark'] {
+  .toggle {
+    &:checked:disabled {
+      background-color: #4c7295;
+      cursor: not-allowed;
+    }
+    &:checked:disabled::before {
+      background-color: #d9d9d9;
+    }
   }
 }
