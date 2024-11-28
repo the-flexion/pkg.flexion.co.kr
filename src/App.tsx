@@ -14,7 +14,7 @@ function App() {
   return (
     <div className={styles.app}>
       <header>
-        <div className="p1">Sample Page</div>
+        <div>Sample Page</div>
         <label>
           <input
             type="radio"
