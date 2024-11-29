@@ -4,7 +4,7 @@ body {
   @each $type
     in (primary, default, default-deep, info, link, success, warning, danger)
   {
-    :not(button):not(textarea).#{$type} {
+    :not(button):not(input):not(textarea).#{$type} {
       color: color($type);
       &a:hover {
         color: color($type + '-hover');

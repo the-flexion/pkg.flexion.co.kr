@@ -2150,55 +2150,6 @@ function App() {
           </section>
         </article>
         <article>
-          <h2>Gap Test</h2>
-          <section>
-            <div>
-              <input type="text" placeholder="default" />
-              <button className="small">
-                <i className="icon-search"></i>우편번호 검색
-              </button>
-
-              <input type="checkbox" checked />
-              <span>Checked</span>
-
-              <input type="checkbox" className="toggle" />
-            </div>
-          </section>
-        </article>
-        <article>
-          <h2>Label</h2>
-          <section>
-            <div className="grid grid-fix-3">
-              <div className="w-1_3">
-                <label htmlFor="label1">Default </label>
-                <input id="label1" type="text" placeholder="default" />
-              </div>
-              <div className="w-1_3">
-                <label htmlFor="label2" className="required">
-                  Required{' '}
-                </label>
-                <input
-                  id="label2"
-                  type="text"
-                  placeholder="Required"
-                  required
-                />
-              </div>
-              <div className="w-1_3">
-                <label htmlFor="label3" className="bold required">
-                  Bold Required{' '}
-                </label>
-                <input
-                  id="label3"
-                  type="text"
-                  placeholder="Bold Required"
-                  required
-                />
-              </div>
-            </div>
-          </section>
-        </article>
-        <article>
           <h2>File</h2>
           <section>
             <input type="file" />
