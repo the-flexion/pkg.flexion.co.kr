@@ -90,7 +90,7 @@ input[type='datetime'] {
   }
 }
 
-.with-left-icon:has(> input[type='text'], > input[type='date'], > input[type='datetime-local'], > input[type='email'], > input[type='month'], > input[type='number'], > input[type='password'], > input[type='search'], > input[type='tel'], > input[type='time'], > input[type='url'], > input[type='week'], > input[type='datetime']) {
+.with-icon:has(> input[type='text'], > input[type='date'], > input[type='datetime-local'], > input[type='email'], > input[type='month'], > input[type='number'], > input[type='password'], > input[type='search'], > input[type='tel'], > input[type='time'], > input[type='url'], > input[type='week'], > input[type='datetime']) {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -119,9 +119,6 @@ input[type='datetime'] {
     transform: translateY(-50%);
     z-index: 1;
     color: color('text-action');
-    &::before {
-      font-size: 1.2rem;
-    }
   }
 }
 .with-right-icon:has(> input[type='text'], > input[type='date'], > input[type='datetime-local'], > input[type='email'], > input[type='month'], > input[type='number'], > input[type='password'], > input[type='search'], > input[type='tel'], > input[type='time'], > input[type='url'], > input[type='week'], > input[type='datetime']) {
@@ -153,8 +150,5 @@ input[type='datetime'] {
     transform: translateY(-50%);
     z-index: 1;
     color: color('text-action');
-    &::before {
-      font-size: 1.2rem;
-    }
   }
 }

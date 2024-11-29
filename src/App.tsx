@@ -1709,7 +1709,7 @@ function App() {
               <input type="text" placeholder="success" className="success" />
               <input type="text" placeholder="danger" className="danger" />
               <input type="text" placeholder="disabled" disabled />
-              <div className="with-left-icon">
+              <div className="with-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" />
               </div>
@@ -1717,7 +1717,7 @@ function App() {
                 <input type="text" placeholder="icon" />
                 <i className="icon-search"></i>
               </div>
-              <div className="with-left-icon with-right-icon">
+              <div className="with-icon with-right-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" />
                 <i className="icon-search"></i>
@@ -1738,7 +1738,7 @@ function App() {
                 disabled
                 className="fill"
               />
-              <div className="with-left-icon">
+              <div className="with-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="fill" />
               </div>
@@ -1746,7 +1746,7 @@ function App() {
                 <input type="text" placeholder="icon" className="fill" />
                 <i className="icon-search"></i>
               </div>
-              <div className="with-left-icon with-right-icon">
+              <div className="with-icon with-right-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="fill" />
                 <i className="icon-search"></i>
@@ -1768,7 +1768,7 @@ function App() {
                 disabled
                 className="text"
               />
-              <div className="with-left-icon">
+              <div className="with-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="text" />
               </div>
@@ -1776,7 +1776,7 @@ function App() {
                 <input type="text" placeholder="icon" className="text" />
                 <i className="icon-search"></i>
               </div>
-              <div className="with-left-icon with-right-icon">
+              <div className="with-icon with-right-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="text" />
                 <i className="icon-search"></i>
@@ -1811,7 +1811,7 @@ function App() {
                 disabled
                 className="underline"
               />
-              <div className="with-left-icon">
+              <div className="with-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="underline" />
               </div>
@@ -1819,7 +1819,7 @@ function App() {
                 <input type="text" placeholder="icon" className="underline" />
                 <i className="icon-search"></i>
               </div>
-              <div className="with-left-icon with-right-icon">
+              <div className="with-icon with-right-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="underline" />
                 <i className="icon-search"></i>
@@ -1840,7 +1840,7 @@ function App() {
                 className="md"
                 disabled
               />
-              <div className="with-left-icon">
+              <div className="with-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="md" />
               </div>
@@ -1848,7 +1848,7 @@ function App() {
                 <input type="text" placeholder="icon" className="md" />
                 <i className="icon-search"></i>
               </div>
-              <div className="with-left-icon with-right-icon">
+              <div className="with-icon with-right-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="md" />
                 <i className="icon-search"></i>
@@ -1878,7 +1878,7 @@ function App() {
                 disabled
                 className="fill md"
               />
-              <div className="with-left-icon">
+              <div className="with-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="fill md" />
               </div>
@@ -1886,7 +1886,7 @@ function App() {
                 <input type="text" placeholder="icon" className="fill md" />
                 <i className="icon-search"></i>
               </div>
-              <div className="with-left-icon with-right-icon">
+              <div className="with-icon with-right-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="fill md" />
                 <i className="icon-search"></i>
@@ -1917,7 +1917,7 @@ function App() {
                 disabled
                 className="text md"
               />
-              <div className="with-left-icon">
+              <div className="with-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="text md" />
               </div>
@@ -1925,7 +1925,7 @@ function App() {
                 <input type="text" placeholder="icon" className="text md" />
                 <i className="icon-search"></i>
               </div>
-              <div className="with-left-icon with-right-icon">
+              <div className="with-icon with-right-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="text md" />
                 <i className="icon-search"></i>
@@ -1960,7 +1960,7 @@ function App() {
                 disabled
                 className="underline md"
               />
-              <div className="with-left-icon">
+              <div className="with-icon">
                 <i className="icon-tag"></i>
                 <input
                   type="text"
@@ -1976,7 +1976,7 @@ function App() {
                 />
                 <i className="icon-search"></i>
               </div>
-              <div className="with-left-icon with-right-icon">
+              <div className="with-icon with-right-icon">
                 <i className="icon-tag"></i>
                 <input
                   type="text"
@@ -2001,7 +2001,7 @@ function App() {
                 className="lg"
                 disabled
               />
-              <div className="with-left-icon">
+              <div className="with-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="lg" />
               </div>
@@ -2009,7 +2009,7 @@ function App() {
                 <input type="text" placeholder="icon" className="lg" />
                 <i className="icon-search"></i>
               </div>
-              <div className="with-left-icon with-right-icon">
+              <div className="with-icon with-right-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="lg" />
                 <i className="icon-search"></i>
@@ -2039,7 +2039,7 @@ function App() {
                 disabled
                 className="fill lg"
               />
-              <div className="with-left-icon">
+              <div className="with-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="fill lg" />
               </div>
@@ -2047,7 +2047,7 @@ function App() {
                 <input type="text" placeholder="icon" className="fill lg" />
                 <i className="icon-search"></i>
               </div>
-              <div className="with-left-icon with-right-icon">
+              <div className="with-icon with-right-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="fill lg" />
                 <i className="icon-search"></i>
@@ -2078,7 +2078,7 @@ function App() {
                 disabled
                 className="text lg"
               />
-              <div className="with-left-icon">
+              <div className="with-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="text lg" />
               </div>
@@ -2086,7 +2086,7 @@ function App() {
                 <input type="text" placeholder="icon" className="text lg" />
                 <i className="icon-search"></i>
               </div>
-              <div className="with-left-icon with-right-icon">
+              <div className="with-icon with-right-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="text lg" />
                 <i className="icon-search"></i>
@@ -2121,7 +2121,7 @@ function App() {
                 disabled
                 className="underline lg"
               />
-              <div className="with-left-icon">
+              <div className="with-icon">
                 <i className="icon-tag"></i>
                 <input
                   type="text"
@@ -2137,7 +2137,7 @@ function App() {
                 />
                 <i className="icon-search"></i>
               </div>
-              <div className="with-left-icon with-right-icon">
+              <div className="with-icon with-right-icon">
                 <i className="icon-tag"></i>
                 <input
                   type="text"
@@ -2209,47 +2209,46 @@ function App() {
         </article>
         <article>
           <h2>Textarea</h2>
-          <section>
+          <section className="elements">
             <textarea placeholder="placeholder"></textarea>
-            <div className="with-icon">
-              <textarea placeholder="placeholder"></textarea>
-              <i className="icon-global"></i>
-            </div>
-            <textarea placeholder="resize none"></textarea>
+            <textarea readOnly>readOnly</textarea>
+            <textarea
+              placeholder="resize-none"
+              className="resize-none"
+            ></textarea>
+            <textarea placeholder="success" className="success"></textarea>
             <textarea placeholder="danger" className="danger"></textarea>
             <textarea placeholder="disabled" disabled></textarea>
           </section>
         </article>
         <article>
           <h2>Select</h2>
-          <section>
-            <div>
+          <section className="elements">
+            <select>
+              <option>default</option>
+              <option>Seoul</option>
+              <option>Tokyo</option>
+            </select>
+            <div className="with-icon">
+              <i className="icon-global"></i>
               <select>
                 <option>default</option>
                 <option>Seoul</option>
                 <option>Tokyo</option>
               </select>
-              <div className="with-icon">
-                <select>
-                  <option>default</option>
-                  <option>Seoul</option>
-                  <option>Tokyo</option>
-                </select>
-                <i className="icon-global"></i>
-              </div>
-              <select required>
-                <option value="" disabled selected>
-                  placeholder
-                </option>
-                <option>Seoul</option>
-                <option>Tokyo</option>
-              </select>
-              <select disabled>
-                <option>default</option>
-                <option>Seoul</option>
-                <option>Tokyo</option>
-              </select>
             </div>
+            <select required>
+              <option value="" disabled selected>
+                placeholder
+              </option>
+              <option>Seoul</option>
+              <option>Tokyo</option>
+            </select>
+            <select disabled>
+              <option>default</option>
+              <option>Seoul</option>
+              <option>Tokyo</option>
+            </select>
           </section>
         </article>
         <article>

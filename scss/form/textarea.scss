@@ -1,0 +1,43 @@
+@use '../color/theme.scss' as *;
+@use '../layout/radius.scss' as *;
+@use '../layout/spacing.scss' as *;
+@use '../typo/typo.scss' as *;
+
+textarea {
+  @include p3;
+  & {
+    padding: spacing(3) spacing(4);
+    background-color: color('bg-block');
+    border: 1px solid color('border');
+    border-radius: r(2);
+    outline: none;
+  }
+  &.resize-none {
+    resize: none;
+  }
+  &:placeholder {
+    color: color('text-action-disabled');
+  }
+  &:focus-visible:not(:disabled):not(:read-only),
+  &:focus:not(:disabled):not(:read-only) {
+    border: 1px solid color('primary');
+  }
+  &:read-only {
+    border: none;
+    resize: none;
+  }
+  &.success {
+    &:not(:disabled):not(:read-only) {
+      border: 1px solid color('success');
+    }
+  }
+  &.danger {
+    &:not(:disabled):not(:read-only) {
+      border: 1px solid color('danger');
+    }
+  }
+  &:disabled {
+    background-color: color('bg-disabled');
+    border: 1px solid color('border-disabled');
+  }
+}
