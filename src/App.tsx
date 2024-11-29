@@ -46,7 +46,7 @@ function App() {
       <main className="p-6">
         <article className="bg-1 p-6">
           <h2>Text</h2>
-          <section className="bg-2 p-6">
+          <section>
             <h1>h1</h1>
             <h2>h2</h2>
             <h3>h3</h3>
@@ -112,7 +112,7 @@ function App() {
         </article>
         <article className="bg-1 p-6">
           <h2>Grid</h2>
-          <section className="bg-2 p-6">
+          <section>
             <h3>Basic 12 Columns (Auto wrap)</h3>
             <div className="grid guide border p-5 bg-3">
               <div className="w-4">w-4</div>
@@ -129,7 +129,7 @@ function App() {
               <div className="w-full">w-full</div>
             </div>
           </section>
-          <section className="bg-2 p-6">
+          <section>
             <h3>Fixed Columns (No wrap)</h3>
             <h4>2 Columns (grid grid-fix-2)</h4>
             <div className="grid guide border grid-fix-2 p-5 bg-3">
@@ -168,7 +168,7 @@ function App() {
         </article>
         <article className="bg-1 p-6">
           <h2>Layout</h2>
-          <section className="bg-2 p-6">
+          <section>
             <h3>Border</h3>
             <div className="grid guide grid-fix-4">
               <div className="w-1_4 border-0">border-0</div>
@@ -177,7 +177,7 @@ function App() {
               <div className="w-1_4 border-3">border-3</div>
             </div>
           </section>
-          <section className="bg-2 p-6">
+          <section>
             <h3>Border-radius</h3>
             <div className="grid guide grid-fix-4">
               <div className="w-1_4 border-1 r-0 p-6">r-0</div>
@@ -190,7 +190,7 @@ function App() {
               <div className="w-1_4 border-1 r-full p-6">r-full</div>
             </div>
           </section>
-          <section className="bg-2 p-6">
+          <section>
             <h3>Spacing</h3>
             <div className="grid grid-fix-4">
               {Array.from({ length: 14 }).map((_, i) => (
@@ -198,7 +198,7 @@ function App() {
               ))}
             </div>
           </section>
-          <section className="bg-2 p-6">
+          <section>
             <h3>Padding</h3>
             <p>
               전체 : p-0 ~ p-13
@@ -220,7 +220,7 @@ function App() {
               ))}
             </div>
           </section>
-          <section className="bg-2 p-6">
+          <section>
             <h3>Margin</h3>
             <p>
               전체 : m-0 ~ m-13
@@ -242,7 +242,7 @@ function App() {
               ))}
             </div>
           </section>
-          <section className="bg-2 p-6">
+          <section>
             <h3>Elevation</h3>
             <div className="grid grid-fix-4">
               <div className="w-1_4 bg-elevation p-3">
@@ -265,7 +265,7 @@ function App() {
               <div className="w-1_5 shadow-5 p-6">shadow-5</div>
             </div>
           </section>
-          <section className="bg-2 p-6">
+          <section>
             <h3>Hide</h3>
             <div className="grid grid-fix-4">
               <div className="w-1_3 hide p-6">hide</div>
@@ -274,7 +274,7 @@ function App() {
               <div className="w-1_3 hide-mo p-6">hide-mo</div>
             </div>
           </section>
-          <section className="bg-2 p-6">
+          <section>
             <h3>Icon</h3>
             <div className="grid icons">
               <div className="w-2 p-6">
@@ -635,7 +635,7 @@ function App() {
         </article>
         <article className="bg-1 p-6">
           <h2>Button</h2>
-          <section className="bg-2 p-6">
+          <section>
             <h3>Primary</h3>
             <div className="elements">
               <button className="primary">primary (sm)</button>
@@ -1629,7 +1629,7 @@ function App() {
         </article>
         <article>
           <h2>Toggle</h2>
-          <section className="bg-2 p-6">
+          <section>
             <div>
               <input type="checkbox" className="toggle" />
               <input type="checkbox" className="toggle" checked />
@@ -1640,11 +1640,15 @@ function App() {
         </article>
         <article>
           <h2>Checkbox</h2>
-          <section className="bg-2 p-6">
+          <section>
             <div className="elements">
               <label>
                 <input type="checkbox" />
                 <span>Default</span>
+              </label>
+              <label>
+                <input type="checkbox" checked />
+                <span>Default checked</span>
               </label>
               <label>
                 <input type="checkbox" disabled />
@@ -1674,7 +1678,7 @@ function App() {
         </article>
         <article>
           <h2>Radio</h2>
-          <section className="bg-2 p-6">
+          <section>
             <div className="elements">
               <label>
                 <input type="radio" name="dafault-radio" />
@@ -1697,26 +1701,457 @@ function App() {
         </article>
         <article>
           <h2>Input</h2>
-          <section className="bg-2 p-6">
+          <section>
+            <h3>Default Size(sm)</h3>
             <div className="elements">
               <input type="text" placeholder="default" />
               <input type="text" value="readOnly" readOnly />
-              <div className="with-icon">
-                <input type="text" placeholder="icon" />
+              <input type="text" placeholder="success" className="success" />
+              <input type="text" placeholder="danger" className="danger" />
+              <input type="text" placeholder="disabled" disabled />
+              <div className="with-left-icon">
                 <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" />
               </div>
-              <div className="with-icon right">
+              <div className="with-right-icon">
                 <input type="text" placeholder="icon" />
                 <i className="icon-search"></i>
               </div>
-              <input type="text" placeholder="danger" className="danger" />
-              <input type="text" placeholder="disabled" disabled />
+              <div className="with-left-icon with-right-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" />
+                <i className="icon-search"></i>
+              </div>
+            </div>
+            <div className="elements">
+              <input type="text" placeholder="fill" className="fill" />
+              <input type="text" value="readOnly" className="fill" readOnly />
+              <input
+                type="text"
+                placeholder="success"
+                className="success fill"
+              />
+              <input type="text" placeholder="danger" className="danger fill" />
+              <input
+                type="text"
+                placeholder="disabled"
+                disabled
+                className="fill"
+              />
+              <div className="with-left-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="fill" />
+              </div>
+              <div className="with-right-icon">
+                <input type="text" placeholder="icon" className="fill" />
+                <i className="icon-search"></i>
+              </div>
+              <div className="with-left-icon with-right-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="fill" />
+                <i className="icon-search"></i>
+              </div>
+            </div>
+
+            <div className="elements">
+              <input type="text" placeholder="text" className="text" />
+              <input type="text" value="readOnly" className="text" readOnly />
+              <input
+                type="text"
+                placeholder="success"
+                className="success text"
+              />
+              <input type="text" placeholder="danger" className="danger text" />
+              <input
+                type="text"
+                placeholder="disabled"
+                disabled
+                className="text"
+              />
+              <div className="with-left-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="text" />
+              </div>
+              <div className="with-right-icon">
+                <input type="text" placeholder="icon" className="text" />
+                <i className="icon-search"></i>
+              </div>
+              <div className="with-left-icon with-right-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="text" />
+                <i className="icon-search"></i>
+              </div>
+            </div>
+
+            <div className="elements">
+              <input
+                type="text"
+                placeholder="underline"
+                className="underline"
+              />
+              <input
+                type="text"
+                value="readOnly"
+                className="underline"
+                readOnly
+              />
+              <input
+                type="text"
+                placeholder="success"
+                className="success underline"
+              />
+              <input
+                type="text"
+                placeholder="danger"
+                className="danger underline"
+              />
+              <input
+                type="text"
+                placeholder="disabled"
+                disabled
+                className="underline"
+              />
+              <div className="with-left-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="underline" />
+              </div>
+              <div className="with-right-icon">
+                <input type="text" placeholder="icon" className="underline" />
+                <i className="icon-search"></i>
+              </div>
+              <div className="with-left-icon with-right-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="underline" />
+                <i className="icon-search"></i>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h3>md</h3>
+            <div className="elements">
+              <input type="text" placeholder="default md" className="md" />
+              <input type="text" value="readOnly" readOnly className="md" />
+              <input type="text" placeholder="success" className="success md" />
+              <input type="text" placeholder="danger" className="danger md" />
+              <input
+                type="text"
+                placeholder="disabled"
+                className="md"
+                disabled
+              />
+              <div className="with-left-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="md" />
+              </div>
+              <div className="with-right-icon">
+                <input type="text" placeholder="icon" className="md" />
+                <i className="icon-search"></i>
+              </div>
+              <div className="with-left-icon with-right-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="md" />
+                <i className="icon-search"></i>
+              </div>
+            </div>
+            <div className="elements">
+              <input type="text" placeholder="fill" className="fill sm" />
+              <input
+                type="text"
+                value="readOnly"
+                className="fill md"
+                readOnly
+              />
+              <input
+                type="text"
+                placeholder="success"
+                className="success fill md"
+              />
+              <input
+                type="text"
+                placeholder="danger"
+                className="danger fill md"
+              />
+              <input
+                type="text"
+                placeholder="disabled"
+                disabled
+                className="fill md"
+              />
+              <div className="with-left-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="fill md" />
+              </div>
+              <div className="with-right-icon">
+                <input type="text" placeholder="icon" className="fill md" />
+                <i className="icon-search"></i>
+              </div>
+              <div className="with-left-icon with-right-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="fill md" />
+                <i className="icon-search"></i>
+              </div>
+            </div>
+
+            <div className="elements">
+              <input type="text" placeholder="text" className="text md" />
+              <input
+                type="text"
+                value="readOnly"
+                className="text md"
+                readOnly
+              />
+              <input
+                type="text"
+                placeholder="success"
+                className="success text md"
+              />
+              <input
+                type="text"
+                placeholder="danger"
+                className="danger text md"
+              />
+              <input
+                type="text"
+                placeholder="disabled"
+                disabled
+                className="text md"
+              />
+              <div className="with-left-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="text md" />
+              </div>
+              <div className="with-right-icon">
+                <input type="text" placeholder="icon" className="text md" />
+                <i className="icon-search"></i>
+              </div>
+              <div className="with-left-icon with-right-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="text md" />
+                <i className="icon-search"></i>
+              </div>
+            </div>
+
+            <div className="elements">
+              <input
+                type="text"
+                placeholder="underline"
+                className="underline md"
+              />
+              <input
+                type="text"
+                value="readOnly"
+                className="underline md"
+                readOnly
+              />
+              <input
+                type="text"
+                placeholder="success"
+                className="success underline md"
+              />
+              <input
+                type="text"
+                placeholder="danger"
+                className="danger underline md"
+              />
+              <input
+                type="text"
+                placeholder="disabled"
+                disabled
+                className="underline md"
+              />
+              <div className="with-left-icon">
+                <i className="icon-tag"></i>
+                <input
+                  type="text"
+                  placeholder="icon"
+                  className="underline md"
+                />
+              </div>
+              <div className="with-right-icon">
+                <input
+                  type="text"
+                  placeholder="icon"
+                  className="underline md"
+                />
+                <i className="icon-search"></i>
+              </div>
+              <div className="with-left-icon with-right-icon">
+                <i className="icon-tag"></i>
+                <input
+                  type="text"
+                  placeholder="icon"
+                  className="underline md"
+                />
+                <i className="icon-search"></i>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h3>lg</h3>
+            <div className="elements">
+              <input type="text" placeholder="default lg" className="lg" />
+              <input type="text" value="readOnly" readOnly className="lg" />
+              <input type="text" placeholder="success" className="success lg" />
+              <input type="text" placeholder="danger" className="danger lg" />
+              <input
+                type="text"
+                placeholder="disabled"
+                className="lg"
+                disabled
+              />
+              <div className="with-left-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="lg" />
+              </div>
+              <div className="with-right-icon">
+                <input type="text" placeholder="icon" className="lg" />
+                <i className="icon-search"></i>
+              </div>
+              <div className="with-left-icon with-right-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="lg" />
+                <i className="icon-search"></i>
+              </div>
+            </div>
+            <div className="elements">
+              <input type="text" placeholder="fill" className="fill sm" />
+              <input
+                type="text"
+                value="readOnly"
+                className="fill lg"
+                readOnly
+              />
+              <input
+                type="text"
+                placeholder="success"
+                className="success fill lg"
+              />
+              <input
+                type="text"
+                placeholder="danger"
+                className="danger fill lg"
+              />
+              <input
+                type="text"
+                placeholder="disabled"
+                disabled
+                className="fill lg"
+              />
+              <div className="with-left-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="fill lg" />
+              </div>
+              <div className="with-right-icon">
+                <input type="text" placeholder="icon" className="fill lg" />
+                <i className="icon-search"></i>
+              </div>
+              <div className="with-left-icon with-right-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="fill lg" />
+                <i className="icon-search"></i>
+              </div>
+            </div>
+
+            <div className="elements">
+              <input type="text" placeholder="text" className="text lg" />
+              <input
+                type="text"
+                value="readOnly"
+                className="text lg"
+                readOnly
+              />
+              <input
+                type="text"
+                placeholder="success"
+                className="success text lg"
+              />
+              <input
+                type="text"
+                placeholder="danger"
+                className="danger text lg"
+              />
+              <input
+                type="text"
+                placeholder="disabled"
+                disabled
+                className="text lg"
+              />
+              <div className="with-left-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="text lg" />
+              </div>
+              <div className="with-right-icon">
+                <input type="text" placeholder="icon" className="text lg" />
+                <i className="icon-search"></i>
+              </div>
+              <div className="with-left-icon with-right-icon">
+                <i className="icon-tag"></i>
+                <input type="text" placeholder="icon" className="text lg" />
+                <i className="icon-search"></i>
+              </div>
+            </div>
+
+            <div className="elements">
+              <input
+                type="text"
+                placeholder="underline"
+                className="underline lg"
+              />
+              <input
+                type="text"
+                value="readOnly"
+                className="underline lg"
+                readOnly
+              />
+              <input
+                type="text"
+                placeholder="success"
+                className="success underline lg"
+              />
+              <input
+                type="text"
+                placeholder="danger"
+                className="danger underline lg"
+              />
+              <input
+                type="text"
+                placeholder="disabled"
+                disabled
+                className="underline lg"
+              />
+              <div className="with-left-icon">
+                <i className="icon-tag"></i>
+                <input
+                  type="text"
+                  placeholder="icon"
+                  className="underline lg"
+                />
+              </div>
+              <div className="with-right-icon">
+                <input
+                  type="text"
+                  placeholder="icon"
+                  className="underline lg"
+                />
+                <i className="icon-search"></i>
+              </div>
+              <div className="with-left-icon with-right-icon">
+                <i className="icon-tag"></i>
+                <input
+                  type="text"
+                  placeholder="icon"
+                  className="underline lg"
+                />
+                <i className="icon-search"></i>
+              </div>
             </div>
           </section>
         </article>
         <article>
           <h2>Gap Test</h2>
-          <section className="bg-2 p-6">
+          <section>
             <div>
               <input type="text" placeholder="default" />
               <button className="small">
@@ -1732,7 +2167,7 @@ function App() {
         </article>
         <article>
           <h2>Label</h2>
-          <section className="bg-2 p-6">
+          <section>
             <div className="grid grid-fix-3">
               <div className="w-1_3">
                 <label htmlFor="label1">Default </label>
@@ -1765,7 +2200,7 @@ function App() {
         </article>
         <article>
           <h2>File</h2>
-          <section className="bg-2 p-6">
+          <section>
             <input type="file" />
             <input type="file" />
             <button className="file-reset"></button>
@@ -1774,7 +2209,7 @@ function App() {
         </article>
         <article>
           <h2>Textarea</h2>
-          <section className="bg-2 p-6">
+          <section>
             <textarea placeholder="placeholder"></textarea>
             <div className="with-icon">
               <textarea placeholder="placeholder"></textarea>
@@ -1787,7 +2222,7 @@ function App() {
         </article>
         <article>
           <h2>Select</h2>
-          <section className="bg-2 p-6">
+          <section>
             <div>
               <select>
                 <option>default</option>
@@ -1819,7 +2254,7 @@ function App() {
         </article>
         <article>
           <h2>Tabs</h2>
-          <section className="bg-2 p-6">
+          <section>
             <h3>Default</h3>
             <ul className="tabs">
               <li className="on">
@@ -1835,7 +2270,7 @@ function App() {
               </li>
             </ul>
           </section>
-          <section className="bg-2 p-6">
+          <section>
             <h3>Fix</h3>
             <ul className="tabs fix">
               <li className="on">
@@ -1858,7 +2293,7 @@ function App() {
         </article>
         <article>
           <h2>Table</h2>
-          <section className="bg-2 p-6">
+          <section>
             <h3>Default</h3>
             <table>
               <colgroup>
@@ -1921,7 +2356,7 @@ function App() {
               </tbody>
             </table>
           </section>
-          <section className="bg-2 p-6">
+          <section>
             <h3>border</h3>
             <table className="border">
               <colgroup>
@@ -2047,7 +2482,7 @@ function App() {
               </tbody>
             </table>
           </section>
-          <section className="bg-2 p-6">
+          <section>
             <h3>border striped (bg-2)</h3>
             <table className="border striped">
               <colgroup>
@@ -2176,7 +2611,7 @@ function App() {
         </article>
         <article>
           <h2>Badge</h2>
-          <section className="bg-2 p-6">
+          <section>
             <div className="grid grid-fix-5">
               <div className="w-1_5">
                 <i className="icon-notification"></i>
