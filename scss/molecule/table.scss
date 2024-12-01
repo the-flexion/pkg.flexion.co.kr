@@ -30,8 +30,3 @@ table {
     }
   }
 }
-&.dark table.striped {
-  tbody > tr:nth-child(odd) {
-    background-color: rgba(0, 0, 0, 0.15);
-  }
-}
