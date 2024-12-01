@@ -98,7 +98,7 @@ p {
 👉 아래 형태로 css 변수를 커스텀하여 사용
 
 ```scss
-:root {
+html {
   --color-primary: #{map-get($base-color, 'red-500')};
   --color-primary-hover: #{map-get($base-color, 'red-600')};
   --color-primary-pressed: #{map-get($base-color, 'red-700')};

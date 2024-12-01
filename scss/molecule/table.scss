@@ -1,38 +1,37 @@
 /*
 Table
 */
-:root {
-  table {
-    width: 100%;
-    border-collapse: separate;
-    border-radius: var(--r-3);
-    border: none;
-    th,
-    td {
-      padding: 10px;
-      text-align: center;
-    }
-    th {
-      font-weight: 700;
-      &:not(.border) {
-        border-bottom: 1px solid var(--border-2);
-      }
-    }
-    &.border {
-      border: 1px solid var(--border-1);
-      td {
-        border-bottom: 1px solid var(--border-1);
-      }
-    }
-    &.striped {
-      tbody > tr:nth-child(odd) {
-        background-color: var(--gray-1);
-      }
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-radius: var(--r-3);
+  border: none;
+  th,
+  td {
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    font-weight: 700;
+    &:not(.border) {
+      border-bottom: 1px solid var(--border-2);
     }
   }
-  &.dark table.striped {
-    tbody > tr:nth-child(odd) {
-      background-color: rgba(0, 0, 0, 0.15);
+  &.border {
+    border: 1px solid var(--border-1);
+    td {
+      border-bottom: 1px solid var(--border-1);
     }
+  }
+  &.striped {
+    tbody > tr:nth-child(odd) {
+      background-color: var(--gray-1);
+    }
+  }
+}
+&.dark table.striped {
+  tbody > tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.15);
   }
 }
