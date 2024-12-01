@@ -1,0 +1,68 @@
+@use '../color/base-color.scss' as *;
+@use '../color/theme.scss' as *;
+@use '../layout/radius.scss' as *;
+@use '../layout/spacing.scss' as *;
+@use '../typo/typo.scss' as *;
+@use '../icon/icon.scss' as *;
+
+/*
+  File
+*/
+input[type='file'] {
+  position: relative;
+  @include p3;
+  & {
+    width: 300px;
+    padding: 0 spacing(4) 0 0;
+    background-color: color('bg-block');
+    // border-radius: r(3);
+    // border: 1px solid color('border-disabled');
+    outline: none;
+    overflow:visible;
+  }
+  &:before {
+    @extend .icon-upload-cloud;
+    position: absolute;
+    left: spacing(3);
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'pkg-icon';
+    font-size: 24px;
+    color: color('default-deep-reverse');
+  }
+  &::file-selector-button {
+    @include p3;
+    & {
+      padding: spacing(3) spacing(3) spacing(3) spacing(8);
+      margin-right: spacing(2);
+      cursor: pointer;
+      border: none;
+      // border-radius: r(3) 0 0 r(3);
+      border-radius: r(3);
+      background-color: color('default-deep');
+      color: color('default-deep-reverse');
+    }
+  }
+  &:disabled {
+    background-color: var(--disabled);
+    color: var(--text-disabled);
+    cursor: not-allowed;
+    box-shadow: 0 0 0 1px var(--disabled-2) inset;
+    &:before {
+      color: var(--text-disabled);
+    }
+    &::file-selector-button {
+      color: var(--text-disabled);
+      background-color: var(--disabled);
+      box-shadow: 0 0 0 1px var(--disabled-2) inset;
+    }
+    &:hover {
+      &::file-selector-button {
+        background-color: var(--disabled);
+        cursor: not-allowed;
+      }
+    }
+  }
+}
