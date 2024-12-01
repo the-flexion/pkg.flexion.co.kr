@@ -10,12 +10,12 @@ ul.tabs {
   padding: 0;
   display: flex;
   justify-content: flex-start;
+  border-bottom: 1px inset color('border');
   &.fill {
     > li {
       flex: 1;
     }
   }
-  border-bottom: 1px inset color('border');
   > li {
     text-align: center;
     padding: 0;
