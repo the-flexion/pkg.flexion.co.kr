@@ -2213,22 +2213,6 @@ function App() {
                 </a>
               </li>
               <li>
-                <a href="#">Tab2</a>
-              </li>
-              <li>
-                <a href="#">Tab3</a>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h3>Fix</h3>
-            <ul className="tabs fix">
-              <li className="on">
-                <a href="#">
-                  <i className="icon-heart"></i> Tab1
-                </a>
-              </li>
-              <li>
                 <a href="#">
                   <i className="icon-heart primary"></i> Tab2
                 </a>
@@ -2237,6 +2221,22 @@ function App() {
                 <a href="#">
                   <i className="icon-heart danger"></i> Tab3
                 </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>fill</h3>
+            <ul className="tabs fill">
+              <li className="on">
+                <a href="#">
+                  <i className="icon-heart"></i> Tab1
+                </a>
+              </li>
+              <li>
+                <a href="#">Tab2</a>
+              </li>
+              <li>
+                <a href="#">Tab3</a>
               </li>
             </ul>
           </section>

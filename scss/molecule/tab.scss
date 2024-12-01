@@ -1,0 +1,42 @@
+@use '../color/theme.scss' as *;
+@use '../layout/radius.scss' as *;
+@use '../layout/spacing.scss' as *;
+@use '../typo/typo.scss' as *;
+
+/*
+Tabs
+*/
+ul.tabs {
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  &.fill {
+    > li {
+      flex: 1;
+    }
+  }
+  border-bottom: 1px inset color('border');
+  > li {
+    text-align: center;
+    padding: 0;
+    > a {
+      @include p3;
+      & {
+        display: block;
+        padding: spacing(2) spacing(5);
+        color: color('text-sub');
+        &:hover {
+          color: inherit;
+        }
+      }
+    }
+    &.on > a {
+      @include p3-semibold;
+      & {
+        color: color('primary') !important;
+        border-bottom: 1px inset color('primary');
+        margin-bottom: -1px;
+      }
+    }
+  }
+}

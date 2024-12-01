@@ -41,3 +41,10 @@
 @forward './scss/form/textarea';
 @forward './scss/form/select';
 @forward './scss/form/toggle';
+
+/*
+  Molecule
+*/
+@forward './scss/molecule/tab.scss';
+@forward './scss/molecule/table.scss';
+@forward './scss/molecule/pagination.scss';
