@@ -3,7 +3,7 @@
 /*
   Light mode colors
 */
-html {
+:global {
   --color-primary: #{map-get($base-color, 'violet-500')};
   --color-primary-hover: #{map-get($base-color, 'violet-600')};
   --color-primary-pressed: #{map-get($base-color, 'violet-700')};
