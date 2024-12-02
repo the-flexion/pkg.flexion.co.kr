@@ -2276,7 +2276,7 @@ function App() {
                   <td>Text</td>
                   <td>Text</td>
                   <td>
-                    <button className="link text">편집하기</button>
+                    <button className="link text xs">편집하기</button>
                   </td>
                 </tr>
                 <tr>
@@ -2288,7 +2288,7 @@ function App() {
                   <td>Text</td>
                   <td>Text</td>
                   <td>
-                    <button className="link text">편집하기</button>
+                    <button className="link text xs">편집하기</button>
                   </td>
                 </tr>
                 <tr>
@@ -2300,12 +2300,76 @@ function App() {
                   <td>Text</td>
                   <td>Text</td>
                   <td>
-                    <button className="link text">편집하기</button>
+                    <button className="link text xs">편집하기</button>
                   </td>
                 </tr>
               </tbody>
             </table>
           </section>
+          <section>
+            <h3>list</h3>
+            <table className="list">
+              <colgroup>
+                <col width="40" />
+                <col width="*" />
+                <col width="*" />
+                <col width="*" />
+                <col width="*" />
+                <col width="100" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>
+                    <input type="checkbox" />
+                  </th>
+                  <th>제목</th>
+                  <th>이메일</th>
+                  <th>역할</th>
+                  <th>이름</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                  </td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>
+                    <button className="link text xs">편집하기</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                  </td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>
+                    <button className="link text xs">편집하기</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                  </td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>
+                    <button className="link text xs">편집하기</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
           <section>
             <h3>border</h3>
             <table className="border">
@@ -2339,7 +2403,7 @@ function App() {
                   <td>Text</td>
                   <td>Text</td>
                   <td>
-                    <button className="link text">편집하기</button>
+                    <button className="link text xs">편집하기</button>
                   </td>
                 </tr>
                 <tr>
@@ -2351,7 +2415,7 @@ function App() {
                   <td>Text</td>
                   <td>Text</td>
                   <td>
-                    <button className="link text">편집하기</button>
+                    <button className="link text xs">편집하기</button>
                   </td>
                 </tr>
                 <tr>
@@ -2363,78 +2427,16 @@ function App() {
                   <td>Text</td>
                   <td>Text</td>
                   <td>
-                    <button className="link text">편집하기</button>
+                    <button className="link text xs">편집하기</button>
                   </td>
                 </tr>
               </tbody>
             </table>
           </section>
-          <section className="bg-1 p-6">
-            <h3>border striped (bg-1)</h3>
-            <table className="border striped">
-              <colgroup>
-                <col width="40" />
-                <col width="*" />
-                <col width="*" />
-                <col width="*" />
-                <col width="*" />
-                <col width="100" />
-              </colgroup>
-              <thead>
-                <tr>
-                  <th>
-                    <input type="checkbox" />
-                  </th>
-                  <th>제목</th>
-                  <th>이메일</th>
-                  <th>역할</th>
-                  <th>이름</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>
-                    <button className="link text">편집하기</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>
-                    <button className="link text">편집하기</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>
-                    <button className="link text">편집하기</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
+
           <section>
-            <h3>border striped (bg-2)</h3>
-            <table className="border striped">
+            <h3>list + border</h3>
+            <table className="list border">
               <colgroup>
                 <col width="40" />
                 <col width="*" />
@@ -2465,7 +2467,7 @@ function App() {
                   <td>Text</td>
                   <td>Text</td>
                   <td>
-                    <button className="link text">편집하기</button>
+                    <button className="link text xs">편집하기</button>
                   </td>
                 </tr>
                 <tr>
@@ -2477,7 +2479,7 @@ function App() {
                   <td>Text</td>
                   <td>Text</td>
                   <td>
-                    <button className="link text">편집하기</button>
+                    <button className="link text xs">편집하기</button>
                   </td>
                 </tr>
                 <tr>
@@ -2489,101 +2491,139 @@ function App() {
                   <td>Text</td>
                   <td>Text</td>
                   <td>
-                    <button className="link text">편집하기</button>
+                    <button className="link text xs">편집하기</button>
                   </td>
                 </tr>
               </tbody>
             </table>
           </section>
-          <section className="bg-3 p-6">
-            <h3>border striped (bg-3)</h3>
-            <table className="border striped">
-              <colgroup>
-                <col width="40" />
-                <col width="*" />
-                <col width="*" />
-                <col width="*" />
-                <col width="*" />
-                <col width="100" />
-              </colgroup>
-              <thead>
-                <tr>
-                  <th>
-                    <input type="checkbox" />
-                  </th>
-                  <th>제목</th>
-                  <th>이메일</th>
-                  <th>역할</th>
-                  <th>이름</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>
-                    <button className="link text">편집하기</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>
-                    <button className="link text">편집하기</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>Text</td>
-                  <td>
-                    <button className="link text">편집하기</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-        </article>
-        <article>
-          <h2>Badge</h2>
+
           <section>
-            <div className="grid grid-fix-5">
-              <div className="w-1_5">
-                <i className="icon-notification"></i>
-                <i className="badge-icon"></i>
-              </div>
-              <div className="w-1_5">
-                <i className="icon-notification"></i>
-                <i className="badge-number">9</i>
-              </div>
-              <div className="w-1_5">
-                <i className="icon-notification"></i>
-                <i className="badge-number">32</i>
-              </div>
-              <div className="w-1_5">
-                <i className="icon-notification"></i>
-                <i className="badge-number">999+</i>
-              </div>
-              <div className="w-1_5">
-                text
-                <i className="badge-text">32</i>
-              </div>
-            </div>
+            <h3>fill</h3>
+            <table className="fill">
+              <colgroup>
+                <col width="40" />
+                <col width="*" />
+                <col width="*" />
+                <col width="*" />
+                <col width="*" />
+                <col width="100" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>
+                    <input type="checkbox" />
+                  </th>
+                  <th>제목</th>
+                  <th>이메일</th>
+                  <th>역할</th>
+                  <th>이름</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                  </td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>
+                    <button className="link text xs">편집하기</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                  </td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>
+                    <button className="link text xs">편집하기</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                  </td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>
+                    <button className="link text xs">편집하기</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section>
+            <h3>list + fill</h3>
+            <table className="list fill">
+              <colgroup>
+                <col width="40" />
+                <col width="*" />
+                <col width="*" />
+                <col width="*" />
+                <col width="*" />
+                <col width="100" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>
+                    <input type="checkbox" />
+                  </th>
+                  <th>제목</th>
+                  <th>이메일</th>
+                  <th>역할</th>
+                  <th>이름</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                  </td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>
+                    <button className="link text xs">편집하기</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                  </td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>
+                    <button className="link text xs">편집하기</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                  </td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>
+                    <button className="link text xs">편집하기</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </section>
         </article>
       </main>

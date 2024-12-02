@@ -1,3 +1,7 @@
+@use '../layout/spacing.scss' as *;
+@use '../color/function.scss' as *;
+@use '../layout/radius.scss' as *;
+@use '../typo/mixin.scss' as *;
 /*
 Table
 */
@@ -5,28 +9,45 @@ Table
 table {
   width: 100%;
   border-collapse: separate;
-  border-radius: var(--r-3);
-  border: none;
-  th,
-  td {
-    padding: 10px;
-    text-align: center;
-  }
-  th {
-    font-weight: 700;
-    &:not(.border) {
-      border-bottom: 1px solid var(--border-2);
+  border-radius: r(2);
+  border: 1px solid color('border');
+  &.list > tbody {
+    > tr {
+      &:hover {
+        background-color: color('default-fill');
+      }
     }
   }
-  &.border {
-    border: 1px solid var(--border-1);
-    td {
-      border-bottom: 1px solid var(--border-1);
+  &.border > thead,
+  &.border > tbody {
+    > tr {
+      > th,
+      > td {
+        border-bottom: 1px solid color('border');
+      }
     }
   }
-  &.striped {
-    tbody > tr:nth-child(odd) {
-      background-color: var(--gray-1);
+  &.fill > thead,
+  &.fill > tbody {
+    > tr {
+      background-color: color('default-fill');
+    }
+  }
+  &.fill > tbody {
+    > tr {
+      &:hover {
+        background-color: color('default');
+      }
+    }
+  }
+  > thead,
+  > tbody {
+    > tr {
+      > th,
+      > td {
+        padding: spacing(2) spacing(4);
+        text-align: left;
+      }
     }
   }
 }
