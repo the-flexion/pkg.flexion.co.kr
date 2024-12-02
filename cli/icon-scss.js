@@ -8,12 +8,16 @@ const outputFileName = path.resolve(process.cwd(), 'scss/icon/icon-name.scss');
 
 // SCSS 파일 생성 함수
 function generateIconScss(glyphs, outputPath) {
-  let scssContent = '';
+  let scssContent = '$icon-name: (\n';
 
   // 각 글리프에 대해 CSS 클래스 생성
   for (const [glyphName, unicode] of Object.entries(glyphs)) {
-    scssContent += `.icon-${glyphName}:before { content: "${unicode}"; }\n`;
+    if (glyphName === '.notdef') {
+      continue;
+    }
+    scssContent += `  ${glyphName}: ${unicode},\n`;
   }
+  scssContent += ');';
 
   // SCSS 파일 저장
   fs.writeFileSync(outputPath, scssContent, 'utf8');

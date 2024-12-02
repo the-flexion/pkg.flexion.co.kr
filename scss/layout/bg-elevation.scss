@@ -1,5 +1,4 @@
-@use '../color/base-color.scss' as *;
-@use '../color/theme.scss' as *;
+@use '../color/function' as *;
 /*
   Shadow
 */
@@ -27,11 +26,11 @@ $shadow: (
 */
 
 .bg-elevation {
-  background-color: map-get($base-color, 'gray-50');
+  background-color: var(--base-color-gray-50);
   &-1,
   &-2,
   &-3 {
-    background-color: map-get($base-color, 'mono-white');
+    background-color: var(--base-color-mono-white);
   }
   &-2 {
     box-shadow: shadow(1);
@@ -43,16 +42,16 @@ $shadow: (
 
 html[data-color-mode='dark'] {
   .bg-elevation {
-    background-color: map-get($base-color, 'gray-950');
+    background-color: var(--base-color-gray-950);
     &-1 {
-      background-color: map-get($base-color, 'gray-940');
+      background-color: var(--base-color-gray-940);
     }
     &-2 {
-      background-color: map-get($base-color, 'gray-750');
+      background-color: var(--base-color-gray-750);
       box-shadow: none;
     }
     &-3 {
-      background-color: color('gray-650');
+      background-color: var(--base-color-gray-650);
       box-shadow: none;
     }
   }

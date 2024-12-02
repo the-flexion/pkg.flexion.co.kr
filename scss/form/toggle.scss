@@ -1,6 +1,5 @@
-@use '../color/base-color.scss' as *;
-@use '../color/theme.scss' as *;
-@use '../layout/radius.scss' as *;
+@use '../color/function' as *;
+@use '../layout/radius' as *;
 /*
   Toggle
   */
@@ -14,7 +13,7 @@
   background-color: color('bg-toggle');
   cursor: pointer;
   vertical-align: middle;
-  margin-top:-1px;
+  margin-top: -1px;
   &::before {
     content: '';
     position: absolute;
@@ -23,11 +22,11 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: map-get($base-color, 'mono-white');
+    background-color: var(--base-color-mono-white);
     transition: 0.15s;
   }
   &:checked::before {
-    background-color: map-get($base-color, 'mono-white');
+    background-color: var(--base-color-mono-white);
     left: auto;
     right: 3px;
   }
@@ -48,7 +47,7 @@
     cursor: not-allowed;
   }
   &:checked:disabled::before {
-    background-color: map-get($base-color, 'mono-white');
+    background-color: var(--base-color-mono-white);
   }
 }
 // 다크모드

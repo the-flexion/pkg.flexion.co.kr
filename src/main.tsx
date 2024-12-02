@@ -1,8 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
-import '../reset.scss';
-import '../pkg.scss';
+import '../global.scss';
 import './styles/font-family.scss'; // custom path
 import './styles/icon.scss'; // custom path
 

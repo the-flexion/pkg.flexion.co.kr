@@ -1,7 +1,7 @@
-@use '../color/theme.scss' as *;
-@use '../layout/radius.scss' as *;
-@use '../layout/spacing.scss' as *;
-@use '../typo/typo.scss' as *;
+@use '../color/function' as *;
+@use '../layout/radius' as *;
+@use '../layout/spacing' as *;
+@use '../typo/mixin' as *;
 
 textarea {
   @include p3;

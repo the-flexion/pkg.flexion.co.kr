@@ -1,7 +1,6 @@
-@use '../layout/spacing.scss' as *;
-@use '../layout/radius.scss' as *;
-@use '../typo/typo.scss' as *;
-
+@use '../layout/spacing' as *;
+@use '../layout/radius' as *;
+@use '../typo/mixin' as *;
 
 button {
   @include p3;

@@ -1,8 +1,7 @@
-@use '../color/theme.scss' as *;
-@use '../layout/spacing.scss' as *;
-@use '../layout/radius.scss' as *;
-@use '../typo/typo.scss' as *;
-
+@use '../color/function' as *;
+@use '../layout/spacing' as *;
+@use '../layout/radius' as *;
+@use '../typo/mixin' as *;
 
 select {
   @include p3;
@@ -52,7 +51,7 @@ select {
     z-index: 1;
     color: color('text-action');
     &::before {
-      margin-top:-1px;
+      margin-top: -1px;
     }
   }
 }

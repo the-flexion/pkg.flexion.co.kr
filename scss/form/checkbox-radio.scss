@@ -1,4 +1,4 @@
-@use '../color/theme.scss' as *;
+@use '../color/function' as *;
 /*
   Checkbox & radio
   */
@@ -57,7 +57,6 @@ html[data-color-mode='dark'] {
     background-size: contain;
     background-repeat: no-repeat;
   }
-
 
   input[type='checkbox']:not(:global(.toggle)):checked::before {
     background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M3%205C3%203.89543%203.89543%203%205%203H19C20.1046%203%2021%203.89543%2021%205V19C21%2020.1046%2020.1046%2021%2019%2021H5C3.89543%2021%203%2020.1046%203%2019V5Z%22%20fill%3D%22%231890FF%22%2F%3E%3Cpath%20d%3D%22M10%2016.4L6%2012.4L7.4%2011L10%2013.6L16.6%207L18%208.4L10%2016.4Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E');

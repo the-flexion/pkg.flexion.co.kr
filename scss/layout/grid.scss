@@ -1,5 +1,5 @@
-@use './spacing.scss' as *;
-@use './device.scss' as *;
+@use './spacing' as *;
+@use './device' as *;
 $grid-pc: 12;
 $grid-tb: 6;
 $grid-mo: 4;

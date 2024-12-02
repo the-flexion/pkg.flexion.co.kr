@@ -1,9 +1,8 @@
-@use '../color/base-color.scss' as *;
-@use '../color/theme.scss' as *;
-@use '../layout/radius.scss' as *;
-@use '../layout/spacing.scss' as *;
-@use '../typo/typo.scss' as *;
-@use '../icon/icon.scss' as *;
+@use '../color/function' as *;
+@use '../layout/radius' as *;
+@use '../layout/spacing' as *;
+@use '../typo/mixin' as *;
+@use '../icon/function' as *;
 
 /*
   File
@@ -18,10 +17,10 @@ input[type='file'] {
     // border-radius: r(3);
     // border: 1px solid color('border-disabled');
     outline: none;
-    overflow:visible;
+    overflow: visible;
   }
   &:before {
-    @extend .icon-upload-cloud;
+    // @include icon('upload-cloud');
     position: absolute;
     left: spacing(3);
     top: 50%;

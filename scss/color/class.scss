@@ -1,10 +1,10 @@
-@use './theme' as *;
+@use './function' as *;
 
 body {
   @each $type
     in (primary, default, default-deep, info, link, success, warning, danger)
   {
-    :not(button):not(input):not(textarea).#{$type} {
+    :not(button).#{$type} {
       color: color($type);
       &a:hover {
         color: color($type + '-hover');

@@ -65,7 +65,9 @@ document.documentElement.setAttribute('data-color-mode', 'dark');
 👉 font-family를 설정. scss에서 덮어쓰기
 
 ```scss
-$base-font-family: 'Pretendard', sans-serif;
+:root {
+  --base-font-family: 'Pretendard', sans-serif;
+}
 ```
 
 ## 색상
@@ -98,24 +100,24 @@ p {
 👉 아래 형태로 css 변수를 커스텀하여 사용
 
 ```scss
-html {
-  --color-primary: #{map-get($base-color, 'red-500')};
-  --color-primary-hover: #{map-get($base-color, 'red-600')};
-  --color-primary-pressed: #{map-get($base-color, 'red-700')};
-  --color-primary-focus: #{map-get($base-color, 'red-600')};
-  --color-primary-fill: #{map-get($base-color, 'red-50')};
-  --color-primary-reverse: #{map-get($base-color, 'mono-white')};
+:root {
+  --color-primary: var(--base-color-red-500);
+  --color-primary-hover: var(--base-color-red-600);
+  --color-primary-pressed: var(--base-color-red-700);
+  --color-primary-focus: var(--base-color-red-600);
+  --color-primary-fill: var(--base-color-red-50);
+  --color-primary-reverse: var(--base-color-mono-white);
 }
 html[data-color-mode='dark'] {
   /*
     Dark mode colors
   */
-  --color-primary: #{map-get($base-color, 'red-500')};
-  --color-primary-hover: #{map-get($base-color, 'red-400')};
-  --color-primary-pressed: #{map-get($base-color, 'red-500')};
-  --color-primary-focus: #{map-get($base-color, 'red-400')};
-  --color-primary-fill: #{map-get($base-color, 'red-900')};
-  --color-primary-reverse: #{map-get($base-color, 'mono-white')};
+  --color-primary: var(--base-color-red-500);
+  --color-primary-hover: var(--base-color-red-400);
+  --color-primary-pressed: var(--base-color-red-500);
+  --color-primary-focus: var(--base-color-red-400);
+  --color-primary-fill: var(--base-color-red-900);
+  --color-primary-reverse: var(--base-color-mono-white);
 }
 ```
 
