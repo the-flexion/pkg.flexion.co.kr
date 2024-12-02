@@ -1,21 +1,22 @@
 /*
   Reset
 */
-:root {
-  * {
-    margin: 0;
-    padding: 0;
-    font: inherit;
-    color: inherit;
-  }
-  *,
-  :after,
-  :before {
-    box-sizing: border-box;
-    flex-shrink: 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
 }
-:root {
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+html,
+body {
+  height: 100%;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -24,10 +25,6 @@
   overflow-wrap: break-word;
   -moz-tab-size: 4;
   tab-size: 4;
-}
-html,
-body {
-  height: 100%;
 }
 img,
 picture,

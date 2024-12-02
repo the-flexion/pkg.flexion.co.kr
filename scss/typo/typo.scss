@@ -18,62 +18,63 @@ body {
   line-height: 1.6;
   color: var(--color-text-body);
 }
-
-/*
+:root {
+  /*
   Heading
 */
-h1,
-.h1 {
-  @include h1;
-}
-h2,
-.h2 {
-  @include h2;
-}
-h3,
-.h3 {
-  @include h3;
-}
-/*
+  h1,
+  .h1 {
+    @include h1;
+  }
+  h2,
+  .h2 {
+    @include h2;
+  }
+  h3,
+  .h3 {
+    @include h3;
+  }
+  /*
   Subtitle
 */
-.s1 {
-  @include s1;
-}
-.s2 {
-  @include s2;
-}
-.s3 {
-  @include s3;
-}
-.s4 {
-  @include s4;
-}
-/*
+  .s1 {
+    @include s1;
+  }
+  .s2 {
+    @include s2;
+  }
+  .s3 {
+    @include s3;
+  }
+  .s4 {
+    @include s4;
+  }
+  /*
   Paragraph
 */
-.p1 {
-  @include p1;
-}
-.p2 {
-  @include p2;
-}
-.p3 {
-  @include p3;
-}
+  .p1 {
+    @include p1;
+  }
+  .p2 {
+    @include p2;
+  }
+  .p3 {
+    @include p3;
+  }
 
-.p3-semibold {
-  @include p3-semibold;
-}
-.p4 {
-  @include p4;
-}
-.p4-semibold {
-  @include p4-semibold;
-}
-.p5 {
-  @include p5;
-}
-.p5-semibold {
-  @include p5-semibold;
+  .p3-semibold {
+    @include p3-semibold;
+  }
+  .p4 {
+    @include p4;
+  }
+  .p4-semibold {
+    @include p4-semibold;
+  }
+  .p5 {
+    @include p5;
+  }
+  .p5-semibold {
+    @include p5-semibold;
+  }
 }

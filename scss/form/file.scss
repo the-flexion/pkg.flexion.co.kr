@@ -19,8 +19,8 @@ input[type='file'] {
     outline: none;
     overflow: visible;
   }
-  &:before {
-    // @include icon('upload-cloud');
+  &::before {
+    content: icon('upload-cloud');
     position: absolute;
     left: spacing(3);
     top: 50%;
