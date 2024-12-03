@@ -2150,9 +2150,7 @@ function App() {
         <article>
           <h2>File</h2>
           <section className="elements">
-            <input type="file" placeholder="파일을 선택하세요." />
             <input type="file" />
-            <button className="file-reset"></button>
             <input type="file" disabled />
           </section>
         </article>

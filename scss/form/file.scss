@@ -11,11 +11,11 @@ input[type='file'] {
   position: relative;
   @include p3;
   & {
-    width: 300px;
+    width: 404px;
     padding: 0 spacing(4) 0 0;
     background-color: color('bg-block');
-    // border-radius: r(3);
-    // border: 1px solid color('border-disabled');
+    border-radius: r(3);
+    border: 1px solid color('border-disabled');
     outline: none;
     overflow: visible;
   }
@@ -38,28 +38,25 @@ input[type='file'] {
       margin-right: spacing(2);
       cursor: pointer;
       border: none;
-      // border-radius: r(3) 0 0 r(3);
-      border-radius: r(3);
+      border-radius: r(3) 0 0 r(3);
       background-color: color('default-deep');
       color: color('default-deep-reverse');
     }
   }
   &:disabled {
-    background-color: var(--disabled);
-    color: var(--text-disabled);
+    color: color('text-action-disabled');
     cursor: not-allowed;
-    box-shadow: 0 0 0 1px var(--disabled-2) inset;
     &:before {
-      color: var(--text-disabled);
+      color: color('text-action-disabled');
     }
     &::file-selector-button {
-      color: var(--text-disabled);
-      background-color: var(--disabled);
-      box-shadow: 0 0 0 1px var(--disabled-2) inset;
+      color: color('text-action-disabled');
+      background-color: color('bg-disabled');
     }
     &:hover {
       &::file-selector-button {
-        background-color: var(--disabled);
+        color: color('text-action-disabled');
+        background-color: color('bg-disabled');
         cursor: not-allowed;
       }
     }
