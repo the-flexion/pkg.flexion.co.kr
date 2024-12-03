@@ -5,45 +5,45 @@ body {
     in (primary, default, default-deep, info, link, success, warning, danger)
   {
     :not(button):not(input).#{$type} {
-      color: color($type);
+      color: color($type) !important;
       &a:hover {
-        color: color($type + '-hover');
+        color: color($type + '-hover') !important;
       }
       &a:active {
-        color: color($type + '-pressed');
+        color: color($type + '-pressed') !important;
       }
       &a:focus {
-        color: color($type + '-focus');
+        color: color($type + '-focus') !important;
       }
       &-fill {
         @if ($type == 'default') {
-          color: color('default-reverse');
-          background-color: color($type + '-fill');
+          color: color('default-reverse') !important;
+          background-color: color($type + '-fill') !important;
         } @else {
           color: color($type);
-          background-color: color($type + '-fill');
+          background-color: color($type + '-fill') !important;
         }
       }
       &-reverse {
-        color: color($type + '-reverse');
+        color: color($type + '-reverse') !important;
       }
     }
     .#{$type}-bg {
-      color: color($type + '-reverse');
-      background-color: color($type);
+      color: color($type + '-reverse') !important;
+      background-color: color($type) !important;
     }
     .#{$type}-border {
-      border: 1px solid color($type);
+      border: 1px solid color($type) !important;
     }
     .#{$type}-border-fill {
       @if ($type == 'default') {
-        color: color('default-reverse');
-        background-color: color($type + '-fill');
-        border: 1px solid color($type);
+        color: color('default-reverse') !important;
+        background-color: color($type + '-fill') !important;
+        border: 1px solid color($type) !important;
       } @else {
         color: color($type);
-        background-color: color($type + '-fill');
-        border: 1px solid color($type);
+        background-color: color($type + '-fill') !important;
+        border: 1px solid color($type) !important;
       }
     }
   }

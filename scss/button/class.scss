@@ -162,3 +162,15 @@ button {
     }
   }
 }
+button:not(:disabled).default-deep {
+  &-border,
+  &-text,
+  &-fill {
+    color: color('text-body');
+    border: 1px solid color('border');
+    &:hover {
+      color: color('text-body');
+      border: 1px solid color('border-hover');
+    }
+  }
+}
