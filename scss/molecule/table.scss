@@ -14,6 +14,7 @@ table {
   &.list > tbody {
     > tr {
       &:hover {
+        cursor: pointer;
         background-color: color('default-fill');
       }
     }
@@ -33,7 +34,7 @@ table {
       background-color: color('default-fill');
     }
   }
-  &.fill > tbody {
+  &.list.fill > tbody {
     > tr {
       &:hover {
         background-color: color('default');
