@@ -1629,17 +1629,15 @@ function App() {
         </article>
         <article>
           <h2>Toggle</h2>
-          <section>
-            <div>
-              <input type="checkbox" className="toggle" />
-              <input type="checkbox" className="toggle" checked />
-              <input type="checkbox" className="toggle" disabled />
-              <input type="checkbox" className="toggle" checked disabled />
-            </div>
+          <section className="elements">
+            <input type="checkbox" className="toggle" />
+            <input type="checkbox" className="toggle" checked />
+            <input type="checkbox" className="toggle" disabled />
+            <input type="checkbox" className="toggle" checked disabled />
           </section>
         </article>
         <article>
-          <h2>Checkbox</h2>
+          <h2 className="test">Checkbox</h2>
           <section>
             <div className="elements">
               <label>
