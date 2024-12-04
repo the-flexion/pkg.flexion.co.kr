@@ -2,6 +2,18 @@
   Base Color
 */
 :root {
+  --base-color-10: #ffffff;
+  --base-color-50: #f5f3ff;
+  --base-color-100: #ede9fe;
+  --base-color-200: #ddd6fe;
+  --base-color-300: #c4b5fd;
+  --base-color-400: #9e73fe;
+  --base-color-500: #8b5cf6;
+  --base-color-600: #7c3aed;
+  --base-color-700: #6d28d9;
+  --base-color-800: #5b21b6;
+  --base-color-900: #4c1d95;
+  --base-color-950: #2e1065;
   --base-color-red-50: #fef2f2;
   --base-color-red-100: #fee2e2;
   --base-color-red-200: #fecaca;
@@ -224,10 +236,11 @@
   --base-color-gray-600: #52525b;
   --base-color-gray-650: #454547;
   --base-color-gray-700: #3f3f46;
-  --base-color-gray-750: #333333;
-  --base-color-gray-800: #2f2f33;
-  --base-color-gray-900: #2a2a2e;
-  --base-color-gray-940: #1f1f21;
+  --base-color-gray-750: #34343a;
+  --base-color-gray-800: #2c2c31;
+  --base-color-gray-850: #242429;
+  --base-color-gray-900: #1c1c20;
+  --base-color-gray-940: #18181b;
   --base-color-gray-950: #09090b;
 }
 
