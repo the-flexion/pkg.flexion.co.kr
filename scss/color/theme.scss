@@ -18,7 +18,7 @@
   --color-default-deep-hover: var(--base-color-gray-700);
   --color-default-deep-pressed: var(--base-color-gray-800);
   --color-default-deep-focus: var(--base-color-gray-700);
-  --color-default-deep-fill: var(--base-color-gray-50);
+  --color-default-deep-fill: var(--base-color-gray-100);
   --color-default-deep-reverse: var(--base-color-mono-white);
   --color-info: var(--base-color-blue-500);
   --color-info-hover: var(--base-color-blue-600);
@@ -94,12 +94,12 @@ html[data-color-mode='dark'] {
   --color-default-focus: var(--base-color-gray-600);
   --color-default-fill: var(--base-color-gray-800);
   --color-default-reverse: var(--base-color-mono-white);
-  --color-default-deep: var(--base-color-gray-700);
-  --color-default-deep-hover: var(--base-color-gray-600);
-  --color-default-deep-pressed: var(--base-color-gray-700);
-  --color-default-deep-focus: var(--base-color-gray-600);
-  --color-default-deep-fill: var(--base-color-gray-900);
-  --color-default-deep-reverse: var(--base-color-mono-white);
+  --color-default-deep: var(--base-color-gray-400);
+  --color-default-deep-hover: var(--base-color-gray-300);
+  --color-default-deep-pressed: var(--base-color-gray-400);
+  --color-default-deep-focus: var(--base-color-gray-300);
+  --color-default-deep-fill: var(--base-color-gray-600);
+  --color-default-deep-reverse: var(--base-color-gray-800);
   --color-info: var(--base-color-blue-600);
   --color-info-hover: var(--base-color-blue-500);
   --color-info-pressed: var(--base-color-blue-600);
