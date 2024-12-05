@@ -19,6 +19,10 @@ button {
   &:active {
     background-color: color('default-pressed');
   }
+  &:focus-visible:not(:disabled),
+  &:focus:not(:disabled) {
+    outline: 4px solid color('default-outline');
+  }
 
   &.default-fill {
     color: color('default-reverse');
@@ -47,7 +51,7 @@ button {
   &.default-border {
     color: color('default-reverse');
     background-color: transparent;
-    outline: none;
+
     border: 1px solid color('border');
     &:hover {
       color: color('default-reverse');
@@ -63,7 +67,7 @@ button {
   }
   &.default-fill {
     color: color('default-reverse');
-    outline: none;
+
     &:hover {
       color: color('default-reverse');
       border: 1px solid color('border-hover');
@@ -79,7 +83,7 @@ button {
   &.default-text {
     color: color('text-action');
     background-color: transparent;
-    outline: none;
+
     border: none;
     &:hover {
       color: color('text-action-hover');
@@ -96,20 +100,20 @@ button {
     color: color('text-action-disabled');
     background-color: color('bg-disabled');
     border: 1px solid color('bg-disabled');
-    outline-color: color('bg-disabled');
+
     cursor: not-allowed;
   }
   &[class$='-border']:disabled {
     color: color('text-action-disabled');
     border: 1px solid color('border-disabled');
-    outline-color: color('bg-disabled');
+
     cursor: not-allowed;
   }
   &[class$='-fill']:disabled {
     color: color('text-action-disabled');
     background-color: color('bg-disabled');
     border: 1px solid color('border-disabled');
-    outline-color: color('bg-disabled');
+
     cursor: not-allowed;
   }
 
@@ -132,6 +136,10 @@ button {
     &:active {
       background-color: color($type + '-pressed');
     }
+
+    &:focus-visible:not(:disabled) {
+      outline: 4px solid color($type + '-outline');
+    }
     &-text {
       border: none;
     }
@@ -149,15 +157,11 @@ button {
     }
     &-fill,
     &-border {
-      outline: none;
       &:hover {
         border: 1px solid color($type + '-hover');
       }
       &:active {
         border: 1px solid color($type + '-pressed');
-      }
-      &:focus {
-        border: 1px solid color($type + '-focus');
       }
     }
   }
