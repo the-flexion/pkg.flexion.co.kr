@@ -22,11 +22,11 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: var(--base-color-mono-white);
+    background-color: #ffffff;
     transition: 0.15s;
   }
   &:checked::before {
-    background-color: var(--base-color-mono-white);
+    background-color: #ffffff;
     left: auto;
     right: 3px;
   }
@@ -47,7 +47,7 @@
     cursor: not-allowed;
   }
   &:checked:disabled::before {
-    background-color: var(--base-color-mono-white);
+    background-color: #ffffff;
   }
 }
 // 다크모드

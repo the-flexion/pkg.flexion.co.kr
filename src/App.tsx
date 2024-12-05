@@ -102,7 +102,7 @@ function App() {
             <div className="w-1_5 warning-fill">warning-fill</div>
             <div className="w-1_5 warning-bg">warning-bg</div>
             <div className="w-1_5 warning-border">warning-border</div>
-            <div className="w-1_5 warning-fill">warning-fill</div>
+            <div className="w-1_5 warning-border-fill">warning-border-fill</div>
             <div className="w-1_5 danger">danger</div>
             <div className="w-1_5 danger-fill">danger-fill</div>
             <div className="w-1_5 danger-bg">danger-bg</div>
@@ -1752,36 +1752,6 @@ function App() {
             </div>
 
             <div className="elements">
-              <input type="text" placeholder="text" className="text" />
-              <input type="text" value="readOnly" className="text" readOnly />
-              <input
-                type="text"
-                placeholder="success"
-                className="success text"
-              />
-              <input type="text" placeholder="danger" className="danger text" />
-              <input
-                type="text"
-                placeholder="disabled"
-                disabled
-                className="text"
-              />
-              <div className="with-icon">
-                <i className="icon-tag"></i>
-                <input type="text" placeholder="icon" className="text" />
-              </div>
-              <div className="with-right-icon">
-                <input type="text" placeholder="icon" className="text" />
-                <i className="icon-search"></i>
-              </div>
-              <div className="with-icon with-right-icon">
-                <i className="icon-tag"></i>
-                <input type="text" placeholder="icon" className="text" />
-                <i className="icon-search"></i>
-              </div>
-            </div>
-
-            <div className="elements">
               <input
                 type="text"
                 placeholder="underline"
@@ -1887,45 +1857,6 @@ function App() {
               <div className="with-icon with-right-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="fill md" />
-                <i className="icon-search"></i>
-              </div>
-            </div>
-
-            <div className="elements">
-              <input type="text" placeholder="text" className="text md" />
-              <input
-                type="text"
-                value="readOnly"
-                className="text md"
-                readOnly
-              />
-              <input
-                type="text"
-                placeholder="success"
-                className="success text md"
-              />
-              <input
-                type="text"
-                placeholder="danger"
-                className="danger text md"
-              />
-              <input
-                type="text"
-                placeholder="disabled"
-                disabled
-                className="text md"
-              />
-              <div className="with-icon">
-                <i className="icon-tag"></i>
-                <input type="text" placeholder="icon" className="text md" />
-              </div>
-              <div className="with-right-icon">
-                <input type="text" placeholder="icon" className="text md" />
-                <i className="icon-search"></i>
-              </div>
-              <div className="with-icon with-right-icon">
-                <i className="icon-tag"></i>
-                <input type="text" placeholder="icon" className="text md" />
                 <i className="icon-search"></i>
               </div>
             </div>
@@ -2048,45 +1979,6 @@ function App() {
               <div className="with-icon with-right-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="fill lg" />
-                <i className="icon-search"></i>
-              </div>
-            </div>
-
-            <div className="elements">
-              <input type="text" placeholder="text" className="text lg" />
-              <input
-                type="text"
-                value="readOnly"
-                className="text lg"
-                readOnly
-              />
-              <input
-                type="text"
-                placeholder="success"
-                className="success text lg"
-              />
-              <input
-                type="text"
-                placeholder="danger"
-                className="danger text lg"
-              />
-              <input
-                type="text"
-                placeholder="disabled"
-                disabled
-                className="text lg"
-              />
-              <div className="with-icon">
-                <i className="icon-tag"></i>
-                <input type="text" placeholder="icon" className="text lg" />
-              </div>
-              <div className="with-right-icon">
-                <input type="text" placeholder="icon" className="text lg" />
-                <i className="icon-search"></i>
-              </div>
-              <div className="with-icon with-right-icon">
-                <i className="icon-tag"></i>
-                <input type="text" placeholder="icon" className="text lg" />
                 <i className="icon-search"></i>
               </div>
             </div>

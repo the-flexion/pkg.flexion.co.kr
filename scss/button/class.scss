@@ -170,7 +170,6 @@ button:not(:disabled).default-deep {
     border: 1px solid color('border');
     &:hover {
       color: color('text-body');
-      border: 1px solid color('border-hover');
     }
   }
 }

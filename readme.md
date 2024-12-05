@@ -101,23 +101,19 @@ p {
 
 ```scss
 :root {
-  --color-primary: var(--base-color-red-500);
-  --color-primary-hover: var(--base-color-red-600);
-  --color-primary-pressed: var(--base-color-red-700);
-  --color-primary-focus: var(--base-color-red-600);
-  --color-primary-fill: var(--base-color-red-50);
-  --color-primary-reverse: var(--base-color-mono-white);
+  --color-primary: #f34a35;
+  --color-primary-hover: #dd2d0f;
+  --color-primary-pressed: #c9280c;
+  --color-primary-focus: #dd2d0f;
+  --color-primary-fill: #fff8f7;
+  --color-primary-reverse: #ffffff;
 }
 html[data-color-mode='dark'] {
-  /*
-    Dark mode colors
-  */
-  --color-primary: var(--base-color-red-500);
-  --color-primary-hover: var(--base-color-red-400);
-  --color-primary-pressed: var(--base-color-red-500);
-  --color-primary-focus: var(--base-color-red-400);
-  --color-primary-fill: var(--base-color-red-900);
-  --color-primary-reverse: var(--base-color-mono-white);
+  --color-primary: #ff5d49;
+  --color-primary-hover: #ff7564;
+  --color-primary-pressed: #ff5d49;
+  --color-primary-focus: #ff7564;
+  --color-primary-fill: #1c1c20;
 }
 ```
 

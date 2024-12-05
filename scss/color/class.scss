@@ -4,7 +4,7 @@ body {
   @each $type
     in (primary, default, default-deep, info, link, success, warning, danger)
   {
-    :not(button):not(input).#{$type} {
+    :not(button, input, textarea, :disabled).#{$type} {
       color: color($type) !important;
       &a:hover {
         color: color($type + '-hover') !important;
@@ -32,7 +32,7 @@ body {
       color: color($type + '-reverse') !important;
       background-color: color($type) !important;
     }
-    .#{$type}-border {
+    .#{$type}-border:not(:disabled) {
       border: 1px solid color($type) !important;
     }
     .#{$type}-border-fill {
