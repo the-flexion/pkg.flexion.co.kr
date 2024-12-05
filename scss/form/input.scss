@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use '../color/function' as *;
 @use '../layout/radius' as *;
 @use '../layout/spacing' as *;
@@ -32,7 +33,13 @@ input[type='datetime'] {
   }
   &:focus-visible:not(:disabled):not(:read-only),
   &:focus:not(:disabled):not(:read-only) {
-    border: 1px solid color('primary');
+    outline: 4px solid color('primary-outline');
+    &.success {
+      outline: 4px solid color('success-outline');
+    }
+    &.danger {
+      outline: 4px solid color('danger-outline');
+    }
   }
   &:read-only {
     border: none;

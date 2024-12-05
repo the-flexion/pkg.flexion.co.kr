@@ -1823,7 +1823,7 @@ function App() {
               </div>
             </div>
             <div className="elements">
-              <input type="text" placeholder="fill" className="fill sm" />
+              <input type="text" placeholder="fill" className="fill md" />
               <input
                 type="text"
                 value="readOnly"
@@ -1945,7 +1945,7 @@ function App() {
               </div>
             </div>
             <div className="elements">
-              <input type="text" placeholder="fill" className="fill sm" />
+              <input type="text" placeholder="fill" className="fill lg" />
               <input
                 type="text"
                 value="readOnly"
