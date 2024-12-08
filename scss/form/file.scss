@@ -43,6 +43,9 @@ input[type='file'] {
       color: color('default-deep-reverse');
     }
   }
+  &:focus-visible:not(:disabled) {
+    outline: 4px solid color('primary-outline');
+  }
   &:disabled {
     color: color('text-action-disabled');
     cursor: not-allowed;

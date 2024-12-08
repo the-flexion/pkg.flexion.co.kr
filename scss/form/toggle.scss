@@ -49,6 +49,9 @@
   &:checked:disabled::before {
     background-color: #ffffff;
   }
+  &:focus-visible:not(:disabled) {
+    outline: 4px solid color('primary-outline');
+  }
 }
 // 다크모드
 html[data-color-mode='dark'] {

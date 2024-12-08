@@ -19,8 +19,7 @@ button {
   &:active {
     background-color: color('default-pressed');
   }
-  &:focus-visible:not(:disabled),
-  &:focus:not(:disabled) {
+  &:focus-visible:not(:disabled) {
     outline: 4px solid color('default-outline');
   }
 
@@ -120,7 +119,7 @@ button {
   &[class$='-text']:disabled {
     color: color('text-action-disabled');
     border: none;
-    outline-color: none;
+    outline: none;
     cursor: not-allowed;
   }
 }
@@ -140,14 +139,26 @@ button {
     &:focus-visible:not(:disabled) {
       outline: 4px solid color($type + '-outline');
     }
+
     &-text {
       border: none;
+      &:focus-visible:not(:disabled) {
+        outline: 4px solid color($type + '-outline');
+      }
     }
     &-fill {
       color: color($type);
       background-color: color($type + '-fill');
       border: 1px solid color($type);
       @include button-status($type);
+      &:focus-visible:not(:disabled) {
+        outline: 4px solid color($type + '-outline');
+      }
+    }
+    &-border {
+      &:focus-visible:not(:disabled) {
+        outline: 4px solid color($type + '-outline');
+      }
     }
     &-border,
     &-text {

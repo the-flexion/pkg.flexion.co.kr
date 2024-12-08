@@ -26,14 +26,23 @@ textarea {
     border: none;
     resize: none;
   }
+  &:focus-visible:not(:disabled) {
+    outline: 4px solid color('primary-outline');
+  }
   &.success {
     &:not(:disabled):not(:read-only) {
       border: 1px solid color('success');
+      &:focus-visible:not(:disabled) {
+        outline: 4px solid color('success-outline');
+      }
     }
   }
   &.danger {
     &:not(:disabled):not(:read-only) {
       border: 1px solid color('danger');
+    }
+    &:focus-visible:not(:disabled) {
+      outline: 4px solid color('danger-outline');
     }
   }
   &:disabled {

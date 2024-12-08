@@ -11,6 +11,7 @@ ul.tabs {
   display: flex;
   justify-content: flex-start;
   border-bottom: 1px inset color('border');
+
   &.fill {
     > li {
       flex: 1;
@@ -27,6 +28,9 @@ ul.tabs {
         color: color('text-sub');
         &:hover {
           color: inherit;
+        }
+        &:focus-visible:not(:disabled) {
+          outline: 4px solid color('primary-outline');
         }
       }
     }
