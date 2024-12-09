@@ -124,7 +124,7 @@ html[data-color-mode='dark'] {
 
 label input[type='checkbox']:not(.toggle),
 label input[type='radio'] {
-  margin-right: spacing(2);
+  margin-right: s(2);
 }
 
 label:has(input[type='checkbox']:not(:disabled)),

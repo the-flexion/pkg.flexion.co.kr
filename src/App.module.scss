@@ -11,14 +11,14 @@
     width: 100%;
     background-color: color('primary');
     color: color('primary-reverse');
-    padding: spacing(1);
+    padding: s(1);
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: spacing(4);
+    gap: s(4);
     nav {
       display: flex;
-      gap: spacing(4);
+      gap: s(4);
       a {
         color: color('primary-reverse');
         text-decoration: none;
@@ -29,19 +29,19 @@
     }
   }
   > main {
-    padding: spacing(3);
-    margin-bottom: spacing(2);
+    padding: s(3);
+    margin-bottom: s(2);
     @extend .bg-elevation-1;
     > article {
-      padding: spacing(3);
-      margin-bottom: spacing(2);
+      padding: s(3);
+      margin-bottom: s(2);
       @extend .bg-elevation-2;
       > section {
-        padding: spacing(3);
-        margin-bottom: spacing(2);
+        padding: s(3);
+        margin-bottom: s(2);
         @extend .bg-elevation-3;
         > div {
-          margin-bottom: spacing(2);
+          margin-bottom: s(2);
         }
       }
     }
@@ -51,7 +51,7 @@
     > * {
       .grid.guide {
         * {
-          padding: spacing(4);
+          padding: s(4);
         }
         &.fill {
           background: color('primary-fill');
@@ -62,7 +62,7 @@
       }
       .elements {
         > :not(:last-child) {
-          margin-right: spacing(4);
+          margin-right: s(4);
         }
       }
     }

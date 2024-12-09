@@ -6,7 +6,7 @@
 textarea {
   @include p3;
   & {
-    padding: spacing(3) spacing(4);
+    padding: s(3) s(4);
     background-color: color('bg-block');
     border: 1px solid color('border');
     border-radius: r(2);

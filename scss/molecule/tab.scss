@@ -24,7 +24,7 @@ ul.tabs {
       @include p3;
       & {
         display: block;
-        padding: spacing(2) spacing(5);
+        padding: s(2) s(5);
         color: color('text-sub');
         &:hover {
           color: inherit;

@@ -18,7 +18,7 @@ $spacing: (
   13: 160px,
 );
 
-@function spacing($key) {
+@function s($key) {
   @return map-get($spacing, $key);
 }
 

@@ -11,7 +11,7 @@
   [class*=' icon-'] {
     &:only-child,
     &:not(:last-child) {
-      margin-right: spacing(2);
+      margin-right: s(2);
     }
   }
 

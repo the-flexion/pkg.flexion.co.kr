@@ -194,7 +194,7 @@ function App() {
             <h3>Spacing</h3>
             <div className="grid grid-fix-4">
               {Array.from({ length: 14 }).map((_, i) => (
-                <div>spacing({i});</div>
+                <div>s({i});</div>
               ))}
             </div>
           </section>
@@ -629,6 +629,14 @@ function App() {
               <div className="w-2 p-6">
                 <i className="icon-arrow-dropdown-right"></i>
                 arrow-dropdown-right(e976)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-arrow"></i>
+                lock(e977)
+              </div>
+              <div className="w-2 p-6">
+                <i className="icon-arrow"></i>
+                unlock(e978)
               </div>
             </div>
           </section>

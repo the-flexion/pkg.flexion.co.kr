@@ -12,14 +12,7 @@ npm publish
 ## 기본 적용
 
 ```js
-import '@the-flexion/pkg/reset.scss';
-import '@the-flexion/pkg/pkg.scss';
-```
-
-### system(admin) 레이아웃 적용
-
-```js
-import '@the-flexion/pkg/system.scss';
+import '@the-flexion/pkg/global.scss';
 ```
 
 ### SCSS Module 내에서 변수, 함수, 믹스인 활용
@@ -27,7 +20,7 @@ import '@the-flexion/pkg/system.scss';
 👉 파일의 최상단에 아래 파일 선언
 
 ```scss
-@use '@the-flexion/pkg/pkg' as *;
+@use '@the-flexion/pkg/mixin' as *;
 ```
 
 ## Variables
@@ -181,7 +174,7 @@ p {
 
 ```scss
 p {
-  margin: spacing(값);
+  margin: s(값);
 }
 ```
 
