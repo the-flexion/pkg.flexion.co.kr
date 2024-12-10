@@ -1,0 +1,16 @@
+.style {
+  display: inline-block;
+  &:global {
+    > * {
+      > input {
+        width: 300px;
+      }
+      > div.validator {
+        display: none;
+        &.show {
+          display: block;
+        }
+      }
+    }
+  }
+}

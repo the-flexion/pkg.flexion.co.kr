@@ -1,9 +1,12 @@
 import styles from './App.module.scss';
 import { useState, useEffect } from 'react';
+import { z } from 'zod';
+import Form from '../react';
 
 function App() {
   const [darkmode, setDarkmode] = useState('light');
-
+  const [testValue, setTestValue] = useState('');
+  const testSchema = z.string().min(5, 'Too short');
   useEffect(() => {
     document.documentElement.setAttribute('data-color-tone', 'warm');
   }, []);
@@ -2055,20 +2058,6 @@ function App() {
           </section>
         </article>
         <article>
-          <h2>Textarea</h2>
-          <section className="elements">
-            <textarea placeholder="placeholder"></textarea>
-            <textarea readOnly>readOnly</textarea>
-            <textarea
-              placeholder="resize-none"
-              className="resize-none"
-            ></textarea>
-            <textarea placeholder="success" className="success"></textarea>
-            <textarea placeholder="danger" className="danger"></textarea>
-            <textarea placeholder="disabled" disabled></textarea>
-          </section>
-        </article>
-        <article>
           <h2>Select</h2>
           <section className="elements">
             <select>
@@ -2096,6 +2085,80 @@ function App() {
               <option>Seoul</option>
               <option>Tokyo</option>
             </select>
+          </section>
+        </article>
+        <article>
+          <h2>Textarea</h2>
+          <section className="elements">
+            <textarea placeholder="placeholder"></textarea>
+            <textarea readOnly>readOnly</textarea>
+            <textarea
+              placeholder="resize-none"
+              className="resize-none"
+            ></textarea>
+            <textarea placeholder="success" className="success"></textarea>
+            <textarea placeholder="danger" className="danger"></textarea>
+            <textarea placeholder="disabled" disabled></textarea>
+          </section>
+        </article>
+
+        <article>
+          <h2>Editor</h2>
+          <section>
+            <h3>Form.Editor</h3>
+            <div>import Form from '@the-flexion/pkg/react';</div>
+            <div>
+              &lt;Form.Editor value=&#123;testValue&#125;
+              onChange=&#123;setTestValue&#125; imageUploadUrl="/upload" /&gt;
+            </div>
+            <Form.Editor
+              value={testValue}
+              onChange={setTestValue}
+              imageUploadUrl="/upload"
+            />
+          </section>
+        </article>
+        <article>
+          <h2>Validator</h2>
+          <section>
+            <h3>Form.Input</h3>
+            <div>import Form from '@the-flexion/pkg/react';</div>
+            <div>const testSchema = z.string().min(5, 'Too short');</div>
+            <pre>
+              &lt;Form.Input type="text" value=&#123;testValue&#125; onChange=
+              &#123;(e) =&gt; &#123; setTestValue(e.target.value); &#125;&#125;
+              validator=&#123;testSchema&#125; /&gt;
+            </pre>
+            <div>
+              <Form.Input
+                type="text"
+                value={testValue}
+                onChange={(e) => {
+                  setTestValue(e.target.value);
+                }}
+                validator={testSchema}
+              />
+            </div>
+          </section>
+          <section>
+            <h3>Form.Textarea</h3>
+            <pre>
+              &lt;Form.Textarea value=&#123;testValue&#125; rows=&#123;5&#125;
+              className="w-full" onChange= &#123;(e) =&gt; &#123;
+              setTestValue(e.target.value); &#125;&#125;
+              validator=&#123;testSchema&#125; /&gt;
+            </pre>
+            <div className="w-full">
+              <Form.Textarea
+                value={testValue}
+                rows={5}
+                onChange={(e) => {
+                  setTestValue(e.target.value);
+                }}
+                className="w-full"
+                validator={testSchema}
+              />
+            </div>
           </section>
         </article>
         <article>
