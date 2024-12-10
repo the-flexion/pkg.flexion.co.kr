@@ -631,11 +631,11 @@ function App() {
                 arrow-dropdown-right(e976)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-arrow"></i>
+                <i className="icon-lock"></i>
                 lock(e977)
               </div>
               <div className="w-2 p-6">
-                <i className="icon-arrow"></i>
+                <i className="icon-unlock"></i>
                 unlock(e978)
               </div>
             </div>
