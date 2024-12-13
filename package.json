@@ -1,6 +1,6 @@
 {
   "name": "@the-flexion/pkg",
-  "version": "0.0.60",
+  "version": "0.0.62",
   "type": "module",
   "author": "flexion <dev@flexion.co.kr>",
   "license": "MIT",
@@ -15,6 +15,7 @@
     "icon": "node ./cli/icon-scss.js"
   },
   "dependencies": {
+    "next": "14.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "suneditor": "^2.47.0",

@@ -1,4 +1,3 @@
-'use client';
 import { useEffect, useRef } from 'react';
 import { v4 as uuid } from 'uuid';
 import suneditor from 'suneditor';

@@ -1,4 +1,3 @@
-'use client';
 import { useState } from 'react';
 import { z } from 'zod';
 import styles from './textarea.module.scss';

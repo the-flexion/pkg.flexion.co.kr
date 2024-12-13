@@ -1,6 +1,9 @@
+'use client';
+import dynamic from 'next/dynamic';
+
 import Input from './react/atom/input';
 import Textarea from './react/atom/textarea';
-import Editor from './react/atom/editor';
+const Editor = dynamic(() => import('./react/atom/editor'), { ssr: false });
 
 const Form = {
   Input,
