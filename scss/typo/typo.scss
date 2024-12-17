@@ -13,41 +13,31 @@ body {
   /*
     Default
   */
-  font-family: var(--base-font-family);
-  font-size: $font-size-16;
-  line-height: 1.6;
-  color: var(--color-text-body);
-}
-:root {
+  @include p3;
+
   /*
-  Heading
+  Display
 */
-  h1,
-  .h1 {
-    @include h1;
+  .display1 {
+    @include display1;
   }
-  h2,
-  .h2 {
-    @include h2;
+  .display2 {
+    @include display2;
   }
-  h3,
-  .h3 {
-    @include h3;
+  .display3 {
+    @include display3;
   }
-  /*
-  Subtitle
-*/
-  .s1 {
-    @include s1;
+  .display4 {
+    @include display4;
   }
-  .s2 {
-    @include s2;
+  .display5 {
+    @include display5;
   }
-  .s3 {
-    @include s3;
+  .display6 {
+    @include display6;
   }
-  .s4 {
-    @include s4;
+  .display7 {
+    @include display7;
   }
   /*
   Paragraph
