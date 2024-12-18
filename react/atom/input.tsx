@@ -37,6 +37,7 @@ const Input: React.FC<InputWrapperProps> = ({
     <div className={`${styles.style} ${className}`}>
       <input
         {...rest}
+        value={value}
         className={`${statusClass} ${className}`}
         onKeyUp={validateHandler}
       />

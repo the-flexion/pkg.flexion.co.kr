@@ -37,6 +37,7 @@ const Textarea: React.FC<TextareaWrapperProps> = ({
     <div className={`${styles.style} ${className}`}>
       <textarea
         {...rest}
+        value={value}
         className={`${statusClass} ${className}`}
         onKeyUp={validateHandler}
       />
