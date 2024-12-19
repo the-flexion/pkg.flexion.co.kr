@@ -13,11 +13,14 @@ body {
   /*
     Default
   */
+  font-family: var(--base-font-family);
   @include p3;
+}
 
-  /*
+/*
   Display
 */
+:root {
   .display1 {
     @include display1;
   }

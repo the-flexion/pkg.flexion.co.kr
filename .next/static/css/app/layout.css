@@ -16471,15 +16471,10 @@ body {
   /*
     Default
   */
+  font-family: var(--base-font-family);
   font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
-  /*
-    Display
-  */
-  /*
-    Paragraph
-  */
 }
 body:not(button) {
   color: var(--color-text-body);
@@ -16489,189 +16484,198 @@ body:not(button) {
     font-size: 14px;
   }
 }
-body .display1 {
+
+/*
+  Display
+*/
+:root {
+  /*
+    Paragraph
+  */
+}
+:root .display1 {
   font-size: 60px;
   line-height: 1.2;
   font-weight: 600;
 }
-body .display1:not(button) {
+:root .display1:not(button) {
   color: var(--color-text-header);
 }
 @media screen and (max-width: calc(768px - 1px)) {
-  body .display1 {
+  :root .display1 {
     font-size: 36px;
   }
 }
-body .display2 {
+:root .display2 {
   font-size: 54px;
   line-height: 1.2;
   font-weight: 600;
 }
-body .display2:not(button) {
+:root .display2:not(button) {
   color: var(--color-text-header);
 }
 @media screen and (max-width: calc(768px - 1px)) {
-  body .display2 {
+  :root .display2 {
     font-size: 32px;
   }
 }
-body .display3 {
+:root .display3 {
   font-size: 48px;
   line-height: 1.2;
   font-weight: 600;
 }
-body .display3:not(button) {
+:root .display3:not(button) {
   color: var(--color-text-header);
 }
 @media screen and (max-width: calc(768px - 1px)) {
-  body .display3 {
+  :root .display3 {
     font-size: 28px;
   }
 }
-body .display4 {
+:root .display4 {
   font-size: 42px;
   line-height: 1.2;
   font-weight: 600;
 }
-body .display4:not(button) {
+:root .display4:not(button) {
   color: var(--color-text-header);
 }
 @media screen and (max-width: calc(768px - 1px)) {
-  body .display4 {
+  :root .display4 {
     font-size: 24px;
   }
 }
-body .display5 {
+:root .display5 {
   font-size: 36px;
   line-height: 1.2;
   font-weight: 600;
 }
-body .display5:not(button) {
+:root .display5:not(button) {
   color: var(--color-text-header);
 }
 @media screen and (max-width: calc(768px - 1px)) {
-  body .display5 {
+  :root .display5 {
     font-size: 20px;
   }
 }
-body .display6 {
+:root .display6 {
   font-size: 24px;
   line-height: 1.4;
   font-weight: 600;
 }
-body .display6:not(button) {
+:root .display6:not(button) {
   color: var(--color-text-header);
 }
 @media screen and (max-width: calc(768px - 1px)) {
-  body .display6 {
+  :root .display6 {
     font-size: 18px;
   }
 }
-body .display7 {
+:root .display7 {
   font-size: 20px;
   line-height: 1.6;
   font-weight: 600;
 }
-body .display7:not(button) {
+:root .display7:not(button) {
   color: var(--color-text-header);
 }
 @media screen and (max-width: calc(768px - 1px)) {
-  body .display7 {
+  :root .display7 {
     font-size: 16px;
   }
 }
-body .p1 {
+:root .p1 {
   font-size: 24px;
   line-height: 1.4;
   font-weight: 400;
 }
-body .p1:not(button) {
+:root .p1:not(button) {
   color: var(--color-text-body);
 }
 @media screen and (max-width: calc(768px - 1px)) {
-  body .p1 {
+  :root .p1 {
     font-size: 20px;
   }
 }
-body .p2 {
+:root .p2 {
   font-size: 20px;
   line-height: 1.6;
   font-weight: 400;
 }
-body .p2:not(button) {
+:root .p2:not(button) {
   color: var(--color-text-body);
 }
 @media screen and (max-width: calc(768px - 1px)) {
-  body .p2 {
+  :root .p2 {
     font-size: 16px;
   }
 }
-body .p3 {
+:root .p3 {
   font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
 }
-body .p3:not(button) {
+:root .p3:not(button) {
   color: var(--color-text-body);
 }
 @media screen and (max-width: calc(768px - 1px)) {
-  body .p3 {
+  :root .p3 {
     font-size: 14px;
   }
 }
-body .p3-semibold {
+:root .p3-semibold {
   font-size: 16px;
   line-height: 1.6;
   font-weight: 600;
 }
-body .p3-semibold:not(button) {
+:root .p3-semibold:not(button) {
   color: var(--color-text-body);
 }
 @media screen and (max-width: calc(768px - 1px)) {
-  body .p3-semibold {
+  :root .p3-semibold {
     font-size: 14px;
   }
 }
-body .p4 {
+:root .p4 {
   font-size: 14px;
   line-height: 1.6;
   font-weight: 400;
 }
-body .p4:not(button) {
+:root .p4:not(button) {
   color: var(--color-text-body);
 }
 @media screen and (max-width: calc(768px - 1px)) {
-  body .p4 {
+  :root .p4 {
     font-size: 12px;
   }
 }
-body .p4-semibold {
+:root .p4-semibold {
   font-size: 14px;
   line-height: 1.6;
   font-weight: 600;
 }
-body .p4-semibold:not(button) {
+:root .p4-semibold:not(button) {
   color: var(--color-text-body);
 }
 @media screen and (max-width: calc(768px - 1px)) {
-  body .p4-semibold {
+  :root .p4-semibold {
     font-size: 12px;
   }
 }
-body .p5 {
+:root .p5 {
   font-size: 12px;
   line-height: 1.6;
   font-weight: 400;
 }
-body .p5:not(button) {
+:root .p5:not(button) {
   color: var(--color-text-body);
 }
-body .p5-semibold {
+:root .p5-semibold {
   font-size: 12px;
   line-height: 1.6;
   font-weight: 600;
 }
-body .p5-semibold:not(button) {
+:root .p5-semibold:not(button) {
   color: var(--color-text-body);
 }
 
@@ -16698,7 +16702,7 @@ body .p5-semibold:not(button) {
   text-transform: none;
   line-height: 1;
   font-size: 24px;
-  vertical-align: middle;
+  vertical-align: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
