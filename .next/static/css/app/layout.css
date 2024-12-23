@@ -16461,6 +16461,9 @@ html[data-color-mode=dark] .bg-elevation-3 {
   Paragraph
 */
 /*
+  Layout
+*/
+/*
   base font family
   */
 :root {
@@ -16482,6 +16485,32 @@ body:not(button) {
 @media screen and (max-width: calc(768px - 1px)) {
   body {
     font-size: 14px;
+  }
+}
+body h1 {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 1.2;
+}
+body h2 {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 1.2;
+}
+body h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+}
+@media screen and (max-width: calc(768px - 1px)) {
+  body h1 {
+    font-size: 24px;
+  }
+  body h2 {
+    font-size: 18px;
+  }
+  body h3 {
+    font-size: 16px;
   }
 }
 

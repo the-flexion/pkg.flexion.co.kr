@@ -51,6 +51,9 @@ function Page() {
         <article className="bg-1 p-6">
           <h2>Text</h2>
           <section>
+            <h1>h1</h1>
+            <h2>h2</h2>
+            <h3>h3</h3>
             <p className="display1">display1</p>
             <p className="display2">display2</p>
             <p className="display3">display3</p>
@@ -61,6 +64,7 @@ function Page() {
             <p className="p1">p1</p>
             <p className="p2">p2</p>
             <p className="p3">p3, body</p>
+            <p className="p3-semibold">p3-semibold</p>
             <p className="p4">p4</p>
             <p className="p4-semibold">p4-semibold</p>
             <p className="p5">p5</p>

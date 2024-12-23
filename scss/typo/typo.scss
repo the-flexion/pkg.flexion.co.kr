@@ -2,6 +2,7 @@
 @use './font-family' as *;
 @use './font-size' as *;
 @use './mixin' as *;
+@use '../layout/device' as *;
 
 /*
   base font family
@@ -15,6 +16,34 @@ body {
   */
   font-family: var(--base-font-family);
   @include p3;
+  & {
+    h1 {
+      font-weight: $font-weight-semibold;
+      font-size: $font-size-54;
+      line-height: 1.2;
+    }
+    h2 {
+      font-weight: $font-weight-semibold;
+      font-size: $font-size-42;
+      line-height: 1.2;
+    }
+    h3 {
+      font-weight: $font-weight-semibold;
+      font-size: $font-size-32;
+      line-height: 1.2;
+    }
+  }
+  @include mo {
+    h1 {
+      font-size: $font-size-24;
+    }
+    h2 {
+      font-size: $font-size-18;
+    }
+    h3 {
+      font-size: $font-size-16;
+    }
+  }
 }
 
 /*
