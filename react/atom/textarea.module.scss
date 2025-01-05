@@ -1,0 +1,16 @@
+.style {
+  display: inline-block;
+  &:global {
+    > * {
+      > textarea {
+        width: 100%;
+      }
+      > div.validator {
+        display: none;
+        &.show {
+          display: block;
+        }
+      }
+    }
+  }
+}
