@@ -2115,7 +2115,7 @@ function Page() {
           <h2>Editor</h2>
           <section>
             <h3>Form.Editor</h3>
-            <div>import Form from '@the-flexion/pkg/react';</div>
+            <div>import Form from '@the-flexion/pkg/next';</div>
             <div>
               &lt;Form.Editor value=&#123;testValue&#125;
               onChange=&#123;setTestValue&#125; imageUploadUrl="/upload" /&gt;
@@ -2127,11 +2127,27 @@ function Page() {
             />
           </section>
         </article>
+
+        <article>
+          <h2>Field</h2>
+          <section>
+            <h3>Form.Field</h3>
+            <div>import Form from '@the-flexion/pkg/next';</div>
+            <div>
+              &lt;Form.Field label="Title" helper="Helper Text"
+              helperClass="danger" &gt; &lt;input type="text" /&gt;
+              &lt;/Form.Field&gt;
+            </div>
+            <Form.Field label="Title" helper="Helper Text" helperClass="danger">
+              <input type="text" />
+            </Form.Field>
+          </section>
+        </article>
         <article>
           <h2>Validator</h2>
           <section>
             <h3>Form.Input</h3>
-            <div>import Form from '@the-flexion/pkg/react';</div>
+            <div>import Form from '@the-flexion/pkg/next';</div>
             <div>const testSchema = z.string().min(5, 'Too short');</div>
             <pre>
               &lt;Form.Input type="text" value=&#123;testValue&#125; onChange=
