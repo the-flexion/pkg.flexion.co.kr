@@ -3,9 +3,6 @@
   display: flex;
   flex-direction: column;
   gap: s(3);
-  > label {
-    @include p5;
-  }
   > div.helper {
     @include p4;
     & {

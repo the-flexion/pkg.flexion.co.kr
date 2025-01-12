@@ -2110,7 +2110,57 @@ function Page() {
             <textarea placeholder="disabled" disabled></textarea>
           </section>
         </article>
-
+        <article>
+          <h2>label</h2>
+          <section>
+            <label>md(default)</label>
+            <br />
+            <label className="semibold">semibold</label>
+            <br />
+            <label className="disabled">disabled</label>
+            <br />
+            <label className="lg">lg</label>
+            <br />
+            <label className="semibold lg">semibold lg</label>
+            <br />
+            <label className="disabled lg">disabled lg</label>
+            <br />
+            <label className="sm">sm</label>
+            <br />
+            <label className="semibold sm">semibold sm</label>
+            <br />
+            <label className="disabled sm">disabled sm</label>
+            <br />
+          </section>
+        </article>
+        <article>
+          <h2>Field</h2>
+          <section>
+            <h3>Form.Field</h3>
+            <div>import Form from '@the-flexion/pkg/next';</div>
+            <div>
+              &lt;Form.Field label="Title" helper="Helper Text"
+              helperClass="danger" &gt; &lt;input type="text" /&gt;
+              &lt;/Form.Field&gt;
+            </div>
+            <Form.Field label="Title" helper="Helper Text" helperClass="danger">
+              <input type="text" />
+            </Form.Field>
+            <div>
+              &lt;Form.Field label="Title" labelClass="lg semibold"
+              required=&#123;true&#125; helper="Helper Text" &gt; &lt;input
+              type="text" /&gt; &lt;/Form.Field&gt;
+            </div>
+            <Form.Field
+              label="Title"
+              labelClass="lg semibold"
+              required={true}
+              helper="Helper Text"
+            >
+              <input type="text" />
+            </Form.Field>
+          </section>
+        </article>
         <article>
           <h2>Editor</h2>
           <section>
@@ -2128,21 +2178,6 @@ function Page() {
           </section>
         </article>
 
-        <article>
-          <h2>Field</h2>
-          <section>
-            <h3>Form.Field</h3>
-            <div>import Form from '@the-flexion/pkg/next';</div>
-            <div>
-              &lt;Form.Field label="Title" helper="Helper Text"
-              helperClass="danger" &gt; &lt;input type="text" /&gt;
-              &lt;/Form.Field&gt;
-            </div>
-            <Form.Field label="Title" helper="Helper Text" helperClass="danger">
-              <input type="text" />
-            </Form.Field>
-          </section>
-        </article>
         <article>
           <h2>Validator</h2>
           <section>
