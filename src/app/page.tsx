@@ -7,6 +7,7 @@ import Form from '../../next';
 function Page() {
   const [darkmode, setDarkmode] = useState('light');
   const [testValue, setTestValue] = useState('');
+  const [testValue2, setTestValue2] = useState('');
   const testSchema = z.string().min(5, 'Too short');
   useEffect(() => {
     document.documentElement.setAttribute('data-color-tone', 'warm');
@@ -2171,10 +2172,11 @@ function Page() {
               onChange=&#123;setTestValue&#125; imageUploadUrl="/upload" /&gt;
             </div>
             <Form.Editor
-              value={testValue}
-              onChange={setTestValue}
+              value={testValue2}
+              onChange={setTestValue2}
               imageUploadUrl="/upload"
             />
+            <div dangerouslySetInnerHTML={{ __html: testValue2 }}></div>
           </section>
         </article>
 

@@ -37,6 +37,7 @@ const SunEditor = ({
   onChange: (content: string) => void;
   imageUploadUrl?: string;
 }) => {
+  const editorRef = useRef<HTMLTextAreaElement>(null);
   const editorID = `f${uuid()}`;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const ref = useRef<any>();
@@ -127,11 +128,12 @@ const SunEditor = ({
     return () => {
       ref.current.destroy();
     };
-  }, [editorID, height, onChange, width, imageUploadUrl]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className={styles.editor}>
-      <textarea id={editorID} defaultValue={value} />
+      <textarea ref={editorRef} id={editorID} defaultValue={value} />
     </div>
   );
 };
