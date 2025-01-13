@@ -1,6 +1,6 @@
 {
   "name": "@the-flexion/pkg",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "type": "module",
   "author": "flexion <dev@flexion.co.kr>",
   "license": "MIT",

@@ -24,7 +24,7 @@ const Field = ({
 
         {required && <span className="required">*</span>}
       </label>
-      {children}
+      <div className="child">{children}</div>
       <div className={`helper ${helperClass}`}>{helper}</div>
     </div>
   );
