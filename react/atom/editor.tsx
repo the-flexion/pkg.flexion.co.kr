@@ -153,6 +153,12 @@ const SunEditor = ({
       ref.current.destroy();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    if (value) {
+      ref.current.setContents(value);
+    }
   }, [value]);
 
   return (
