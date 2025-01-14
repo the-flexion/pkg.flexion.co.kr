@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import suneditor from 'suneditor';
 import 'suneditor/dist/css/suneditor.min.css';
@@ -23,6 +23,16 @@ import {
   video,
   table,
 } from 'suneditor/src/plugins';
+import { z } from 'zod';
+
+interface Props {
+  value: string;
+  width?: string;
+  height?: string;
+  onChange: (content: string) => void;
+  imageUploadUrl?: string;
+  validator?: z.ZodType<unknown>;
+}
 
 const SunEditor = ({
   value = '',
@@ -30,17 +40,30 @@ const SunEditor = ({
   height = '600px',
   onChange,
   imageUploadUrl,
-}: {
-  value: string;
-  width?: string;
-  height?: string;
-  onChange: (content: string) => void;
-  imageUploadUrl?: string;
-}) => {
+  validator,
+}: Props) => {
+  const [message, setMessage] = useState('');
+  const [statusClass, setStatusClass] = useState('');
   const editorRef = useRef<HTMLTextAreaElement>(null);
   const editorID = `f${uuid()}`;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const ref = useRef<any>();
+
+  const validateHandler = (content: string) => {
+    setMessage('');
+    setStatusClass('');
+    if (validator && content.length > 0) {
+      try {
+        validator.parse(content);
+        setStatusClass('success');
+      } catch (e) {
+        if (e instanceof z.ZodError) {
+          setMessage(e.errors[0].message);
+          setStatusClass('danger');
+        }
+      }
+    }
+  };
 
   useEffect(() => {
     const toolbar = [
@@ -123,6 +146,7 @@ const SunEditor = ({
 
     ref.current.onChange = function (content: string) {
       onChange(content);
+      validateHandler(content);
     };
 
     return () => {
@@ -132,8 +156,11 @@ const SunEditor = ({
   }, []);
 
   return (
-    <div className={styles.editor}>
+    <div className={`${styles.editor} ${statusClass}`}>
       <textarea ref={editorRef} id={editorID} defaultValue={value} />
+      {validator && message && (
+        <div className={styles.validator}>{message}</div>
+      )}
     </div>
   );
 };
