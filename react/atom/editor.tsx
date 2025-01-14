@@ -153,7 +153,7 @@ const SunEditor = ({
       ref.current.destroy();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [value]);
 
   return (
     <div className={`${styles.editor} ${statusClass}`}>
