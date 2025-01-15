@@ -165,6 +165,14 @@ const SunEditor = ({
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       ref.current = suneditor.create(editorID, editorOptions as any);
     }
+    ref.current.onChange = function (content: string) {
+      onChange(content);
+      validateHandler(content);
+    };
+    return () => {
+      ref.current.destroy();
+    };
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [editorID, value]);
 
