@@ -169,10 +169,6 @@ const SunEditor = ({
       onChange(content);
       validateHandler(content);
     };
-    return () => {
-      ref.current.destroy();
-    };
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [editorID, value]);
 
