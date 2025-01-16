@@ -158,20 +158,6 @@ const SunEditor = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useEffect(() => {
-    if (value) {
-      // 에디터 삭제 후 재생성
-      ref.current.destroy();
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      ref.current = suneditor.create(editorID, editorOptions as any);
-    }
-    ref.current.onChange = function (content: string) {
-      onChange(content);
-      validateHandler(content);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [editorID, value]);
-
   return (
     <div className={`${styles.editor} ${statusClass}`}>
       <textarea ref={editorRef} id={editorID} defaultValue={value} />
