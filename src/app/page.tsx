@@ -8,6 +8,10 @@ function Page() {
   const [darkmode, setDarkmode] = useState('light');
   const [testValue, setTestValue] = useState('');
   const [testValue2, setTestValue2] = useState('');
+  const [testValue3, setTestValue3] = useState('');
+  const [testValue4, setTestValue4] = useState('');
+  const [wrapValue, setWrapValue] = useState('');
+  const [wrapClass, setWrapClass] = useState('');
   const testSchema = z.string().min(5, 'Too short');
   useEffect(() => {
     document.documentElement.setAttribute('data-color-tone', 'warm');
@@ -15,6 +19,9 @@ function Page() {
   useEffect(() => {
     document.documentElement.setAttribute('data-color-mode', darkmode);
   });
+  useEffect(() => {
+    setWrapValue(`${testValue3}${testValue4}`);
+  }, [testValue3, testValue4]);
 
   return (
     <div className={styles.app}>
@@ -2220,6 +2227,35 @@ function Page() {
                 className="w-full"
                 validator={testSchema}
               />
+            </div>
+          </section>
+          <section>
+            <h3>Form.Validator</h3>
+            <pre>
+              &lt;Form.Validator validator=&#123;testSchema&#125;
+              value=&#123;wrapValue&#125; setClassName=&#123;wrapClass&#125;
+              &gt; &lt;... className=&#123;wrapClass&#125;/&gt;
+              &lt;/Form.Validator&gt;
+            </pre>
+            <div className="w-full">
+              <Form.Validator
+                validator={testSchema}
+                value={wrapValue}
+                setClassName={setWrapClass}
+              >
+                <input
+                  type="text"
+                  value={testValue3}
+                  className={wrapClass}
+                  onChange={(e) => setTestValue3(e.target.value)}
+                />
+                <input
+                  type="text"
+                  value={testValue4}
+                  className={wrapClass}
+                  onChange={(e) => setTestValue4(e.target.value)}
+                />
+              </Form.Validator>
             </div>
           </section>
         </article>

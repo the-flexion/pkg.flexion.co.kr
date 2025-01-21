@@ -1,0 +1,13 @@
+.style {
+  display: inline-block;
+  &:global {
+    > * {
+      > div.validator {
+        display: none;
+        &.show {
+          display: block;
+        }
+      }
+    }
+  }
+}
