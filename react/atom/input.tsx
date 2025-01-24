@@ -3,7 +3,7 @@ import { z } from 'zod';
 import styles from './input.module.scss';
 
 interface InputWrapperProps extends React.ComponentProps<'input'> {
-  value: string;
+  value?: string | number;
   className?: string;
   validator?: z.ZodType<unknown>;
   withLeftIcon?: string;
@@ -24,7 +24,7 @@ const Input: React.FC<InputWrapperProps> = ({
   const validateHandler = useCallback(() => {
     setMessage('');
     setStatusClass('');
-    if (validator && value.length > 0) {
+    if (validator && value) {
       try {
         validator.parse(value);
         setStatusClass('success');
@@ -49,7 +49,7 @@ const Input: React.FC<InputWrapperProps> = ({
         {withLeftIcon && <i className={withLeftIcon} />}
         <input
           {...rest}
-          value={value}
+          value={value ?? ''}
           className={`${statusClass} ${className || ''}`}
         />
         {withRightIcon && <i className={withRightIcon} />}
