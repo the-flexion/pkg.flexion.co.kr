@@ -6,7 +6,7 @@ interface InputWrapperProps extends React.ComponentProps<'input'> {
   value?: string | number;
   className?: string;
   validator?: z.ZodType<unknown>;
-  withLeftIcon?: string;
+  withIcon?: string;
   withRightIcon?: string;
 }
 
@@ -14,7 +14,7 @@ const Input: React.FC<InputWrapperProps> = ({
   validator,
   value,
   className,
-  withLeftIcon,
+  withIcon,
   withRightIcon,
   ...rest
 }) => {
@@ -44,9 +44,9 @@ const Input: React.FC<InputWrapperProps> = ({
   return (
     <div className={`${styles.style} ${className || ''}`}>
       <div
-        className={`${withLeftIcon && 'with-icon'} ${withRightIcon && 'with-right-icon'}`}
+        className={`${withIcon ? 'with-icon' : ''} ${withRightIcon ? 'with-right-icon' : ''}`}
       >
-        {withLeftIcon && <i className={withLeftIcon} />}
+        {withIcon && <i className={withIcon} />}
         <input
           {...rest}
           value={value ?? ''}

@@ -2230,32 +2230,34 @@ function Page() {
             </div>
           </section>
           <section>
-            <h3>Form.Validator</h3>
+            <h3>Form.Field</h3>
             <pre>
-              &lt;Form.Validator validator=&#123;testSchema&#125;
-              value=&#123;wrapValue&#125; setClassName=&#123;wrapClass&#125;
+              &lt;Form.Field validator=&#123;testSchema&#125;
+              value=&#123;wrapValue&#125; setClassName=&#123;setWrapClass&#125;
               &gt; &lt;... className=&#123;wrapClass&#125;/&gt;
-              &lt;/Form.Validator&gt;
+              &lt;/Form.Field&gt;
             </pre>
             <div className="w-full">
-              <Form.Validator
+              <Form.Field
                 validator={testSchema}
                 value={wrapValue}
                 setClassName={setWrapClass}
               >
-                <input
-                  type="text"
-                  value={testValue3}
-                  className={wrapClass}
-                  onChange={(e) => setTestValue3(e.target.value)}
-                />
-                <input
-                  type="text"
-                  value={testValue4}
-                  className={wrapClass}
-                  onChange={(e) => setTestValue4(e.target.value)}
-                />
-              </Form.Validator>
+                <div>
+                  <input
+                    type="text"
+                    value={testValue3}
+                    className={`${wrapClass} m-r-3`}
+                    onChange={(e) => setTestValue3(e.target.value)}
+                  />
+                  <input
+                    type="text"
+                    value={testValue4}
+                    className={wrapClass}
+                    onChange={(e) => setTestValue4(e.target.value)}
+                  />
+                </div>
+              </Form.Field>
             </div>
           </section>
         </article>
