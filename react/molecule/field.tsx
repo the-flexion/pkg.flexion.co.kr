@@ -67,7 +67,9 @@ const Field = ({
       <div className="child">{children}</div>
       {helper ||
         (validator && message !== '' && (
-          <div className={`helper ${helperClass}`}>{message || helper}</div>
+          <div className={`helper ${helperClass || ''}`}>
+            {message || helper}
+          </div>
         ))}
     </div>
   );

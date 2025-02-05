@@ -55,7 +55,7 @@ const Input: React.FC<InputWrapperProps> = ({
         {withRightIcon && <i className={withRightIcon} />}
       </div>
       {validator && message !== '' && (
-        <div className={styles.validator}>{message}</div>
+        <div className="validator">{message}</div>
       )}
     </div>
   );

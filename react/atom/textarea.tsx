@@ -42,7 +42,7 @@ const Textarea: React.FC<TextareaWrapperProps> = ({
         onKeyUp={validateHandler}
       />
       {validator && message !== '' && (
-        <div className={styles.validator}>{message}</div>
+        <div className="validator">{message}</div>
       )}
     </div>
   );
