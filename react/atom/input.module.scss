@@ -24,6 +24,19 @@
         color: color('text-sub');
         pointer-events: none;
       }
+      > input {
+        /* Chrome, Safari, Edge, Opera */
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        /* Firefox  */
+        &[type='number'] {
+          -moz-appearance: textfield;
+        }
+      }
     }
   }
 }

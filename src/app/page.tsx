@@ -2218,7 +2218,7 @@ function Page() {
             </pre>
             <div>
               <Form.Input
-                type="text"
+                type="number"
                 value={testValue}
                 onChange={(e) => {
                   setTestValue(e.target.value);
