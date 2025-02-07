@@ -46,7 +46,7 @@ const Input: React.FC<InputWrapperProps> = ({
   return (
     <div className={`${styles.style} ${className || ''}`}>
       <div
-        className={`${withIcon ? 'with-icon' : ''} ${withRightIcon ? 'with-right-icon' : ''}`}
+        className={`${className || ''} ${withIcon ? 'with-icon' : ''} ${withRightIcon ? 'with-right-icon' : ''}`}
       >
         {withIcon && <i className={withIcon} />}
         <input
