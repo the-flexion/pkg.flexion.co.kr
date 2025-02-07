@@ -8,6 +8,7 @@ interface InputWrapperProps extends React.ComponentProps<'input'> {
   validator?: z.ZodType<unknown>;
   withIcon?: string;
   withRightIcon?: string;
+  unit?: string;
 }
 
 const Input: React.FC<InputWrapperProps> = ({
@@ -16,6 +17,7 @@ const Input: React.FC<InputWrapperProps> = ({
   className,
   withIcon,
   withRightIcon,
+  unit,
   ...rest
 }) => {
   const [message, setMessage] = useState('');
@@ -53,6 +55,7 @@ const Input: React.FC<InputWrapperProps> = ({
           className={`${statusClass} ${className || ''}`}
         />
         {withRightIcon && <i className={withRightIcon} />}
+        {unit && <span className="unit">{unit}</span>}
       </div>
       {validator && message !== '' && (
         <div className="validator">{message}</div>

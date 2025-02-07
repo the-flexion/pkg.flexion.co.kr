@@ -13,5 +13,17 @@
         color: color('text-sub');
       }
     }
+    > div{
+      position: relative;
+      width: fit-content;
+      > span.unit {
+        position: absolute;
+        right: s(3);
+        top: 50%;
+        transform: translateY(-50%);
+        color: color('text-sub');
+        pointer-events: none;
+      }
+    }
   }
 }

@@ -1772,6 +1772,9 @@ function Page() {
                 <input type="text" placeholder="icon" className="fill" />
                 <i className="icon-search"></i>
               </div>
+              <div className="with-right-icon">
+                <input type="text" placeholder="icon" className="fill"/>
+              </div>
               <div className="with-icon with-right-icon">
                 <i className="icon-tag"></i>
                 <input type="text" placeholder="icon" className="fill" />
@@ -2196,7 +2199,7 @@ function Page() {
             <pre>
               &lt;Form.Input type="text" value=&#123;testValue&#125; onChange=
               &#123;(e) =&gt; &#123; setTestValue(e.target.value); &#125;&#125;
-              validator=&#123;testSchema&#125; /&gt;
+              validator=&#123;testSchema&#125;/&gt;
             </pre>
             <div>
               <Form.Input
@@ -2206,6 +2209,22 @@ function Page() {
                   setTestValue(e.target.value);
                 }}
                 validator={testSchema}
+              />
+            </div>
+            <pre>
+              &lt;Form.Input type="text" value=&#123;testValue&#125; onChange=
+              &#123;(e) =&gt; &#123; setTestValue(e.target.value); &#125;&#125;
+              validator=&#123;testSchema&#125; unit=&#123;Unit&#125; /&gt;
+            </pre>
+            <div>
+              <Form.Input
+                type="text"
+                value={testValue}
+                onChange={(e) => {
+                  setTestValue(e.target.value);
+                }}
+                validator={testSchema}
+                unit="Unit"
               />
             </div>
           </section>
