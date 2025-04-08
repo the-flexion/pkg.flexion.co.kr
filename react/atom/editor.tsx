@@ -57,7 +57,7 @@ const SunEditor = ({
     if (validator && content.length > 0) {
       try {
         validator.parse(content);
-        setStatusClass('success');
+        setStatusClass('');
       } catch (e) {
         if (e instanceof z.ZodError) {
           setMessage(e.errors[0].message);

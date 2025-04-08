@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { z } from 'zod';
 import styles from './input.module.scss';
 
@@ -22,6 +22,10 @@ const Input: React.FC<InputWrapperProps> = ({
 }) => {
   const [message, setMessage] = useState('');
   const [statusClass, setStatusClass] = useState('');
+  const inputRef = useRef<HTMLInputElement>(null);
+  const pickerHandler = () => {
+    inputRef.current?.showPicker?.();
+  };
 
   const validateHandler = useCallback(() => {
     setMessage('');
@@ -29,7 +33,7 @@ const Input: React.FC<InputWrapperProps> = ({
     if (validator && value) {
       try {
         validator.parse(value);
-        setStatusClass('success');
+        setStatusClass('');
       } catch (e) {
         if (e instanceof z.ZodError) {
           setMessage(e.errors[0].message);
@@ -48,13 +52,16 @@ const Input: React.FC<InputWrapperProps> = ({
       <div
         className={`${className || ''} ${withIcon ? 'with-icon' : ''} ${withRightIcon ? 'with-right-icon' : ''}`}
       >
-        {withIcon && <i className={withIcon} />}
+        {withIcon && <i className={withIcon} onClick={pickerHandler} />}
         <input
           {...rest}
           value={value ?? ''}
           className={`${statusClass} ${className || ''}`}
+          ref={inputRef}
         />
-        {withRightIcon && <i className={withRightIcon} />}
+        {withRightIcon && (
+          <i className={withRightIcon} onClick={pickerHandler} />
+        )}
         {unit && <span className="unit">{unit}</span>}
       </div>
       {validator && message !== '' && (

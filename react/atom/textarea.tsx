@@ -23,7 +23,7 @@ const Textarea: React.FC<TextareaWrapperProps> = ({
     if (validator && value.length > 0) {
       try {
         validator.parse(value);
-        setStatusClass('success');
+        setStatusClass('');
       } catch (e) {
         if (e instanceof z.ZodError) {
           setMessage(e.errors[0].message);

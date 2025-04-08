@@ -38,7 +38,7 @@ const Field = ({
       try {
         validator.parse(value);
         if (setClassName) {
-          setClassName('success');
+          setClassName('');
         }
       } catch (e) {
         if (e instanceof z.ZodError) {
