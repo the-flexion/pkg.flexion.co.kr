@@ -4,6 +4,7 @@ import styles from './input.module.scss';
 
 interface InputWrapperProps extends React.ComponentProps<'input'> {
   value?: string | number;
+  errMessage?: string;
   className?: string;
   validator?: z.ZodType<unknown>;
   withIcon?: string;
@@ -13,6 +14,7 @@ interface InputWrapperProps extends React.ComponentProps<'input'> {
 
 const Input: React.FC<InputWrapperProps> = ({
   validator,
+  errMessage,
   value,
   className,
   withIcon,
@@ -42,6 +44,12 @@ const Input: React.FC<InputWrapperProps> = ({
       }
     }
   }, [validator, value]);
+
+  useEffect(() => {
+    if (errMessage !== undefined) {
+      setMessage(errMessage);
+    }
+  }, [errMessage]);
 
   useEffect(() => {
     validateHandler();

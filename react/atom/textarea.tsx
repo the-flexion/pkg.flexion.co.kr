@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { z } from 'zod';
 import styles from './textarea.module.scss';
 
@@ -6,10 +6,12 @@ interface TextareaWrapperProps extends React.ComponentProps<'textarea'> {
   value: string;
   className?: string;
   validator?: z.ZodType<unknown>;
+  errMessage?: string;
 }
 
 const Textarea: React.FC<TextareaWrapperProps> = ({
   validator,
+  errMessage,
   value,
   className,
   ...rest
@@ -32,6 +34,12 @@ const Textarea: React.FC<TextareaWrapperProps> = ({
       }
     }
   };
+
+  useEffect(() => {
+    if (errMessage !== undefined) {
+      setMessage(errMessage);
+    }
+  }, [errMessage]);
 
   return (
     <div className={`${styles.style} ${className}`}>

@@ -10,6 +10,7 @@ interface Props {
   helperClass?: string;
   children?: React.ReactNode;
   validator?: z.ZodType<unknown>;
+  errMessage?: string;
   value?: string;
   setClassName?: React.Dispatch<React.SetStateAction<string>>;
   className?: string;
@@ -23,6 +24,7 @@ const Field = ({
   helperClass,
   children,
   validator,
+  errMessage,
   value,
   setClassName,
   className,
@@ -54,6 +56,12 @@ const Field = ({
   useEffect(() => {
     validateHandler();
   }, [validateHandler]);
+
+  useEffect(() => {
+    if (errMessage !== undefined) {
+      setMessage(errMessage);
+    }
+  }, [errMessage]);
 
   return (
     <div className={`${styles.style} ${className || ''}`}>
