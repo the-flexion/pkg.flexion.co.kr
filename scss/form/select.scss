@@ -7,7 +7,7 @@ select {
   @include p3;
   & {
     border-radius: r(3);
-    padding: s(3) s(7) s(3) s(5);
+    padding: s(3) s(10) s(3) s(6);
     outline: none;
     vertical-align: middle;
     -o-appearance: none;
@@ -38,7 +38,7 @@ select {
   display: inline-block;
   vertical-align: top;
   > select {
-    padding-left: s(8);
+    padding-left: s(11);
     position: relative;
   }
   > [class^='icon-']:first-child,

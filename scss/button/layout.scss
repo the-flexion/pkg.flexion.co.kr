@@ -8,7 +8,7 @@ button {
     display: inline-flex;
     gap: s(2);
     border-radius: r(3);
-    padding: s(3) s(5);
+    padding: s(3) s(6);
     &.xs {
       @include p4;
       & {
@@ -23,14 +23,14 @@ button {
       @include p2;
       & {
         border-radius: r(5);
-        padding: s(4) s(6);
+        padding: s(5) s(8);
       }
     }
     &.lg {
       @include p1;
       & {
         border-radius: r(6);
-        padding: s(5) s(6);
+        padding: s(6) s(8);
       }
     }
   }

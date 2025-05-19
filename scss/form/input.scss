@@ -22,7 +22,7 @@ input[type='week'],
 input[type='datetime'] {
   @include p3;
   & {
-    padding: s(3) s(4);
+    padding: s(3) s(5);
     background-color: color('bg-block');
     border-radius: r(3);
     border: 1px solid color('border-disabled');
@@ -84,14 +84,14 @@ input[type='datetime'] {
   &.md {
     @include p2;
     & {
-      padding: s(4) s(4);
+      padding: s(5) s(5);
       border-radius: r(5);
     }
   }
   &.lg {
     @include p2;
     & {
-      padding: s(5) s(4);
+      padding: s(6) s(5);
       border-radius: r(6);
     }
   }
@@ -128,7 +128,7 @@ input[type='datetime'] {
   > input[type='url'],
   > input[type='week'],
   > input[type='datetime'] {
-    padding-left: s(8);
+    padding-left: s(11);
     position: relative;
   }
   > [class^='icon-']:first-child,
@@ -173,7 +173,7 @@ input[type='datetime'] {
   > input[type='url'],
   > input[type='week'],
   > input[type='datetime'] {
-    padding-right: s(7);
+    padding-right: s(10);
     position: relative;
   }
   > [class^='icon-']:last-child,

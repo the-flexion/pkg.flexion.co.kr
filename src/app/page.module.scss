@@ -15,10 +15,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: s(4);
+    gap: s(5);
     nav {
       display: flex;
-      gap: s(4);
+      gap: s(5);
       a {
         color: color('primary-reverse');
         text-decoration: none;
@@ -30,7 +30,7 @@
   }
   > main {
     padding: s(3);
-    padding-top: s(7);
+    padding-top: s(10);
     margin-bottom: s(2);
     @extend .bg-elevation-1;
     > article {
@@ -52,7 +52,7 @@
     > * {
       .grid.guide {
         * {
-          padding: s(4);
+          padding: s(5);
         }
         &.fill {
           background: color('primary-fill');
@@ -63,7 +63,7 @@
       }
       .elements {
         > :not(:last-child) {
-          margin-right: s(4);
+          margin-right: s(5);
         }
       }
     }

@@ -12,7 +12,7 @@ input[type='file'] {
   @include p3;
   & {
     width: 404px;
-    padding: 0 s(4) 0 0;
+    padding: 0 s(5) 0 0;
     background-color: color('bg-block');
     border-radius: r(3);
     border: 1px solid color('border-disabled');
@@ -34,7 +34,7 @@ input[type='file'] {
   &::file-selector-button {
     @include p3;
     & {
-      padding: s(3) s(3) s(3) s(8);
+      padding: s(3) s(3) s(3) s(11);
       margin-right: s(2);
       cursor: pointer;
       border: none;
