@@ -48,6 +48,7 @@ const Input: React.FC<InputWrapperProps> = ({
   useEffect(() => {
     if (errMessage !== undefined) {
       setMessage(errMessage);
+      setStatusClass('danger');
     }
   }, [errMessage]);
 
