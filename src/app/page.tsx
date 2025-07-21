@@ -1773,7 +1773,7 @@ function Page() {
                 <i className="icon-search"></i>
               </div>
               <div className="with-right-icon">
-                <input type="text" placeholder="icon" className="fill"/>
+                <input type="text" placeholder="icon" className="fill" />
               </div>
               <div className="with-icon with-right-icon">
                 <i className="icon-tag"></i>
@@ -2225,6 +2225,29 @@ function Page() {
                 }}
                 validator={testSchema}
                 unit="Unit"
+              />
+            </div>
+            <div>
+              <Form.Input
+                type="number"
+                value={testValue}
+                onChange={(e) => {
+                  setTestValue(e.target.value);
+                }}
+                validator={testSchema}
+                withRightIcon="icon-user"
+                unit="Unit"
+              />
+            </div>
+            <div>
+              <Form.Input
+                type="number"
+                value={testValue}
+                onChange={(e) => {
+                  setTestValue(e.target.value);
+                }}
+                validator={testSchema}
+                withRightIcon="icon-user"
               />
             </div>
           </section>

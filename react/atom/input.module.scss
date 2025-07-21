@@ -13,16 +13,24 @@
         color: color('text-sub');
       }
     }
-    > div{
+    > div {
       position: relative;
       width: fit-content;
-      > span.unit {
-        position: absolute;
-        right: s(3);
-        top: 50%;
-        transform: translateY(-50%);
+      span.unit {
         color: color('text-sub');
         pointer-events: none;
+      }
+      .etc {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: s(3);
+        gap: s(1);
+        i {
+          margin: 0 !important;
+        }
       }
       > input {
         /* Chrome, Safari, Edge, Opera */

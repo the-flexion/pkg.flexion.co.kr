@@ -68,10 +68,12 @@ const Input: React.FC<InputWrapperProps> = ({
           className={`${statusClass} ${className || ''}`}
           ref={inputRef}
         />
-        {withRightIcon && (
-          <i className={withRightIcon} onClick={pickerHandler} />
-        )}
-        {unit && <span className="unit">{unit}</span>}
+        <div className="etc">
+          {unit && <span className="unit">{unit}</span>}
+          {withRightIcon && (
+            <i className={withRightIcon} onClick={pickerHandler} />
+          )}
+        </div>
       </div>
       {validator && message !== '' && (
         <div className="validator">{message}</div>
