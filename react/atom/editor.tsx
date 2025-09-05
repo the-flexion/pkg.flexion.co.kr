@@ -95,6 +95,7 @@ const SunEditor = ({
       image,
       video,
     },
+    placeholder: '내용을 입력해주세요.',
     width: width,
     height: height,
     buttonList: toolbar,
