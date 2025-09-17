@@ -1,3 +1,4 @@
-src
+src/
 tsconfig.json
 .next/
+node_modules/

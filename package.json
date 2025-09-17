@@ -1,6 +1,6 @@
 {
   "name": "@the-flexion/pkg",
-  "version": "0.1.36",
+  "version": "0.1.37",
   "type": "module",
   "author": "flexion <dev@flexion.co.kr>",
   "license": "MIT",
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "tsc",
     "start": "next start",
     "lint": "next lint",
     "icon": "node ./cli/icon-scss.js"

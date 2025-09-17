@@ -2,7 +2,7 @@ import { z } from 'zod';
 import styles from './field.module.scss';
 import { useCallback, useEffect, useState } from 'react';
 
-interface Props {
+export type Props = {
   label?: string;
   labelClass?: string;
   required?: boolean;
@@ -14,7 +14,7 @@ interface Props {
   value?: string;
   setClassName?: React.Dispatch<React.SetStateAction<string>>;
   className?: string;
-}
+};
 
 const Field = ({
   label,
