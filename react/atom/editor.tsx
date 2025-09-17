@@ -25,7 +25,7 @@ import {
 } from 'suneditor/src/plugins';
 import { z } from 'zod';
 
-export type Props = {
+interface Props {
   value: string;
   width?: string;
   height?: string;
@@ -33,7 +33,7 @@ export type Props = {
   imageUploadUrl?: string;
   imageUploadHeader?: Record<string, string>;
   validator?: z.ZodType<unknown>;
-};
+}
 
 const SunEditor = ({
   value = '',

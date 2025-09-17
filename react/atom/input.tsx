@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { z } from 'zod';
 import styles from './input.module.scss';
 
-export type InputWrapperProps = React.ComponentProps<'input'> & {
+interface InputWrapperProps extends React.ComponentProps<'input'> {
   value?: string | number;
   errMessage?: string;
   className?: string;
@@ -10,7 +10,7 @@ export type InputWrapperProps = React.ComponentProps<'input'> & {
   withIcon?: string;
   withRightIcon?: string;
   unit?: string;
-};
+}
 
 const Input: React.FC<InputWrapperProps> = ({
   validator,

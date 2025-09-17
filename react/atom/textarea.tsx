@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react';
 import { z } from 'zod';
 import styles from './textarea.module.scss';
 
-export type TextareaWrapperProps = React.ComponentProps<'textarea'> & {
+interface TextareaWrapperProps extends React.ComponentProps<'textarea'> {
   value: string;
   className?: string;
   validator?: z.ZodType<unknown>;
   errMessage?: string;
-};
+}
 
 const Textarea: React.FC<TextareaWrapperProps> = ({
   validator,
